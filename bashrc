@@ -10,10 +10,9 @@ source ~/.bash_aliases
 source ~/.bash_secrets
 
 # Bash prompt with git notification
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWUNTRACKEDFILES=1
-
 function parse_git_branch {
+    GIT_PS1_SHOWDIRTYSTATE=1
+    GIT_PS1_SHOWUNTRACKEDFILES=1
     BRANCH_PROMPT=$(__git_ps1)
     echo $BRANCH_PROMPT
 }
