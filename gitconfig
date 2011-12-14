@@ -1,8 +1,10 @@
-[color]
-  ui = true
 [user]
   name = aaaaaa aaaaaaaaaa
   email = aaaaaa@example.com
+[color]
+  ui = true
+[alias]
+  st = status -sb
 [github]
   user = aaaaaa
   token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

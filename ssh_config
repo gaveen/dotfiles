@@ -1,0 +1,10 @@
+IdentityFile ~/.ssh/key_aaaaaa
+
+# For LANs
+Host 192.168.*
+    UserKnownHostsFile /dev/null
+    StrictHostKeyChecking no
+
+# For Git
+Host *.github.com
+    IdentityFile ~/.ssh/key_github
