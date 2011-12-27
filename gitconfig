@@ -4,6 +4,7 @@
 [color]
   ui = true
 [alias]
+  hist = log --oneline --decorate --all --graph
   st = status -sb
 [github]
   user = aaaaaa
