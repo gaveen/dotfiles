@@ -3,7 +3,9 @@ alias vess='/usr/share/vim/vim73/macros/less.sh'
 alias g='gvim --remote-silent $@ &> /dev/null'
 
 # Misc
+alias l='ls'
 alias lls='ls'
+alias lcd='cd'
 alias ack='ack -i'
 alias :q='exit'
 
