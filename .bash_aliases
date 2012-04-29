@@ -3,10 +3,12 @@ alias vess='/usr/share/vim/vim73/macros/less.sh'
 alias g='gvim --remote-silent $@ &> /dev/null'
 
 # Misc
+alias c='cd'
 alias l='ls'
+alias ll='ls -lh --color=auto'
 alias lls='ls'
 alias lcd='cd'
-alias ack='ack -i'
+alias ack='ack --smart-case'
 alias :q='exit'
 
 # MPlayer

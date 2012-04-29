@@ -23,6 +23,3 @@ PS1="\[\033[1;32m\][\u@\h \W\[\033[0;33m\]\$(parse_git_branch)\[\033[1;32m\]]\$\
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
-
-# Loads RVM into a shell session
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

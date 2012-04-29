@@ -1,13 +1,13 @@
 [user]
-  name = Aaaaaa Aaaaaaaaaa
-  email = aaaaaa@example.org
+  name = Gaveen Prabhasara
+  email = gaveen@owain.org
 [color]
   ui = true
 [alias]
   hist = log --oneline --decorate --all --graph
   st = status -sb
 [core]
-  excludesfile = /home/aaaaaa/.gitignore
+  excludesfile = /home/gaveen/.gitignore
 [github]
-  user = aaaaaa
+  user = gaveen
   token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
