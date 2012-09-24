@@ -1,15 +1,16 @@
 # Vim
-alias vess='/usr/share/vim/vim73/macros/less.sh'
 alias g='gvim --remote-silent $@ &> /dev/null'
+alias v='vim'
+alias vess='/usr/share/vim/vim73/macros/less.sh'
 
 # Misc
+alias :q='exit'
+alias ack='ack --smart-case'
 alias c='cd'
 alias l='ls'
 alias ll='ls -lh --color=auto'
-alias lls='ls'
 alias lcd='cd'
-alias ack='ack --smart-case'
-alias :q='exit'
+alias lls='ls'
 
 # MPlayer
 alias mpa='mplayer -vo null'

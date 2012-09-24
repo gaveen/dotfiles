@@ -2,7 +2,7 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+    . /etc/bashrc
 fi
 
 # User specific aliases and functions
@@ -18,8 +18,3 @@ function parse_git_branch {
 }
 
 PS1="\[\033[1;32m\][\u@\h \W\[\033[0;33m\]\$(parse_git_branch)\[\033[1;32m\]]\$\[\033[0m\] "
-
-# For IBus
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
