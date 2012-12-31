@@ -1,7 +1,8 @@
 # Vim
 alias g='gvim --remote-silent $@ &> /dev/null'
-alias v='vim'
 alias vess='/usr/share/vim/vim73/macros/less.sh'
+alias vim-basic='vim -u ~/.vimrc_basic'
+alias vim-minimal='vim -u NONE -N'
 
 # Misc
 alias :q='exit'
