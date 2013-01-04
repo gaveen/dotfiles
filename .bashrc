@@ -17,4 +17,14 @@ function parse_git_branch {
     echo $BRANCH_PROMPT
 }
 
-PS1="\[\033[1;32m\][\u@\h \W\[\033[0;33m\]\$(parse_git_branch)\[\033[1;32m\]]\$\[\033[0m\] "
+CLR_GREEN=$(tput setaf 2)
+CLR_YELLW=$(tput setaf 3)
+CHR_RESET=$(tput sgr0)
+
+if [ "$VIM" ]; then
+    PS1="\[$CLR_GREEN\][\u@\h \W\[$CLR_YELLW\]\$(parse_git_branch)\[$CLR_GREEN\]]\$\[$CHR_RESET\] "
+else
+    PS1="\[\033[1;32m\][\u@\h \W\[\033[0;33m\]\$(parse_git_branch)\[\033[1;32m\]]\$\[\033[0m\] "
+fi
+
+#PS1="[\u@\h \W\$(parse_git_branch)]\$ "

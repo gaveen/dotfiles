@@ -1,3 +1,5 @@
+# .bash_aliases
+
 # Vim
 alias g='gvim --remote-silent $@ &> /dev/null'
 alias vess='/usr/share/vim/vim73/macros/less.sh'
