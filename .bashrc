@@ -9,6 +9,9 @@ fi
 source ~/.bash_aliases
 source ~/.bash_secrets
 
+# Map ':h' to Vim Help
+function :h { vim +"h $1" +only; }
+
 # Bash prompt with git notification
 function parse_git_branch {
     GIT_PS1_SHOWDIRTYSTATE=1
