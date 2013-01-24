@@ -8,6 +8,7 @@ fi
 # User specific aliases and functions
 source ~/.bash_aliases
 source ~/.bash_secrets
+source ~/.local/bin/git-prompt.sh
 
 # Map ':h' to Vim Help
 function :h { vim +"h $1" +only; }
