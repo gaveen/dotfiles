@@ -14,9 +14,8 @@ export GIT_EDITOR='vim'
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
+VAGRANT_PATH=/opt/vagrant
 export GOROOT=$HOME/Apps/go
-ANDROID_SDK_PATH=$HOME/Apps/android-sdk/tools:$HOME/Apps/android-sdk/platform-tools
-VAGRANT_PATH=/opt/vagrant/bin
-PATH=$PATH:$HOME/.local/bin:$HOME/.bin:$VAGRANT_PATH:$ANDROID_SDK_PATH:$GOROOT/bin
+PATH=$PATH:$HOME/.local/bin::$HOME/.rvm/bin:$GOROOT/bin:$VAGRANT_PATH/bin
 
 export PATH
