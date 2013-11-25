@@ -11,11 +11,10 @@ fi
 export EDITOR='vim'
 export GIT_EDITOR='vim'
 
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-VAGRANT_PATH=/opt/vagrant
+#VAGRANT_PATH=/opt/vagrant
+#ELIXIR_PATH=$HOME/Apps/elixir
 export GOROOT=$HOME/Apps/go
-PATH=$PATH:$HOME/.local/bin::$HOME/.rvm/bin:$GOROOT/bin:$VAGRANT_PATH/bin
+export GOPATH=$HOME/Projects/go
+PATH=$PATH:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin
 
 export PATH

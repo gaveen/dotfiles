@@ -1,2 +1,4 @@
 .DS\_Store
 *.swp
+.idea
+.netrwhist

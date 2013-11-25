@@ -1,2 +1,9 @@
+# .inputrc
+
+# Use already entered text as pattern for history search
+# and use up/down aroows to traverse the results
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+
+# Do not auto complete already entered text parts
+set skip-completed-text on

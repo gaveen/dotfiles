@@ -7,8 +7,10 @@ fi
 
 # User specific aliases and functions
 source ~/.bash_aliases
-source ~/.bash_secrets
 source ~/.local/bin/git-prompt.sh
+#source /usr/local/share/chruby/chruby.sh
+#source /usr/local/share/chruby/auto.sh
+#source ~/.bash_secrets
 
 # Map ':h' to Vim Help
 function :h { vim +"h $1" +only; }
@@ -28,7 +30,5 @@ CHR_RESET=$(tput sgr0)
 if [ "$VIM" ]; then
     PS1="\[$CLR_GREEN\][\u@\h \W\[$CLR_YELLW\]\$(parse_git_branch)\[$CLR_GREEN\]]\$\[$CHR_RESET\] "
 else
-    PS1="\[\033[1;32m\][\u@\h \W\[\033[0;33m\]\$(parse_git_branch)\[\033[1;32m\]]\$\[\033[0m\] "
+    PS1="\[\033[0;32m\][\u@\h \W\[\033[0;33m\]\$(parse_git_branch)\[\033[0;32m\]]\$\[\033[0m\] "
 fi
-
-#PS1="[\u@\h \W\$(parse_git_branch)]\$ "

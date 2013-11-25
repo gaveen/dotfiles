@@ -1,7 +1,8 @@
 # .bash_aliases
 
 # Vim
-alias g='gvim --remote-silent $@ &> /dev/null'
+alias g='gvim'
+alias gvm='gvim --remote-silent $@ &> /dev/null'
 alias vess='/usr/share/vim/vim73/macros/less.sh'
 alias vim-basic='vim -u ~/.vimrc_basic'
 alias vim-minimal='vim -u NONE -N'
@@ -14,6 +15,7 @@ alias l='ls'
 alias ll='ls -lh --color=auto'
 alias lcd='cd'
 alias lls='ls'
+alias psc='ps xawf -eo pid,user,cgroup,args'
 
 # MPlayer
 alias mpa='mplayer -vo null'
