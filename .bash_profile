@@ -14,7 +14,7 @@ export GIT_EDITOR='vim'
 #VAGRANT_PATH=/opt/vagrant
 #ELIXIR_PATH=$HOME/Apps/elixir
 export GOROOT=$HOME/Apps/go
-export GOPATH=$HOME/Projects/go
+export GOPATH=$HOME/.local/share/go
 PATH=$PATH:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin
 
 export PATH
