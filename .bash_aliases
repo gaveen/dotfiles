@@ -19,10 +19,10 @@ alias psc='ps xawf -eo pid,user,cgroup,args'
 
 # MPlayer
 alias mpa='mplayer -vo null'
-alias mpf='mplayer -fs'
 alias mpp='mplayer -ao null -fs'
-alias mps='mplayer -ao null'
-alias mpv='mplayer -af volume=12'
 
 # RSync
 alias rget='rsync -r -v --progress -c --partial -e ssh'
+
+# Cargo
+alias car='cargo'
