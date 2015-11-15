@@ -5,11 +5,12 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
 # User specific aliases and functions
 source ~/.bash_aliases
 source ~/.local/bin/git-prompt.sh
-#source /usr/local/share/chruby/chruby.sh
-#source /usr/local/share/chruby/auto.sh
 #source ~/.bash_secrets
 
 # Map ':h' to Vim Help
