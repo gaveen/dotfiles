@@ -13,6 +13,7 @@ export GIT_EDITOR='vim'
 
 export GOROOT=$HOME/Apps/go
 export GOPATH=$HOME/.local/share/go
+export CARGO_HOME=$HOME/.cargo
 
 PATH=$PATH:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin
 
