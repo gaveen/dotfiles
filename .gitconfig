@@ -1,13 +1,14 @@
 [user]
   name = Gaveen Prabhasara
-  email = gaveen@owain.org
+  email = gaveen@pm.me
 [color]
   ui = true
 [alias]
   hist = log --oneline --decorate --all --graph
+  lo = log --oneline
   st = status -sb
-[core]
-  excludesfile = /home/gaveen/.gitignore
+;[core]
+  ;excludesfile = /home/gaveen/.gitignore
 [github]
   user = gaveen
   token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

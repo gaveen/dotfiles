@@ -6,15 +6,18 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
+
 # eval `dircolors $HOME/.dir_colors`
 
-export EDITOR='vim'
-export GIT_EDITOR='vim'
+#export EDITOR='vim'
+#export GIT_EDITOR='vim'
 
-export GOROOT=$HOME/Apps/go
-export GOPATH=$HOME/.local/share/go
-export CARGO_HOME=$HOME/.cargo
+# Set GOPATH
+#export GOPATH=$HOME/.go
 
-PATH=$PATH:$HOME/.local/bin:$GOROOT/bin:$GOPATH/bin
+# Add Deno to PATH
+#export DENO_INSTALL="/home/gaveen/.deno"
+#export PATH="$DENO_INSTALL/bin:$PATH"
 
-export PATH
+# Add Cargo binaries to PATH
+#export PATH="$HOME/.cargo/bin:$PATH"
