@@ -13,11 +13,9 @@ fi
 #export GIT_EDITOR='vim'
 
 # Set GOPATH
+#export PATH=$PATH:/usr/local/go/bin
 #export GOPATH=$HOME/.go
 
 # Add Deno to PATH
 #export DENO_INSTALL="/home/gaveen/.deno"
 #export PATH="$DENO_INSTALL/bin:$PATH"
-
-# Add Cargo binaries to PATH
-#export PATH="$HOME/.cargo/bin:$PATH"
