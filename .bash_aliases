@@ -6,7 +6,7 @@
 #alias vess='/usr/share/vim/vim90/macros/less.sh'
 #alias vim-basic='vim -u ~/.vimrc_basic'
 #alias vim-minimal='vim -u NONE -N'
-#alias n='nvim'
+#alias n='neovide'
 
 # Misc
 alias :q='exit'
