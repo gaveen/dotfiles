@@ -7,6 +7,7 @@
 #alias vim-basic='vim -u ~/.vimrc_basic'
 #alias vim-minimal='vim -u NONE -N'
 #alias n='neovide'
+#alias z='zellij'
 
 # Misc
 alias :q='exit'
