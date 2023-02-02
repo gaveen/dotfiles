@@ -1,13 +1,15 @@
 # .bash_aliases
 
 # Vim
-#alias g='gvim'
-#alias gvm='gvim --remote-silent $@ &> /dev/null'
-#alias vess='/usr/share/vim/vim90/macros/less.sh'
-#alias vim-basic='vim -u ~/.vimrc_basic'
-#alias vim-minimal='vim -u NONE -N'
+alias g='gvim'
+alias gvm='gvim --remote-silent $@ &> /dev/null'
+alias vess='/usr/share/vim/vim90/macros/less.sh'
+alias vim-basic='vim -u ~/.vimrc_basic'
+alias vim-minimal='vim -u NONE -N'
 #alias n='neovide'
-#alias z='zellij'
+
+# Zellij
+alias ze='zellij --layout compact options --theme catppuccin-mocha'
 
 # Misc
 alias :q='exit'
@@ -19,17 +21,17 @@ alias l='ls'
 alias ll='ls -lh --color=auto'
 alias lcd='cd'
 alias lls='ls'
-#alias psc='ps xawf -eo pid,user,cgroup,args'
-#alias flatpack='flatpak'
+alias psc='ps xawf -eo pid,user,cgroup,args'
+alias flatpack='flatpak'
 
 # MPlayer/mpv
 #alias mpa='mplayer -vo null'
 #alias mpp='mplayer -ao null -fs'
-##alias mpa='mpv --no-video'
-##alias mpp='mpv --fs --no-audio'
+alias mpa='mpv --no-video'
+alias mpp='mpv --fs --no-audio'
 
 # RSync
-#alias rget='rsync -r -v --progress -c --partial -e ssh'
+alias rget='rsync -r -v --progress -c --partial -e ssh'
 
 # Ping
 alias P8='ping 8.8.8.8'
