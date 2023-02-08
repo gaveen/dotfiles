@@ -15,6 +15,7 @@ export PATH
 # User specific aliases and functions
 #source ~/.bash_aliases
 #source ~/.local/bin/git-prompt.sh
+#source ~/.bash_completion/alacritty
 #source ~/.bash_secrets
 
 # Map ':h' to Vim Help
