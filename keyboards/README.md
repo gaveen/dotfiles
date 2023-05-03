@@ -4,7 +4,7 @@
 ID75 configured as a ortholinear (matrix) split layout in a single body.
 
 ### Current Layout: [G-18](./G-18.json)
-![Current Layout: G-18](https://i.imgur.com/T6FScjv.png)
+![Current Layout: G-18](https://i.imgur.com/NuuRltR.png)
 
 #### Layer 0 (Base Layer):
 ![Base Layer: Colemak](https://i.imgur.com/RF2RlR7.png)
