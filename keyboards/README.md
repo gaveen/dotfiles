@@ -7,7 +7,7 @@ ID75 configured as a ortholinear (matrix) split layout in a single body.
 ![Current Layout: G-18](https://i.imgur.com/NuuRltR.png)
 
 #### Layer 0 (Base Layer):
-![Base Layer: Colemak](https://i.imgur.com/RF2RlR7.png)
+![Base Layer: Colemak](https://i.imgur.com/lmBj2lw.png)
 
 __Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
 
