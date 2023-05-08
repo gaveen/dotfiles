@@ -27,7 +27,7 @@ Right Thumb Cluster (from R to L):
 _Right Hand_ access to frequently used symbols and navigation keys + _Left Hand_ access for _Mods_ + _Number Row_ easy access
 
 #### Layer 2:
-![Layer 2: Mouse and Media](https://i.imgur.com/qIIZntK.png)
+![Layer 2: Mouse and Media](https://i.imgur.com/sgt9ZGT.png)
 
 _Home Row_ arrows + _Mouse_ keys + _Media/Brightness_ keys + _Number Row_ easy access
 
