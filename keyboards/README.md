@@ -64,7 +64,7 @@ Therefore, I have used Esc, Del, Arrow, and Ctrl on the four corners. These are 
 ## Current Layouts
 My Idobao ID75 configured as a ortholinear (matrix) split layout in a single body.
 
-### Current Layout: [G-20](./Idobao ID75/G-20.json)
+### Current Layout: [G-20](Idobao%20ID75/G-20.json)
 ![Current Layout: G-20](https://i.imgur.com/3jjpQfM.png)
 
 This is how the keyboard looks with a set of keycaps on. Layers are described below in the next section.
@@ -106,10 +106,10 @@ _QWERTY_ layout layer (e.g., for convenience in games)
 
 ### Other Layouts
 
-#### [G-18](./Idobao ID75/Previous Layouts/G-18.json)
-G-18 images:
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/WfUXuTO"  ><a href="//imgur.com/a/WfUXuTO">Keymap Dev - G-18 Idobao ID75 - QMK/VIA - 23.05</a></blockquote>
+#### [G-18](Idobao%20ID75/Previous%20Layouts/G-18.json)
+Screenshots:
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/WfUXuTO"  ><a href="//imgur.com/a/WfUXuTO">Keymap Dev - G-18 - Idobao ID75 - QMK/VIA - 23.05</a></blockquote>
 
-#### [G-16](./Idobao ID75/Previous Layouts/G-16.json)
-G-16 images:
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/n7rGcCq"  ><a href="//imgur.com/a/n7rGcCq">Keymap Dev - G-16 Idobao ID75 -  QMK/VIA - 23.04</a></blockquote>
+#### [G-16](Idobao%20ID75/Previous%20Layouts/G-16.json)
+Screenshots:
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/n7rGcCq"  ><a href="//imgur.com/a/n7rGcCq">Keymap Dev - G-16 - Idobao ID75 -  QMK/VIA - 23.04</a></blockquote>
