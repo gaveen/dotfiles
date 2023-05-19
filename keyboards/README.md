@@ -74,7 +74,7 @@ Layers are described in the sections below.
 The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding (e.g., QWERTY arrangement because I can touch type in Colemak, visually distinct keycap for Enter, etc.) with homing positions maintained for providing tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., * instead of 0 to match the color of the row).
 
 #### Layer 0 (Base Layer):
-![Base Layer: Colemak](https://i.imgur.com/kA7oK61.png)
+![Base Layer: Colemak](https://i.imgur.com/50SDnBw.png)
 
 __Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
 
@@ -91,18 +91,18 @@ Right Thumb Cluster (from R to L):
 In addition, the four corners of the keyboard have useful keys so that they can be hit without being seen.
 
 #### Layer 1:
-![Layer 1: Frequent Symbols & Mouse](https://i.imgur.com/YuLDkbT.png)
+![Layer 1: Frequent Symbols & Mouse](https://i.imgur.com/vDMGZYe.png)
 
 _Right Hand_ access to frequently used symbols and navigation keys + _Number Row_ easy access + _Mouse_ keys + _Left Hand_ access for _Mods,_ especially Shift. 
 
 This layer is accessed by holding the Layer 1 key with the Left Thumb. It is busier than Layer 2 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
 
 #### Layer 2:
-![Layer 2: Frequent Symbols & Media](https://i.imgur.com/Polca1O.png)
+![Layer 2: Functions & Media](https://i.imgur.com/GPztYJx.png)
 
-_Home Row_ arrows + _Media/Brightness_ keys + _Number Row_ easy access.
+Left Hand access for _Function Keys_ + _Media/Brightness_ keys + _Number Row_ easy access.
 
-This layer is accessed by holding the Layer 2 key with the Right Thumb. It is less busy because it's convenient to hold a Shift key (mapped to the home position on Layer 2) with the Left Index finger when the Left Thumb is already occupied with holding the Layer key.
+This layer is accessed by holding the Layer 2 key with the Right Thumb.
 
 #### Layer 3:
 ![Layer 3: QWERTY](https://i.imgur.com/cAzEeD1.png)
