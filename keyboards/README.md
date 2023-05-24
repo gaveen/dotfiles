@@ -74,7 +74,7 @@ Layers are described in the sections below.
 The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding (e.g., QWERTY arrangement because I can touch type in Colemak, visually distinct keycap for Enter, etc.) with homing positions maintained for providing tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., F5 to match the color of the row).
 
 #### Layer 0 (Base Layer):
-![Base Layer: Colemak](https://i.imgur.com/zz8kjvv.png)
+![Base Layer: Colemak](https://i.imgur.com/TPIgsnl.png)
 
 __Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
 
@@ -91,7 +91,7 @@ Right Thumb Cluster (from R to L):
 In addition, the four corners of the keyboard have useful keys so that they can be hit without being seen.
 
 #### Layer 1:
-![Layer 1: Frequent Symbols & Mouse](https://i.imgur.com/23Td193.png)
+![Layer 1: Frequent Symbols & Mouse](https://i.imgur.com/64lGXax.png)
 
 Right Hand Side:
 - Numbers & Symbols on the Home Row
@@ -103,17 +103,17 @@ Left Hand Side:
 - Numbers & Symbols on the Home Row
 - F1 to F5, F11
 - Shift
-- Alternative mouse accelerations
+- Alternative mouse buttons
 
 This layer is accessed by holding the Layer 1 key with the Left Thumb. It is busier than Layer 2 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
 
 #### Layer 2:
-![Layer 2: Functions & Media](https://i.imgur.com/fq0SgsI.png)
+![Layer 2: Functions & Media](https://i.imgur.com/AhTvoTg.png)
 
 Left Hand Side:
 - Numbers & Symbols on the Home Row
 - Quick access to Esc, Tab, ~, Menu, and Del
-- Ctrl+X/C/V shortcut Macros
+- Ctrl+X/C/V/Z shortcut Macros
 
 Right Hand Side:
 - Numbers & Symbols on the Home Row
@@ -123,7 +123,7 @@ Right Hand Side:
 This layer is accessed by holding the Layer 2 key with the Right Thumb.
 
 #### Layer 3:
-![Layer 3: QWERTY](https://i.imgur.com/91nBaBq.png)
+![Layer 3: QWERTY](https://i.imgur.com/9mbftgX.png)
 
 _QWERTY_ layout layer (e.g., for convenience in games)
 
