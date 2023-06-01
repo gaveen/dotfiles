@@ -43,14 +43,14 @@ _1 Distance from Home (1DFH)_ design principle essentially means you only move a
 On an ortholinear keyboard, these distances are uniform in a given direction unlike in regular keyboards. No more reaching out to far away keys like "]". I also use all ten fingers including thumbs for 1DFH. 
 
 ### Thumb key clusters
-_Thumb clusters_ mean what it sounds. Instead of using both thumbs for the single spacebar, both of the human opposable thumbs can be put to good use. Adhering to the 1DFH principle also means there are at least six keys physically assigned for the two thumbs.
+_Thumb clusters_ mean what it sounds. Instead of using both thumbs for the single spacebar, both of the human opposable thumbs can be put to good use. Adhering to the 1DFH principle also means there are at least six keys physically assigned for the two thumbs, more if you differentiate between _Tap_ and _Hold_ behaviors.
 
 I use these six keys for things like Space, Backspace, Enter, Shift, and Layer Switches.
 
 ### Layers
 _Layers_ in a keyboard mean additional characters or functions can be available on the same physical key by temporarily switching to a different layer. This is similar to when we press Shift, Fn, or Capslock.
 
-My current daily driver keyboard came with 4 layers, which is the default layers count in QMK. My configuration of these four layers (i.e., 0-3) is described below. In addition to the keyboard input function, I have also included basic mouse functions and a couple of other conveniences within these layers.
+My current daily driver keyboard came with 4 layers as it is the default layers count in QMK. My configuration of these four layers (i.e., 0-3) is described below. In addition to the keyboard input function, I have also included basic mouse functions and a couple of other conveniences within these layers.
 
 ### Dedicated keys for visual guiding
 As explained earlier, sometimes you need to hit a key with visual-only guiding (i.e., Hand-Eye coordination). Therefore, dedicated keys can be assigned for such frequently used keys.
@@ -66,12 +66,12 @@ Therefore, I have used Esc, Del, Arrow, and Ctrl on the four corners. Colemak la
 ## Current Layouts
 My daily-use main keyboard is built from an Idobao ID75 custom keyboard kit, configured as a ortholinear (matrix) split keyboard in a single body.
 
-### Current Layout: [G-22](Idobao%20ID75/G-22.json)
+### Current Layout 1: [G-22](Idobao%20ID75/G-22.json)
 ![Current Layout: G-22](https://i.imgur.com/SctIaXW.png)
 
 Layers are described in the sections below.
 
-The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding (e.g., QWERTY arrangement because I can touch type in Colemak, visually distinct keycap for Enter, etc.) with homing positions maintained for providing tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., F5 to match the color of the row).
+The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding. For example, the keycaps are in QWERTY arrangement because I can touch type in Colemak and I use a visually distinct keycap for Enter, etc. Homing positions are also maintained for tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
 
 #### Layer 0 (Base Layer):
 ![Base Layer: Colemak](https://i.imgur.com/TPIgsnl.png)
@@ -81,12 +81,12 @@ __Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
 Left Thumb Cluster (from L to R):
 - Shift,
 - Space, and
-- Layer 1
+- Switch to Layer 1 (on Hold)
 
 Right Thumb Cluster (from R to L):
-- Shift on Hold / Enter on Tap
+- Shift (on Hold) & Enter (on Tap)
 - Backspace, and
-- Layer 2
+- Switch to Layer 2 (on Hold)
 
 In addition, the four corners of the keyboard have useful keys so that they can be hit without being seen.
 
@@ -105,6 +105,8 @@ Left Hand Side:
 - Shift
 - Alternative mouse buttons
 
+In addition, Layer 1 also has F1 to F12 function keys, Media Play/Pause, and Capslock.
+
 This layer is accessed by holding the Layer 1 key with the Left Thumb. It is busier than Layer 2 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
 
 #### Layer 2:
@@ -120,10 +122,79 @@ Right Hand Side:
 - F6 to F10, F12
 - Shift
 
+In addition, Layer 2 also has F1 to F12 function keys, 'Toggle Layer 3' (i.e., QWERTY layer), Media Play/Pause, and Volume Up/Down.
+
 This layer is accessed by holding the Layer 2 key with the Right Thumb.
 
 #### Layer 3:
 ![Layer 3: QWERTY](https://i.imgur.com/9mbftgX.png)
+
+_QWERTY_ layout layer (e.g., for convenience in games)
+
+
+### Current Layout 2: [G-19](Idobao%20ID75/G-19.json)
+![Current Layout: G-19](https://i.imgur.com/dvXam8h.png)
+
+Layers are described in the sections below.
+
+The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding. For example, the keycaps are in QWERTY arrangement because I can touch type in Colemak and I use a visually distinct keycap for Enter, etc. Homing positions are also maintained for tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
+
+#### Layer 0 (Base Layer):
+![Base Layer: Colemak](https://i.imgur.com/qaIINQn.png)
+
+__Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
+
+Left Thumb Cluster (from L to R):
+- Shift,
+- Space, and
+- Switch to Layer 1 (on Hold) & Del (on Tap)
+
+Right Thumb Cluster (from R to L):
+- Arrow
+- Shift (on Hold) & Enter (on Tap), and
+- Switch to Layer 2 (on Hold) & Backspace (on Tap)
+
+In addition, the four corners of the keyboard have useful keys so that they can be hit without being seen.
+
+#### Layer 1:
+![Layer 1: Special Keys & Arrows](https://i.imgur.com/gz21akR.png)
+
+Left Hand Side:
+- Quick access to Esc, Tab, and ~
+- Arrow Cluster and Home/End
+- Ctrl+X/C/V/Z shortcut Macros
+- Tap Ctrl (Left Thumb) and press any key to comple a Ctrl+key sequence
+
+Right Hand Side:
+- Arrow keys on the Home Row
+- Home/End adjacent to the Home Row arrows
+- Numbers 6 - 0
+- Shift
+
+In addition, Layer 1 also has F1 to F12 function keys, Capslock, Screen Brightness Increase/Decrease, Volume Up/Down, and Media Play/Pause.
+
+This layer is accessed by holding the 'Switch to Layer 1' key on the base layer with the Right Thumb. 
+
+#### Layer 2:
+![Layer 2: Symbols & Mouse](https://i.imgur.com/tQ1T6aH.png)
+
+Right Hand Side:
+- Quick access to Symbols (including the Home Row)
+- Mouse movement and scroll actions
+- Backspace entire-word Macro
+
+Left Hand Side:
+- Symbols on the Home Row
+- Numbers 1 - 5
+- Mouse Buttons 1 - 4 
+- Shift
+
+In addition, Layer 2 also has F1 to F12 function keys, 'Toggle Layer 3' (i.e., QWERTY layer), Screen Brightness Increase/Decrease, Volume Up/Down, and Media Play/Pause.
+
+This layer is accessed by holding the 'Switch to Layer 2' key on the base layer with the Left Thumb. It is busier than Layer 1 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
+
+#### Layer 3:
+![Layer 3: QWERTY](https://i.imgur.com/i9roU7R.png)
 
 _QWERTY_ layout layer (e.g., for convenience in games)
 
