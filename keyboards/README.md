@@ -66,6 +66,8 @@ Therefore, I have used Esc, Del, Arrow, and Ctrl on the four corners. Colemak la
 ## Current Layouts
 My daily-use main keyboard is built from an Idobao ID75 custom keyboard kit, configured as a ortholinear (matrix) split keyboard in a single body.
 
+The below Layout G-19 gives the most amount of space between the split area and therefore, better ergonomics. However, I currently prefer the Layout G-22 below because it is ergonomically closer to G-19 (and has only slightly less space between the split areas) and does not let my pinkies get too lazy over time.
+
 ### Current Layout 1: [G-22](Idobao%20ID75/G-22.json)
 ![Current Layout: G-22](https://i.imgur.com/SctIaXW.png)
 
@@ -91,40 +93,41 @@ Right Thumb Cluster (from R to L):
 In addition, the four corners of the keyboard have useful keys so that they can be hit without being seen.
 
 #### Layer 1:
-![Layer 1: Frequent Symbols & Mouse](https://i.imgur.com/64lGXax.png)
-
-Right Hand Side:
-- Numbers & Symbols on the Home Row
-- Mouse actions
-- Home/End buttons
-- Backspace entire-word Macro
-
-Left Hand Side:
-- Numbers & Symbols on the Home Row
-- F1 to F5, F11
-- Shift
-- Alternative mouse buttons
-
-In addition, Layer 1 also has F1 to F12 function keys, Media Play/Pause, and Capslock.
-
-This layer is accessed by holding the Layer 1 key with the Left Thumb. It is busier than Layer 2 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
-
-#### Layer 2:
-![Layer 2: Functions & Media](https://i.imgur.com/AhTvoTg.png)
+![Layer 1: Functions & Media](https://i.imgur.com/AhTvoTg.png)
 
 Left Hand Side:
 - Numbers & Symbols on the Home Row
 - Quick access to Esc, Tab, ~, Menu, and Del
 - Ctrl+X/C/V/Z shortcut Macros
+- Tap Ctrl (on Home Row) and press any key to comple a Ctrl+key sequence
 
 Right Hand Side:
 - Numbers & Symbols on the Home Row
-- F6 to F10, F12
+- F6 - F10
+- Shift
+- Volume Up/Down
+
+In addition, Layer 1 also has function keys, 'Toggle Layer 3' (i.e., QWERTY layer), and Media Play/Pause.
+
+This layer is accessed by holding the 'Switch to Layer 1' key with the Right Thumb.
+
+#### Layer 2:
+![Layer 2: Frequent Symbols & Mouse](https://i.imgur.com/64lGXax.png)
+
+Right Hand Side:
+- Quick access to Symbols (including the Home Row)
+- Mouse movement and scroll actions
+- Backspace entire-word Macro
+
+Left Hand Side:
+- Numbers & Symbols on the Home Row
+- F1 to F5
+- Mouse buttons 1 - 4
 - Shift
 
-In addition, Layer 2 also has F1 to F12 function keys, 'Toggle Layer 3' (i.e., QWERTY layer), Media Play/Pause, and Volume Up/Down.
+In addition, Layer 1 also has F1 to F12 function keys, Media Play/Pause, and Capslock.
 
-This layer is accessed by holding the Layer 2 key with the Right Thumb.
+This layer is accessed by holding the 'Switch to Layer 2' key with the Left Thumb. It is busier than Layer 2 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
 
 #### Layer 3:
 ![Layer 3: QWERTY](https://i.imgur.com/9mbftgX.png)
