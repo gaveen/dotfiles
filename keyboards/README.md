@@ -76,7 +76,7 @@ Layers are described in the sections below.
 The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding. For example, the keycaps are in QWERTY arrangement because I can touch type in Colemak and I use a visually distinct keycap for Enter, etc. Homing positions are also maintained for tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
 
 #### Layer 0 (Base Layer):
-![Base Layer: Colemak](https://i.imgur.com/TPIgsnl.png)
+![Base Layer: Colemak](https://i.imgur.com/wSYBbHy.png)
 
 __Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
 
@@ -93,7 +93,7 @@ Right Thumb Cluster (from R to L):
 In addition, the four corners of the keyboard have useful keys so that they can be hit without being seen.
 
 #### Layer 1:
-![Layer 1: Functions & Media](https://i.imgur.com/AhTvoTg.png)
+![Layer 1: Symbols & Special Keys](https://i.imgur.com/n3nVUXS.png)
 
 Left Hand Side:
 - Numbers & Symbols on the Home Row
@@ -112,7 +112,7 @@ In addition, Layer 1 also has function keys, 'Toggle Layer 3' (i.e., QWERTY laye
 This layer is accessed by holding the 'Switch to Layer 1' key with the Right Thumb.
 
 #### Layer 2:
-![Layer 2: Frequent Symbols & Mouse](https://i.imgur.com/64lGXax.png)
+![Layer 2: Frequent Symbols & Mouse](https://i.imgur.com/tvG6tKb.png)
 
 Right Hand Side:
 - Quick access to Symbols (including the Home Row)
@@ -130,7 +130,7 @@ In addition, Layer 1 also has F1 to F12 function keys, Media Play/Pause, and Cap
 This layer is accessed by holding the 'Switch to Layer 2' key with the Left Thumb. It is busier than Layer 2 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
 
 #### Layer 3:
-![Layer 3: QWERTY](https://i.imgur.com/9mbftgX.png)
+![Layer 3: QWERTY](https://i.imgur.com/jTKZ5Tw.png)
 
 _QWERTY_ layout layer (e.g., for convenience in games)
 
