@@ -7,7 +7,7 @@ There are two senses we utilize when we use keyboards as input devices:
 
 Unless trained to _touch type,_ most of us would instinctively use vision-based guiding to orient our hands over a keyboard.
 
-I view the practice of only optimizing for just one of these guiding senses as a mistake. It can be a hindrance or it's a wasted opportunity at best.
+I view the practice of only optimizing for just one of these guiding senses as a mistake. It can be a hindrance or at least a wasted opportunity.
 
 Let's take each of the following poor optimization and/or design choices.
 - A comically long spacebar wasting valuable real estate on a keyboard surface
@@ -30,7 +30,7 @@ My current daily-driver keyboard of choice supports QMK firmware and VIA configu
 ### Ergonomic form factor
 Ergonomics can mean different things to different people. On one hand, we have the traditional QWERTY keyboards. On the far end of the ergonomic spectrum, we have keyboards custom designed for individual hands and use cases. I feel an _ortholinear (aka matrix)_ keyboard provides a meaningful balance in between as a pragmatic base for most people.
 
-Since I prefer a split typing area configuration, I picked up a larger 15x5 grid ortho keyboard (i.e., Idobao ID75) instead of the more common smaller ortho keyboards (e.g., OLKB Planck/Preonic). This gives me a uniform grid of 1U keys and enough space to configure everything I want.
+Since I prefer a split typing area configuration, I picked up a larger 15x5 grid ortho keyboard (i.e., Idobao ID75) instead of the more common smaller ortho keyboards (e.g., OLKB Planck/Preonic). This gives me a uniform grid of 1U keys and enough space to configure everything I want. In a gist, I prefer to use my keyboard in a split configuration for better ergonomics.
 
 ### Colemak layout base
 My base layout of choice is _Colemak._ It is a well-designed layout, relatively easier to migrate from QWERTY, and does not break the so-called universal shortcuts (e.g., Ctrl+C, Ctrl+V). It is also comfortable and satisfying to type in, especially if you touch type.
@@ -66,10 +66,74 @@ Therefore, I have used Esc, Del, Arrow, and Ctrl on the four corners. Colemak la
 ## Current Layouts
 My daily-use main keyboard is built from an Idobao ID75 custom keyboard kit, configured as a ortholinear (matrix) split keyboard in a single body.
 
-The below Layout G-19 gives the most amount of space between the split area and therefore, better ergonomics. However, I currently prefer the Layout G-22 below because it is ergonomically closer to G-19 (and has only slightly less space between the split areas) and does not let my pinkies get too lazy over time.
+The below Layout G-19 gives the most amount of space between the split area and therefore, better ergonomics. However, G-22 offers a layout superficially familiar to a traditional keyboard layout (e.g., modifiers on on the edge columns).
 
-### Current Layout 1: [G-22](Idobao%20ID75/G-22.json)
-![Current Layout: G-22](https://i.imgur.com/SctIaXW.png)
+### Current Layout 1: [G-19](Idobao%20ID75/G-19.json)
+![Current Layout 1: G-19](https://i.imgur.com/TJCOIUz.png)
+
+Layers are described in the sections below.
+
+The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding. For example, the keycaps are in QWERTY arrangement because I can touch type in Colemak and I use a visually distinct keycap for Enter, etc. Homing positions are also maintained for tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
+
+#### Layer 0 (Base Layer):
+![Base Layer: Colemak](https://i.imgur.com/2PV6kA7.png)
+
+__Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
+
+Left Thumb Cluster (from L to R):
+- Shift,
+- Space, and
+- Switch to Layer 2 (on Hold) & Del (on Tap)
+
+Right Thumb Cluster (from R to L):
+- Shift,
+- Enter, and
+- Switch to Layer 1 (on Hold) & Backspace (on Tap)
+
+In addition, the four corners of the keyboard have useful keys (e.g., Esc, Del, PgDown, and Ctrl) so that they can be hit without being seen.
+
+#### Layer 1:
+![Layer 1: Special Keys & Arrows](https://i.imgur.com/OReld0D.png)
+
+Left Hand Side:
+- Quick access to Esc, Tab, and ~
+- Home Row Numbers/Symbols
+- Ctrl+X/C/V/Z shortcut Macros
+- One-Shot Modifier Ctrl (Left Thumb) to be followed up to complete a Ctrl+key sequence
+
+Right Hand Side:
+- Arrow keys on two positions (i.g., How Row and Arrow Corner)
+- Home/End and PgUp/PgDown adjacent to the arrows
+- Shift
+
+In addition, Layer 1 also has F1 to F12 function keys, 'Toggle Layer 3' (i.e., QWERTY layer), Screen Brightness Increase/Decrease, Volume Up/Down, and Media Play/Pause.
+
+This layer is accessed by holding the 'Switch to Layer 1' key on the base layer with the Right Thumb. 
+
+#### Layer 2:
+![Layer 2: Symbols & Mouse](https://i.imgur.com/Y86h8HI.png)
+
+Right Hand Side:
+- Additional Symbols
+- Home Row Numbers/Symbols
+- Backspace entire-word Macro
+
+Left Hand Side:
+- Mouse movement, scroll, and button actions
+- Shift
+
+In addition, Layer 2 also has F1 to F12 function keys, Capslock, Screen Brightness Increase/Decrease, Volume Up/Down, and Media Play/Pause.
+
+This layer is accessed by holding the 'Switch to Layer 2' key on the base layer with the Left Thumb. It is busier than Layer 1 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
+
+#### Layer 3:
+![Layer 3: QWERTY](https://i.imgur.com/i9roU7R.png)
+
+_QWERTY_ layout layer (e.g., for convenience in games)
+
+
+### Current Layout 2: [G-22](Idobao%20ID75/G-22.json)
+![Current Layout 2: G-22](https://i.imgur.com/SctIaXW.png)
 
 Layers are described in the sections below.
 
@@ -99,7 +163,7 @@ Left Hand Side:
 - Numbers & Symbols on the Home Row
 - Quick access to Esc, Tab, ~, Menu, and Del
 - Ctrl+X/C/V/Z shortcut Macros
-- Tap Ctrl (on Home Row) and press any key to comple a Ctrl+key sequence
+- Tap Ctrl (on Home Row) and press any key to complete a Ctrl+key sequence
 
 Right Hand Side:
 - Numbers & Symbols on the Home Row
@@ -131,73 +195,6 @@ This layer is accessed by holding the 'Switch to Layer 2' key with the Left Thum
 
 #### Layer 3:
 ![Layer 3: QWERTY](https://i.imgur.com/jTKZ5Tw.png)
-
-_QWERTY_ layout layer (e.g., for convenience in games)
-
-
-### Current Layout 2: [G-19](Idobao%20ID75/G-19.json)
-![Current Layout: G-19](https://i.imgur.com/dvXam8h.png)
-
-Layers are described in the sections below.
-
-The above is how the keyboard looks with a set of keycaps on. The keycap placement is primarily optimized for visual guiding. For example, the keycaps are in QWERTY arrangement because I can touch type in Colemak and I use a visually distinct keycap for Enter, etc. Homing positions are also maintained for tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
-
-#### Layer 0 (Base Layer):
-![Base Layer: Colemak](https://i.imgur.com/qaIINQn.png)
-
-__Colemak__ base layer for split _1DFH_ touch typing, including thumb clusters.
-
-Left Thumb Cluster (from L to R):
-- Shift,
-- Space, and
-- Switch to Layer 1 (on Hold) & Del (on Tap)
-
-Right Thumb Cluster (from R to L):
-- Arrow
-- Shift (on Hold) & Enter (on Tap), and
-- Switch to Layer 2 (on Hold) & Backspace (on Tap)
-
-In addition, the four corners of the keyboard have useful keys so that they can be hit without being seen.
-
-#### Layer 1:
-![Layer 1: Special Keys & Arrows](https://i.imgur.com/gz21akR.png)
-
-Left Hand Side:
-- Quick access to Esc, Tab, and ~
-- Arrow Cluster and Home/End
-- Ctrl+X/C/V/Z shortcut Macros
-- Tap Ctrl (Left Thumb) and press any key to comple a Ctrl+key sequence
-
-Right Hand Side:
-- Arrow keys on the Home Row
-- Home/End adjacent to the Home Row arrows
-- Numbers 6 - 0
-- Shift
-
-In addition, Layer 1 also has F1 to F12 function keys, Capslock, Screen Brightness Increase/Decrease, Volume Up/Down, and Media Play/Pause.
-
-This layer is accessed by holding the 'Switch to Layer 1' key on the base layer with the Right Thumb. 
-
-#### Layer 2:
-![Layer 2: Symbols & Mouse](https://i.imgur.com/tQ1T6aH.png)
-
-Right Hand Side:
-- Quick access to Symbols (including the Home Row)
-- Mouse movement and scroll actions
-- Backspace entire-word Macro
-
-Left Hand Side:
-- Symbols on the Home Row
-- Numbers 1 - 5
-- Mouse Buttons 1 - 4 
-- Shift
-
-In addition, Layer 2 also has F1 to F12 function keys, 'Toggle Layer 3' (i.e., QWERTY layer), Screen Brightness Increase/Decrease, Volume Up/Down, and Media Play/Pause.
-
-This layer is accessed by holding the 'Switch to Layer 2' key on the base layer with the Left Thumb. It is busier than Layer 1 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
-
-#### Layer 3:
-![Layer 3: QWERTY](https://i.imgur.com/i9roU7R.png)
 
 _QWERTY_ layout layer (e.g., for convenience in games)
 
