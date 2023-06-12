@@ -127,7 +127,7 @@ In addition, Layer 2 also has F1 to F12 function keys, Capslock, Screen Brightne
 This layer is accessed by holding the 'Switch to Layer 2' key on the base layer with the Left Thumb. It is busier than Layer 1 because Right Hand is the one that usually moves around (e.g., access arrow cluster, use external mouse).
 
 #### Layer 3:
-![Layer 3: QWERTY](https://i.imgur.com/i9roU7R.png)
+![Layer 3: QWERTY](https://i.imgur.com/o6IBGTX.png)
 
 _QWERTY_ layout layer (e.g., for convenience in games)
 
