@@ -23,7 +23,7 @@ sudo dnf install libdvdcss ffmpeg easytag audacity-freeworld mplayer
 sudo dnf install gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator la-capitaine-icon-theme la-capitaine-cursor-theme materia-gtk-theme arc-theme gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock
 
 # Fonts
-sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts fira-code-fonts rsms-inter-fonts catharsis-cormorant-fonts-all jetbrains-mono-fonts-all julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts google-rubik-fonts
+sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts fira-code-fonts rsms-inter-fonts catharsis-cormorant-fonts-all jetbrains-mono-fonts-all julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all
 
 # Enable Flathub: https://flatpak.org/setup/Fedora/
 
@@ -34,9 +34,9 @@ flatpak install flathub com.mattjakeman.ExtensionManager
 #flatpak install flathub com.github.alexkdeveloper.desktop-files-creator
 
 # Flatpak - Basic Needs
+flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub org.gnome.NetworkDisplays
 flatpak install flathub org.standardnotes.standardnotes
-flatpak install flathub md.obsidian.Obsidian
 #flatpak install flathub com.github.alainm23.planner
 #flatpak install flathub com.github.liferooter.textpieces
 #flatpak install flathub org.gabmus.whatip
@@ -54,17 +54,21 @@ flatpak install flathub com.github.jkotra.unlockr
 #flatpak install flathub com.github.unrud.djpdf
 
 # Flatpak - Dev Tools
-flatpak install flathub com.getpostman.Postman
+flatpak install flathub io.github.shiftey.Desktop
+#flatpak install flathub com.getpostman.Postman
+#flatpak install flathub io.podman_desktop.PodmanDesktop
+#flatpak install flathub com.github.LongSoft.UEFITool
+#flatpak install flathub xyz.tytanium.DoorKnocker
 
 # Flatpak - Multimedia - Images
 flatpak install flathub io.gitlab.adhami3310.Converter
 flatpak install flathub io.gitlab.theevilskeleton.Upscaler
 flatpak install flathub com.github.huluti.Curtail
 flatpak install flathub fr.romainvigier.MetadataCleaner
-flatpak install flathub com.github.maoschanz.drawing
-flatpak install flathub org.gnome.design.Emblem
-flatpak install flathub com.boxy_svg.BoxySVG
 flatpak install flathub com.github.PintaProject.Pinta
+#flatpak install flathub org.gnome.design.Emblem
+#flatpak install flathub com.boxy_svg.BoxySVG
+#flatpak install flathub com.github.maoschanz.drawing
 #flatpak install flathub org.glimpse_editor.Glimpse
 #flatpak install flathub com.github.GradienceTeam.Gradience
 #flatpak install flathub com.endlessm.photos
@@ -74,6 +78,8 @@ flatpak install flathub io.github.aandrew_me.ytdn
 flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
 flatpak install flathub fr.handbrake.ghb
 flatpak install flathub de.haeckerfelix.AudioSharing
+flatpak install flathub io.gitlab.adhami3310.Footage
+flatpak install flathub io.freetubeapp.FreeTube
 #flatpak install flathub com.obsproject.Studio
 #flatpak install flathub io.bassi.Amberol
 #flatpak install flathub org.nickvision.tubeconverter
@@ -86,6 +92,11 @@ flatpak install flathub com.raggesilver.BlackBox
 flatpak install flathub dev.geopjr.Collision
 flatpak install flathub com.belmoussaoui.Decoder
 flatpak install flathub com.anydesk.Anydesk
+flatpak install flathub com.github.Darazaki.Spedread
+flatpak install flathub io.gitlab.news_flash.NewsFlash
+flatpak install flathub io.gitlab.adhami3310.Impression
+flatpak install flathub info.febvre.Komikku
+flatpak install flathub dev.bragefuglseth.Fretboard
 #flatpak install flathub com.parsecgaming.parsec
 #flatpak install flathub com.bitwarden.desktop
 #flatpak install flathub org.gnome.Solanum
