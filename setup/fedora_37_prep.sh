@@ -66,6 +66,7 @@ flatpak install flathub io.gitlab.theevilskeleton.Upscaler
 flatpak install flathub com.github.huluti.Curtail
 flatpak install flathub fr.romainvigier.MetadataCleaner
 flatpak install flathub com.github.PintaProject.Pinta
+#flatpak install flathub io.gitlab.gregorni.Letterpress
 #flatpak install flathub org.gnome.design.Emblem
 #flatpak install flathub com.boxy_svg.BoxySVG
 #flatpak install flathub com.github.maoschanz.drawing
