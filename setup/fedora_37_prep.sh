@@ -30,6 +30,7 @@ sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-al
 # Flatpak - Look & Feel
 flatpak install flathub com.mattjakeman.ExtensionManager
 #flatpak install flathub com.github.tchx84.Flatseal
+#flatpak install flathub io.github.giantpinkrobots.flatsweep
 #flatpak install flathub io.github.realmazharhussain.GdmSettings
 #flatpak install flathub com.github.alexkdeveloper.desktop-files-creator
 
@@ -98,11 +99,15 @@ flatpak install flathub io.gitlab.news_flash.NewsFlash
 flatpak install flathub io.gitlab.adhami3310.Impression
 flatpak install flathub info.febvre.Komikku
 flatpak install flathub dev.bragefuglseth.Fretboard
+#flatpak install flathub dev.geopjr.Tuba
+#flatpak install flathub io.github.nokse22.minitext
+#flatpak install flathub org.gnome.Polari
 #flatpak install flathub com.parsecgaming.parsec
 #flatpak install flathub com.bitwarden.desktop
 #flatpak install flathub org.gnome.Solanum
 #flatpak install flathub app.drey.Dialect
 #flatpak install flathub com.github.scrivanolabs.scrivano
+#flatpak install flathub io.github.nokse22.teleprompter
 
 # Flatpak - Gaming
 #flatpak install flathub com.endlessnetwork.fablemaker
