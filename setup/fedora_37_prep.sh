@@ -27,8 +27,9 @@ sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-al
 
 # Enable Flathub: https://flatpak.org/setup/Fedora/
 
-# Flatpak - Look & Feel
+# Flatpak - Meta, Look & Feel
 flatpak install flathub com.mattjakeman.ExtensionManager
+flatpak install flathub io.github.flattool.Warehouse
 #flatpak install flathub com.github.tchx84.Flatseal
 #flatpak install flathub io.github.giantpinkrobots.flatsweep
 #flatpak install flathub io.github.realmazharhussain.GdmSettings
