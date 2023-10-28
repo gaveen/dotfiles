@@ -48,6 +48,7 @@ flatpak install flathub app.drey.Dialect
 #flatpak install flathub org.standardnotes.standardnotes
 #flatpak install flathub org.gnome.gitlab.somas.Apostrophe
 #flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
+#flatpak install flathub io.github.phastmike.tags
 
 # Flatpak - PDF Tools
 flatpak install flathub com.github.jeromerobert.pdfarranger
@@ -75,11 +76,13 @@ flatpak install flathub io.gitlab.adhami3310.Impression
 flatpak install flathub io.gitlab.adhami3310.Converter
 flatpak install flathub com.github.huluti.Curtail
 flatpak install flathub com.github.PintaProject.Pinta
+flatpak install flathub org.upscayl.Upscayl
 #flatpak install flathub io.gitlab.theevilskeleton.Upscaler
 #flatpak install flathub com.github.maoschanz.drawing
 #flatpak install flathub com.endlessm.photos
 
 # Flatpak - Multimedia
+flatpak install flathub com.rafaelmardojai.Blanket
 flatpak install flathub no.mifi.losslesscut
 flatpak install flathub io.github.aandrew_me.ytdn
 flatpak install flathub io.freetubeapp.FreeTube
