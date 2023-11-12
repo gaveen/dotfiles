@@ -70,6 +70,8 @@ flatpak install flathub io.github.shiftey.Desktop
 flatpak install flathub fr.romainvigier.MetadataCleaner
 flatpak install flathub dev.geopjr.Collision
 flatpak install flathub io.gitlab.adhami3310.Impression
+#flatpak install flathub com.github.qarmin.czkawka
+#flatpak install flathub com.github.qarmin.szyszka
 #flatpak install flathub com.belmoussaoui.Decoder
 
 # Flatpak - Photo and Drawing
@@ -111,6 +113,24 @@ flatpak install flathub info.febvre.Komikku
 flatpak install flathub dev.geopjr.Tuba
 #flatpak install flathub dev.bragefuglseth.Fretboard
 #flatpak install flathub com.github.Darazaki.Spedread
+#flatpak install flathub com.librumreader.librum
+
+# Flatpak - Misc
+#flatpak install flathub com.felipekinoshita.Kana
+#flatpak install flathub io.github.nokse22.minitext
+#flatpak install flathub io.github.nokse22.teleprompter
+#flatpak install flathub app.drey.Warp
+#flatpak install flathub com.github.alainm23.planner
+#flatpak install flathub com.github.liferooter.textpieces
+#flatpak install flathub com.github.scrivanolabs.scrivano
+#flatpak install flathub com.github.flxzt.rnote
+
+# Flatpak - Gaming
+#flatpak install flathub org.turbowarp.TurboWarp
+#flatpak install flathub edu.mit.Scratch
+#flatpak install flathub com.endlessnetwork.fablemaker
+#flatpak install flathub com.endlessnetwork.dragonsapprentice
+#flatpak install flathub com.endlessnetwork.aqueducts
 
 # Flatpak - Design Tools (e.g., https://tools.design.gnome.org/)
 #flatpak install flathub org.gnome.design.Contrast
@@ -123,20 +143,6 @@ flatpak install flathub dev.geopjr.Tuba
 #flatpak install flathub io.gitlab.gregorni.Letterpress
 #flatpak install flathub io.github.lainsce.Colorway
 #flatpak install flathub io.github.lainsce.Emulsion
-
-# Flatpak - Misc
-#flatpak install flathub io.github.nokse22.minitext
-#flatpak install flathub io.github.nokse22.teleprompter
-#flatpak install flathub app.drey.Warp
-#flatpak install flathub com.github.alainm23.planner
-#flatpak install flathub com.github.liferooter.textpieces
-#flatpak install flathub com.github.scrivanolabs.scrivano
-#flatpak install flathub com.github.flxzt.rnote
-
-# Flatpak - Gaming
-#flatpak install flathub com.endlessnetwork.fablemaker
-#flatpak install flathub com.endlessnetwork.dragonsapprentice
-#flatpak install flathub com.endlessnetwork.aqueducts
 
 # Cargo Installs
 # Depends on Rust toolchain
