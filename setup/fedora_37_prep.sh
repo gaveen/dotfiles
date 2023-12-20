@@ -11,7 +11,7 @@ sudo dnf groupupdate core
 sudo dnf install bash-completion gnome-terminal-nautilus wget curl git vim-X11 vim-enhanced ripgrep htop youtube-dl
 
 # Basic Needs
-sudo dnf install neovim gitg binutils lsof ctags gcc cmake openssl-devel powertop wmctrl gimp gimp-data-extras pngcrush soundconverter transmission-gtk wireshark nmap xsel exiv2 bcc bcc-tools hexchat pdfmerge pdfarranger mpv gedit-plugins rhythmbox-alternative-toolbar socat libreoffice-draw chromium-freeworld wl-clipboard wlroots netcat bat rr toolbox distrobox diffpdf
+sudo dnf install neovim gitg binutils lsof ctags gcc cmake openssl-devel powertop wmctrl gimp gimp-data-extras pngcrush soundconverter transmission-gtk wireshark nmap xsel exiv2 bcc bcc-tools hexchat pdfmerge pdfarranger mpv gedit-plugins rhythmbox-alternative-toolbar socat libreoffice-draw chromium-freeworld wl-clipboard wlroots netcat bat rr toolbox distrobox diffpdf diskonaut procs
 
 # Multimedia Support
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
@@ -42,6 +42,7 @@ flatpak install flathub org.gnome.NetworkDisplays
 
 # Flatpak - Productivity
 flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub com.github.Eloston.UngoogledChromium
 flatpak install flathub app.drey.Dialect
 #flatpak install flathub io.gitlab.idevecore.Pomodoro
 #flatpak install flathub com.raggesilver.BlackBox
@@ -154,6 +155,7 @@ cargo install cargo-audit --features=binary-scanning
 cargo install cargo-auditable
 cargo install systemfd
 cargo install cargo-watch
+cargo install systeroid
 cargo install erdtree
 cargo install viu
 
