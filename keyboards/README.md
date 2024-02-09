@@ -133,7 +133,7 @@ Left Hand Side:
 In addition, Layer 2 also has F1 to F12 function keys, Capslock, Screen Brightness Increase/Decrease, Scroll-lock, and Media Play/Pause.
 
 #### Layer 3:
-![Layer 3: QWERTY](https://https://i.imgur.com/dAkeZw3.png)
+![Layer 3: QWERTY](https://i.imgur.com/dAkeZw3.png)
 
 _QWERTY_ layout layer (e.g., for convenience in games)
 
