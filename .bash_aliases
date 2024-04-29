@@ -3,7 +3,7 @@
 # Vim
 alias g='gvim'
 alias gvm='gvim --remote-silent $@ &> /dev/null'
-alias vess='/usr/share/vim/vim90/macros/less.sh'
+alias vess='/usr/share/vim/vim91/macros/less.sh'
 alias vim-basic='vim -u ~/.vimrc_basic'
 alias vim-minimal='vim -u NONE -N'
 #alias n='neovide'

@@ -28,122 +28,57 @@ sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-al
 # Enable Flathub: https://flatpak.org/setup/Fedora/
 
 # Flatpak - Flatpak and related
-flatpak install flathub io.github.flattool.Warehouse
-#flatpak install flathub com.github.tchx84.Flatseal
-#flatpak install flathub io.github.giantpinkrobots.flatsweep
+flatpak install flathub io.github.flattool.Warehouse                            # Manage flatpaks
+flatpak install flathub com.github.tchx84.Flatseal                              # Manage permissions for flatpaks
+flatpak install flathub io.github.giantpinkrobots.flatsweep                     # Clean leftover data from flatpaks
 
 # Flatpak - System-related
-flatpak install flathub com.mattjakeman.ExtensionManager
-flatpak install flathub org.gnome.NetworkDisplays
-#flatpak install flathub org.gabmus.whatip
-#flatpak install flathub com.github.alexkdeveloper.desktop-files-creator
-#flatpak install flathub io.github.realmazharhussain.GdmSettings
-#flatpak install flathub com.github.GradienceTeam.Gradience
+flatpak install flathub org.gnome.NetworkDisplays                               # Connect to network displays
+flatpak install flathub com.github.alexkdeveloper.desktop-files-creator         # Create .desktop files
 
 # Flatpak - Productivity
-flatpak install flathub md.obsidian.Obsidian
-flatpak install flathub com.github.Eloston.UngoogledChromium
-flatpak install flathub app.drey.Dialect
-#flatpak install flathub io.gitlab.idevecore.Pomodoro
-#flatpak install flathub com.raggesilver.BlackBox
-#flatpak install flathub org.standardnotes.standardnotes
-#flatpak install flathub org.gnome.gitlab.somas.Apostrophe
-#flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
-#flatpak install flathub io.github.phastmike.tags
+flatpak install flathub md.obsidian.Obsidian                                    # Obsidian notes
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe                       # Apostrophe markdown editor
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive        # TexLive plugin for Apostrophe
+flatpak install flathub app.drey.Dialect                                        # Translator
+flatpak install flathub io.gitlab.idevecore.Pomodoro                            # Pomodoro timer
+flatpak install flathub io.github.phastmike.tags                                # Use color tags to search text files
+flatpak install flathub io.github.alainm23.planify                              # Todo list
 
 # Flatpak - PDF Tools
-flatpak install flathub com.github.jeromerobert.pdfarranger
-flatpak install flathub io.github.diegoivan.pdf_metadata_editor
-#flatpak install flathub com.github.muriloventuroso.pdftricks
-#flatpak install flathub net.sourceforge.pdfchain
-#flatpak install flathub com.github.jkotra.unlockr
-#flatpak install flathub com.github.unrud.djpdf
+flatpak install flathub com.github.jeromerobert.pdfarranger                     # Manipulate PDF files
+flatpak install flathub com.github.jkotra.unlockr                               # Remove PDF passwords
 
 # Flatpak - Dev Tools
-flatpak install flathub io.github.shiftey.Desktop
-#flatpak install flathub com.getpostman.Postman
-#flatpak install flathub io.podman_desktop.PodmanDesktop
-#flatpak install flathub com.github.marhkb.Pods
-#flatpak install flathub com.github.LongSoft.UEFITool
-#flatpak install flathub xyz.tytanium.DoorKnocker
+flatpak install flathub io.podman_desktop.PodmanDesktop                         # Podman Desktop
+flatpak install flathub com.github.marhkb.Pods                                  # Podman GUI
 
 # Flatpak - Other Utilities
-flatpak install flathub fr.romainvigier.MetadataCleaner
-flatpak install flathub dev.geopjr.Collision
-flatpak install flathub io.gitlab.adhami3310.Impression
-#flatpak install flathub com.github.qarmin.czkawka
-#flatpak install flathub com.github.qarmin.szyszka
-#flatpak install flathub com.belmoussaoui.Decoder
+flatpak install flathub fr.romainvigier.MetadataCleaner                         # Clean metadata in files
+flatpak install flathub dev.geopjr.Collision                                    # Generate and verify file hashes
+flatpak install flathub io.gitlab.adhami3310.Impression                         # Write ISO images to drives
+flatpak install flathub it.mijorus.collector                                    # Drap & Drop buffer
 
 # Flatpak - Photo and Drawing
-flatpak install flathub io.gitlab.adhami3310.Converter
-flatpak install flathub com.github.huluti.Curtail
-flatpak install flathub com.github.PintaProject.Pinta
-flatpak install flathub org.upscayl.Upscayl
-#flatpak install flathub io.gitlab.theevilskeleton.Upscaler
-#flatpak install flathub com.github.maoschanz.drawing
-#flatpak install flathub com.endlessm.photos
+flatpak install flathub io.gitlab.adhami3310.Converter                          # Convert and resize images
+flatpak install flathub com.github.huluti.Curtail                               # Compress images
+flatpak install flathub com.github.PintaProject.Pinta                           # Simple drawing/paint tool
+flatpak install flathub org.upscayl.Upscayl                                     # Upscale images
 
 # Flatpak - Multimedia
-flatpak install flathub com.rafaelmardojai.Blanket
-flatpak install flathub no.mifi.losslesscut
-flatpak install flathub io.github.aandrew_me.ytdn
-flatpak install flathub io.freetubeapp.FreeTube
-#flatpak install flathub it.mijorus.whisper
-#flatpak install flathub de.haeckerfelix.AudioSharing
-#flatpak install flathub io.bassi.Amberol
-#flatpak install flathub org.nickvision.tubeconverter
-#flatpak install flathub io.gitlab.adhami3310.Footage
-#flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer
-#flatpak install flathub fr.handbrake.ghb
-#flatpak install flathub app.drey.EarTag
-#flatpak install flathub com.obsproject.Studio
+flatpak install flathub io.bassi.Amberol                                        # Audio player
+flatpak install flathub io.github.aandrew_me.ytdn                               # YouTube downloader
+flatpak install flathub org.nickvision.tubeconverter                            # YouTube downloader
+flatpak install flathub io.gitlab.adhami3310.Footage                            # Trim, crop, rotate videos
+flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer                    # Trim videos
 
 # Flatpak - Communication
-flatpak install flathub org.signal.Signal
-flatpak install flathub com.discordapp.Discord
-flatpak install flathub im.riot.Riot
-#flatpak install flathub com.anydesk.Anydesk
-#flatpak install flathub com.parsecgaming.parsec
-#flatpak install flathub org.gnome.Fractal
-#flatpak install flathub us.zoom.Zoom
+flatpak install flathub com.discordapp.Discord                                  # Discord
+flatpak install flathub org.gnome.Fractal                                       # Matrix chat client
 
 # Flatpak - Entertainment and Fun
-flatpak install flathub io.gitlab.news_flash.NewsFlash
-flatpak install flathub info.febvre.Komikku
-flatpak install flathub dev.geopjr.Tuba
-#flatpak install flathub dev.bragefuglseth.Fretboard
-#flatpak install flathub com.github.Darazaki.Spedread
-#flatpak install flathub com.librumreader.librum
-
-# Flatpak - Misc
-#flatpak install flathub com.felipekinoshita.Kana
-#flatpak install flathub io.github.nokse22.minitext
-#flatpak install flathub io.github.nokse22.teleprompter
-#flatpak install flathub app.drey.Warp
-#flatpak install flathub com.github.alainm23.planner
-#flatpak install flathub com.github.liferooter.textpieces
-#flatpak install flathub com.github.scrivanolabs.scrivano
-#flatpak install flathub com.github.flxzt.rnote
-
-# Flatpak - Gaming
-#flatpak install flathub org.turbowarp.TurboWarp
-#flatpak install flathub edu.mit.Scratch
-#flatpak install flathub com.endlessnetwork.fablemaker
-#flatpak install flathub com.endlessnetwork.dragonsapprentice
-#flatpak install flathub com.endlessnetwork.aqueducts
-
-# Flatpak - Design Tools (e.g., https://tools.design.gnome.org/)
-#flatpak install flathub org.gnome.design.Contrast
-#flatpak install flathub org.gnome.design.Palette
-#flatpak install flathub org.gnome.design.AppIconPreview
-#flatpak install flathub org.gnome.design.IconLibrary
-#flatpak install flathub org.gnome.design.SymbolicPreview
-#flatpak install flathub com.boxy_svg.BoxySVG
-#flatpak install flathub org.gnome.design.Emblem
-#flatpak install flathub io.gitlab.gregorni.Letterpress
-#flatpak install flathub io.github.lainsce.Colorway
-#flatpak install flathub io.github.lainsce.Emulsion
+flatpak install flathub io.gitlab.news_flash.NewsFlash                          # Feed reader
+flatpak install flathub com.github.johnfactotum.Foliate                         # E-book reader
 
 # Cargo Installs
 # Depends on Rust toolchain
@@ -173,7 +108,6 @@ cargo install erdtree
 ## Tela icon theme - https://github.com/vinceliuice/Tela-icon-theme
 ## rust via rustup
 ## rust components
-## nvchad - https://nvchad.com/
 ## go
 ## deno
 ## abrt: bugzilla credentials
@@ -187,7 +121,64 @@ cargo install erdtree
 
 
 
-# Deprecated Items
+########## Items for Posterity ##########
+# Flatpak - Misc flatpak apps for posterity
+#                                                                               ## Utilities:
+#flatpak install flathub com.github.liferooter.textpieces                       # Transform texts
+#flatpak install flathub io.github.nokse22.minitext                             # Always-on-top scratch buffer
+#flatpak install flathub io.github.nokse22.teleprompter                         # Teleprompter
+#flatpak install flathub app.drey.Warp                                          # Warp file transfer
+#flatpak install flathub org.gabmus.whatip                                      # Get IP-related details and copy
+#flatpak install flathub com.github.qarmin.czkawka                              # Find duplicate files
+#flatpak install flathub com.github.qarmin.szyszka                              # Batch rename files
+#flatpak install flathub com.belmoussaoui.Decoder                               # Scan and generate QR codes
+#                                                                               ## PDF Tools:
+#flatpak install flathub com.github.unrud.djpdf                                 # Create PDFs with OCR layer
+#                                                                               ## Image Tools:
+#flatpak install flathub io.gitlab.theevilskeleton.Upscaler                     # Upscale images
+#flatpak install flathub com.github.maoschanz.drawing                           # Doodling tool
+#flatpak install flathub com.endlessm.photos                                    # Simple image editor
+#                                                                               ## Multimedia:
+#flatpak install flathub com.rafaelmardojai.Blanket                             # Ambient sounds
+#flatpak install flathub io.freetubeapp.FreeTube                                # YouTube player
+#flatpak install flathub it.mijorus.whisper                                     # Listen to own mic
+#flatpak install flathub de.haeckerfelix.AudioSharing                           # Share computer audio over LAN
+#flatpak install flathub app.drey.EarTag                                        # Edit audio file metadata tags
+#flatpak install flathub fr.handbrake.ghb                                       # Handbrake video converter
+#flatpak install flathub com.obsproject.Studio                                  ## OBS Studio
+#                                                                               # Fun & Entertainment:
+#flatpak install flathub info.febvre.Komikku                                    # Manga and comic book reader
+#flatpak install flathub dev.geopjr.Tuba                                        # Fediverse client
+#flatpak install flathub dev.bragefuglseth.Fretboard                            # Guitar code browser
+
+# Flatpak - Design Tools (e.g., https://tools.design.gnome.org/)
+#flatpak install flathub org.gnome.design.Contrast
+#flatpak install flathub org.gnome.design.Palette
+#flatpak install flathub org.gnome.design.AppIconPreview
+#flatpak install flathub org.gnome.design.IconLibrary
+#flatpak install flathub org.gnome.design.SymbolicPreview
+#flatpak install flathub com.boxy_svg.BoxySVG
+#flatpak install flathub org.gnome.design.Emblem
+#flatpak install flathub io.gitlab.gregorni.Letterpress
+#flatpak install flathub io.github.lainsce.Colorway
+#flatpak install flathub io.github.lainsce.Emulsion
+
+# Flatpak - Unverified flatpak apps
+#flatpak install flathub org.signal.Signal                                      # [Unverified] Signal desktop
+#flatpak install flathub im.riot.Riot                                           # [Unverified] Element matrix client
+#flatpak install flathub com.anydesk.Anydesk                                    # [Unverified] Anydesk client
+#flatpak install flathub com.parsecgaming.parsec                                # [Unverified] Parsec client
+#flatpak install flathub us.zoom.Zoom                                           # [Unverified] Zoom client
+#flatpak install flathub no.mifi.losslesscut                                    # [Unverified] Trim videos and audios
+#flatpak install flathub io.github.diegoivan.pdf_metadata_editor                # [Unverified] Edit PDF file metadata
+#flatpak install flathub com.github.muriloventuroso.pdftricks                   # [Unverified] Manipulate PDF files
+#flatpak install flathub net.sourceforge.pdfchain                               # [Unverified] Manipulate PDF files
+
+
+
+
+
+########## Deprecated Items ##########
 echo "Reached the end. The rest are deprecated."
 exit 126
 
@@ -205,7 +196,7 @@ exit 126
 #sudo dnf copr enable dawid/better_fonts
 
 # Deprecated - Manual Set Ups
-## Alacritty
+## nvchad - https://nvchad.com/
 ## neovide - https://neovide.dev/
 ## SpiderOak ONE
 

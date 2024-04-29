@@ -54,7 +54,7 @@ history = 10000
 save_to_clipboard = true
 
 [window]
-decorations = "none"
+decorations = "Full"
 opacity = 0.95
 startup_mode = "Windowed"
 
