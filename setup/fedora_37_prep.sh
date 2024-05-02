@@ -44,6 +44,7 @@ flatpak install flathub app.drey.Dialect                                        
 flatpak install flathub io.gitlab.idevecore.Pomodoro                            # Pomodoro timer
 flatpak install flathub io.github.phastmike.tags                                # Use color tags to search text files
 flatpak install flathub io.github.alainm23.planify                              # Todo list
+flatpak install flathub com.github.hugolabe.Wike                                # Wikipedia browser
 
 # Flatpak - PDF Tools
 flatpak install flathub com.github.jeromerobert.pdfarranger                     # Manipulate PDF files

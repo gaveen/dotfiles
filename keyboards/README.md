@@ -45,7 +45,7 @@ On an ortholinear keyboard, these distances are uniform in a given direction unl
 ### Thumb key clusters
 _Thumb clusters_ mean what it sounds. Instead of using both thumbs for the single spacebar, both of the human opposable thumbs can be put to good use. Adhering to the 1DFH principle also means there are at least six keys physically assigned for the two thumbs, more if you differentiate between _Tap_ and _Hold_ behaviors.
 
-I use these six keys for things like Space, Backspace, Enter, Shift, and Layer Switches.
+I use these six keys for things like Space, Backspace, Enter, Shift, Tab, and Layer Switches.
 
 ### Layers
 _Layers_ in a keyboard mean additional characters or functions can be available on the same physical key by temporarily switching to a different layer. This is similar to when we press Shift, Fn, or Capslock.
@@ -60,7 +60,7 @@ In my case, these are keys like Modifiers (e.g., Ctrl, Shift, Alt, etc.), Naviga
 ### Dedicated keys for tactile guiding
 There are usually at least two homing keys in a keyboard (e.g., "F" and "J" with a distinct feel to touch on a QWERTY keyboard, "5" on a number pad). In addition, the four corners of a rectangular keyboard are prime spots to have dedicated keys you can find just by touch.
 
-Therefore, I have used Esc, Del, Arrow, and Ctrl on the four corners. Colemak layer has T and N in place for the homing positions. Since I approach a keyboard with both hands at an inwards angle, my thumb home positions ended up being on the bottom row directly below my index finger home positions.
+Therefore, I have used Esc, Del, Page Down, and Ctrl on the four corners. Colemak layer has T and N in place for the homing positions. Since I approach a keyboard with both hands at an inwards angle, my thumb home positions ended up being on the bottom row directly below my index finger home positions.
 
 
 ## Current Layouts
