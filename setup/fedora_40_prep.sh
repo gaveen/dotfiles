@@ -36,17 +36,21 @@ flatpak install flathub io.github.giantpinkrobots.flatsweep                     
 flatpak install flathub org.gnome.NetworkDisplays                               # Connect to network displays
 flatpak install flathub com.github.alexkdeveloper.desktop-files-creator         # Create .desktop files
 
-# Flatpak - Productivity
+# Flatpak - Notes and Research
 flatpak install flathub md.obsidian.Obsidian                                    # Obsidian notes
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe                       # Apostrophe markdown editor
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive        # TexLive plugin for Apostrophe
+flatpak install flathub org.tropy.Tropy                                         # Manage research photos
+flatpak install flathub com.github.hugolabe.Wike                                # Wikipedia browser
+
+# Flatpak - Productivity
 flatpak install flathub app.drey.Dialect                                        # Translator
 flatpak install flathub io.gitlab.idevecore.Pomodoro                            # Pomodoro timer
 flatpak install flathub io.github.phastmike.tags                                # Use color tags to search text files
 flatpak install flathub io.github.alainm23.planify                              # Todo list
-flatpak install flathub com.github.hugolabe.Wike                                # Wikipedia browser
 
 # Flatpak - PDF Tools
+flatpak install flathub org.gnome.Papers                                        # PDF reader (update of Evince)
 flatpak install flathub com.github.jeromerobert.pdfarranger                     # Manipulate PDF files
 flatpak install flathub com.github.jkotra.unlockr                               # Remove PDF passwords
 
@@ -55,6 +59,7 @@ flatpak install flathub io.podman_desktop.PodmanDesktop                         
 flatpak install flathub com.github.marhkb.Pods                                  # Podman GUI
 
 # Flatpak - Other Utilities
+flatpak install flathub io.gitlab.liferooter.TextPieces                         # Transform text
 flatpak install flathub fr.romainvigier.MetadataCleaner                         # Clean metadata in files
 flatpak install flathub dev.geopjr.Collision                                    # Generate and verify file hashes
 flatpak install flathub io.gitlab.adhami3310.Impression                         # Write ISO images to drives
@@ -67,6 +72,8 @@ flatpak install flathub com.github.PintaProject.Pinta                           
 flatpak install flathub org.upscayl.Upscayl                                     # Upscale images
 
 # Flatpak - Multimedia
+flatpak install flathub org.gnome.Showtime                                      # Video player
+flatpak install flathub com.github.rafostar.Clapper                             # Video player
 flatpak install flathub io.bassi.Amberol                                        # Audio player
 flatpak install flathub io.github.aandrew_me.ytdn                               # YouTube downloader
 flatpak install flathub org.nickvision.tubeconverter                            # YouTube downloader
@@ -78,6 +85,7 @@ flatpak install flathub com.discordapp.Discord                                  
 flatpak install flathub org.gnome.Fractal                                       # Matrix chat client
 
 # Flatpak - Entertainment and Fun
+flatpak install flathub dev.bragefuglseth.Keypunch                              # Practice typing
 flatpak install flathub io.gitlab.news_flash.NewsFlash                          # Feed reader
 flatpak install flathub com.github.johnfactotum.Foliate                         # E-book reader
 
@@ -104,6 +112,7 @@ cargo install erdtree
 ## Mullvad VPN
 
 # Manual Set Ups
+## additional gnome extensions: Space Bar, Wiggle
 ## dotfiles
 ## additional fonts
 ## Tela icon theme - https://github.com/vinceliuice/Tela-icon-theme
