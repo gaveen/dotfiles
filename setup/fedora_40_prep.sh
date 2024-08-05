@@ -10,28 +10,30 @@ sudo dnf groupupdate core
 # Set Up - COPRs
 sudo dnf copr enable wezfurlong/wezterm-nightly                                 # wezterm nightly builds
 
-# Minimal
-sudo dnf install curl git vim-enhanced vim-X11 bash-completion ripgrep htop gnome-terminal-nautilus
+# Minimal (plus basic GUI tools) Setup
+sudo dnf install curl git vim-enhanced bash-completion ripgrep htop \
+    gnome-terminal-nautilus ptyxis vim-X11 gedit-plugins gitg xsel wmctrl wl-clipboard
 
-# Basic Setup
+# Convenience (minus a few flatpaks) Setup
 sudo dnf install \
-    helix neovim binutils wget lsof ctags gcc cmake openssl-devel distrobox toolbox rr ptyxis \
-    socat nmap netcat powertop exiv2 wmctrl xsel wl-clipboard wlroots zoxide procs diskonaut bat \
-    gimp gimp-data-extras pngcrush soundconverter gedit-plugins libreoffice-draw pdfarranger diffpdf pdfmerge \
-    wireguard-tools wireshark gitg transmission-gtk hexchat mpv rhythmbox-alternative-toolbar wezterm youtube-dl \
+    distrobox toolbox wireguard-tools powertop wezterm helix neovim \
+    gimp gimp-data-extras libreoffice-draw pdfarranger diffpdf pdfmerge \
+    mpv rhythmbox-alternative-toolbar soundconverter hexchat \
+    socat nmap netcat procs diskonaut bat wireshark exiv2 pngcrush zoxide \
+    binutils wget lsof ctags gcc cmake openssl-devel rr wlroots \
     bcc bcc-tools bpftop libbpf-tools bpfmon bpftool bpftrace
-
-# Multimedia Support
-sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-sudo dnf groupupdate sound-and-video
-# Additional Multimedia
-sudo dnf install libdvdcss ffmpeg easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils
 
 # Look & Feel
 sudo dnf install gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator la-capitaine-icon-theme la-capitaine-cursor-theme materia-gtk-theme arc-theme gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock
 
 # Fonts
 sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts fira-code-fonts rsms-inter-fonts catharsis-cormorant-fonts-all jetbrains-mono-fonts-all julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all
+
+# Multimedia Support
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf groupupdate sound-and-video
+# Additional Multimedia
+sudo dnf install libdvdcss ffmpeg easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils youtube-dl
 
 # Enable Flathub: https://flatpak.org/setup/Fedora/
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -223,7 +225,7 @@ exit 126
 # sudo dnf install ffmpeg ffmpeg-libs gstreamer1-plugins-base gstreamer1-plugin-openh264 gstreamer1-libav gstreamer1-svt-av1 gstreamer1-svt-vp9 gstreamer1-plugins-good-gtk gstreamer1-vaapi gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free gstreamer1-plugins-good-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-base-tools gstreamer1-plugins-bad-free-extras
 
 # Deprecated - Other Packages
-#sudo dnf install chromium-freeworld alsa-firmware celluloid toolbox brasero libvirt-client gnome-shell-extension-openweather gnome-shell-extension-disconnect-wifi gnome-shell-extension-refresh-wifi freetype-freeworld apostrophe libXScrnSaver python2-gpg remmina remmina-plugins-rdp remmina-plugins-vnc remmina-plugins-spice remmina-plugins-exec texlive-pdftex-bin texlive-pdftex uget vidcutter gstreamer1-svt-hevc foliate nushell gydl micro lynx cabextract xorg-x11-font-utils fontconfig fontconfig-enhanced-defaults fontconfig-font-replacements font-manager
+#sudo dnf install chromium-freeworld alsa-firmware celluloid toolbox brasero libvirt-client gnome-shell-extension-openweather gnome-shell-extension-disconnect-wifi gnome-shell-extension-refresh-wifi freetype-freeworld apostrophe libXScrnSaver python2-gpg remmina remmina-plugins-rdp remmina-plugins-vnc remmina-plugins-spice remmina-plugins-exec texlive-pdftex-bin texlive-pdftex uget vidcutter gstreamer1-svt-hevc foliate nushell gydl micro lynx cabextract xorg-x11-font-utils fontconfig fontconfig-enhanced-defaults fontconfig-font-replacements font-manager transmission-gtk 
 #sudo dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 # Deprecated - COPRs
