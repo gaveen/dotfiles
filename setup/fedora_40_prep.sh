@@ -15,7 +15,7 @@ sudo dnf install curl git vim-enhanced vim-X11 bash-completion ripgrep htop gnom
 
 # Basic Setup
 sudo dnf install \
-    helix neovim binutils wget lsof ctags gcc cmake openssl-devel distrobox toolbox rr \
+    helix neovim binutils wget lsof ctags gcc cmake openssl-devel distrobox toolbox rr ptyxis \
     socat nmap netcat powertop exiv2 wmctrl xsel wl-clipboard wlroots zoxide procs diskonaut bat \
     gimp gimp-data-extras pngcrush soundconverter gedit-plugins libreoffice-draw pdfarranger diffpdf pdfmerge \
     wireguard-tools wireshark gitg transmission-gtk hexchat mpv rhythmbox-alternative-toolbar wezterm youtube-dl \
@@ -88,11 +88,16 @@ flatpak install flathub com.github.johnfactotum.Foliate                         
 #sudo dnf install \*-firmware
 
 # Manual Installs - Packages / Binary
-## Rust via rustup, add components
-## Zellij
-## VS Code
-## Dropbox
-## Hugo
+## Rust (via rustup)                                                            # https://www.rust-lang.org/tools/install
+## Zellij                                                                       # https://zellij.dev/
+## Hugo                                                                         # https://github.com/gohugoio/hugo/releases
+## Typst                                                                        # https://github.com/typst/typst/releases
+## Dropbox                                                                      # https://www.dropbox.com/
+## VS Code                                                                      # https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
+
+# Rustup - Components
+rustup component add rust-src
+rustup component add rust-analyzer
 
 # Cargo - CLI Tools
 cargo install systeroid
@@ -107,25 +112,22 @@ cargo install cargo-watch
 cargo install systemfd
 
 # Manual Set Ups
-## dotfiles
+## dotfiles (and: ptyxis, vim, gedit, etc.)
 ## additional fonts
 ## Tela icon theme - https://github.com/vinceliuice/Tela-icon-theme
-## rust via rustup
-## rust components
-## go
-## deno
-## abrt: bugzilla credentials
-## libreoffice galleries and icons
-## alacritty - https://github.com/alacritty/alacritty/blob/master/INSTALL.md
-## rust-analyzer - https://rust-analyzer.github.io/manual.html#rust-analyzer-language-server-binary
+## LibreOffice galleries and icons
+## LSP support for Rust - https://rust-analyzer.github.io/manual.html
+## deno                                                                         # https://deno.com/
+## alacritty                                                                    # https://github.com/alacritty/alacritty/blob/master/INSTALL.md
 ## rr
+## abrt: bugzilla credentials
 ## sudo alternatives --config nc
 
 # Manual Set Ups - GNOME Extensions
 ## PaperWM                                                                      # https://github.com/paperwm/PaperWM
 ### PaperWM configuration excerpt from: $ dconf read /org/gnome/shell/extensions/paperwm/winprops
-### Restore with (untested): 
-### dconf write /org/gnome/shell/extensions/paperwm/winprops "['{"wm_class":"Audacity","preferredWidth":"100%"}', '{"wm_class":"Code","preferredWidth":"100%"}', '{"wm_class":"com.github.huluti.Curtail","scratch_layer":true}', '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"easytag","preferredWidth":"100%"}', '{"wm_class":"eog","scratch_layer":true}', '{"wm_class":"evince","preferredWidth":"50%"}', '{"wm_class":"","title":"GNU Image Manipulation Program","preferredWidth":"100%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"io.github.alainm23.planify","scratch_layer":true}', '{"wm_class":"Io.github.ungoogled_software.ungoogled_chromium","preferredWidth":"100%"}', '{"wm_class":"io.gitlab.idevecore.Pomodoro","scratch_layer":true}', '{"wm_class":"libreoffice-calc","preferredWidth":"100%"}', '{"wm_class":"libreoffice-draw","preferredWidth":"100%"}', '{"wm_class":"libreoffice-impress","preferredWidth":"100%"}', '{"wm_class":"libreoffice-writer","preferredWidth":"100%"}', '{"wm_class":"Microsoft-edge","preferredWidth":"100%"}', '{"wm_class":"obsidian","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Boxes","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","scratch_layer":true}', '{"wm_class":"","title":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Papers","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', '{"wm_class":"org.wezfurlong.wezterm","preferredWidth":"100%"}', '{"wm_class":"org.wireshark.Wireshark","preferredWidth":"100%"}', '{"wm_class":"Proton Pass","scratch_layer":true}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"re.sonny.Tangram","preferredWidth":"100%"}', '{"wm_class":"rhythmbox","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"Standard Notes","scratch_layer":true}', '{"wm_class":"steam","preferredWidth":"100%"}', '{"wm_class":"","title":"Transmission","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":true}', '{"wm_class":"VirtualBox Manager","preferredWidth":"100%"}', '{"wm_class":"xdg-desktop-portal-gnome","scratch_layer":true}', '{"wm_class":"zoom","scratch_layer":true}']"
+### Restore with (untested):
+### dconf write /org/gnome/shell/extensions/paperwm/winprops "['{"wm_class":"Audacity","preferredWidth":"100%"}', '{"wm_class":"Code","preferredWidth":"100%"}', '{"wm_class":"com.github.huluti.Curtail","scratch_layer":true}', '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"easytag","preferredWidth":"100%"}', '{"wm_class":"eog","scratch_layer":true}', '{"wm_class":"evince","preferredWidth":"50%"}', '{"wm_class":"","title":"GNU Image Manipulation Program","preferredWidth":"100%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"io.github.alainm23.planify","scratch_layer":true}', '{"wm_class":"Io.github.ungoogled_software.ungoogled_chromium","preferredWidth":"100%"}', '{"wm_class":"io.gitlab.idevecore.Pomodoro","scratch_layer":true}', '{"wm_class":"libreoffice-calc","preferredWidth":"100%"}', '{"wm_class":"libreoffice-draw","preferredWidth":"100%"}', '{"wm_class":"libreoffice-impress","preferredWidth":"100%"}', '{"wm_class":"libreoffice-writer","preferredWidth":"100%"}', '{"wm_class":"Microsoft-edge","preferredWidth":"100%"}', '{"wm_class":"obsidian","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Boxes","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","scratch_layer":true}', '{"wm_class":"","title":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Papers","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', '{"wm_class":"org.wezfurlong.wezterm","preferredWidth":"50%"}', '{"wm_class":"org.wireshark.Wireshark","preferredWidth":"100%"}', '{"wm_class":"Proton Pass","scratch_layer":true}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"re.sonny.Tangram","preferredWidth":"100%"}', '{"wm_class":"rhythmbox","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"Standard Notes","scratch_layer":true}', '{"wm_class":"steam","preferredWidth":"100%"}', '{"wm_class":"","title":"Transmission","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":true}', '{"wm_class":"VirtualBox Machine","preferredWidth":"100%"}', '{"wm_class":"VirtualBox Manager","preferredWidth":"100%"}', '{"wm_class":"xdg-desktop-portal-gnome","scratch_layer":true}', '{"wm_class":"zoom","scratch_layer":true}']"
 ##
 ## Wiggle                                                                       # https://github.com/mechtifs/wiggle
 ## Extension List                                                               # https://github.com/tuberry/extension-list
@@ -221,7 +223,7 @@ exit 126
 # sudo dnf install ffmpeg ffmpeg-libs gstreamer1-plugins-base gstreamer1-plugin-openh264 gstreamer1-libav gstreamer1-svt-av1 gstreamer1-svt-vp9 gstreamer1-plugins-good-gtk gstreamer1-vaapi gstreamer1-plugins-good gstreamer1-plugins-bad-free gstreamer1-plugins-ugly gstreamer1-plugins-ugly-free gstreamer1-plugins-good-extras gstreamer1-plugins-bad-freeworld gstreamer1-plugins-base-tools gstreamer1-plugins-bad-free-extras
 
 # Deprecated - Other Packages
-#sudo dnf install chromium-freeworld alsa-firmware celluloid toolbox brasero libvirt-client gnome-shell-extension-openweather gnome-shell-extension-disconnect-wifi gnome-shell-extension-refresh-wifi freetype-freeworld apostrophe libXScrnSaver python2-gpg remmina remmina-plugins-rdp remmina-plugins-vnc remmina-plugins-spice remmina-plugins-exec texlive-pdftex-bin texlive-pdftex uget vidcutter gstreamer1-svt-hevc foliate nushell gydl micro lynx cabextract xorg-x11-font-utils fontconfig fontconfig-enhanced-defaults fontconfig-font-replacements
+#sudo dnf install chromium-freeworld alsa-firmware celluloid toolbox brasero libvirt-client gnome-shell-extension-openweather gnome-shell-extension-disconnect-wifi gnome-shell-extension-refresh-wifi freetype-freeworld apostrophe libXScrnSaver python2-gpg remmina remmina-plugins-rdp remmina-plugins-vnc remmina-plugins-spice remmina-plugins-exec texlive-pdftex-bin texlive-pdftex uget vidcutter gstreamer1-svt-hevc foliate nushell gydl micro lynx cabextract xorg-x11-font-utils fontconfig fontconfig-enhanced-defaults fontconfig-font-replacements font-manager
 #sudo dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 
 # Deprecated - COPRs
@@ -229,10 +231,14 @@ exit 126
 #sudo dnf copr enable heikoada/gtk-themes
 #sudo dnf copr enable dirkdavidis/papirus-icon-theme
 #sudo dnf copr enable dawid/better_fonts
+#sudo dnf copr enable varlad/helix
+#sudo dnf copr enable titaniumtown/lapce
+#sudo dnf copr enable jerrycasiano/FontManager
 
 # Deprecated - Manual Set Ups
-## nvchad - https://nvchad.com/
-## neovide - https://neovide.dev/
+## go                                                                           # https://go.dev/doc/install
+## nvchad                                                                       # https://nvchad.com/
+## neovide                                                                      # https://neovide.dev/
 ## SpiderOak ONE
 ## Mullvad VPN
 
