@@ -19,7 +19,7 @@ sudo dnf install \
     distrobox toolbox wireguard-tools powertop wezterm helix neovim \
     gimp gimp-data-extras libreoffice-draw pdfarranger diffpdf pdfmerge \
     mpv rhythmbox-alternative-toolbar soundconverter hexchat \
-    socat nmap netcat procs diskonaut bat wireshark exiv2 pngcrush zoxide \
+    socat nmap netcat procs diskonaut bat wireshark exiv2 pngcrush thefuck zoxide \
     binutils wget lsof ctags gcc cmake openssl-devel rr wlroots \
     bcc bcc-tools bpftop libbpf-tools bpfmon bpftool bpftrace
 

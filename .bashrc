@@ -47,3 +47,5 @@ function :h { vim +"h $1" +only; }
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
+# Add support for the f... I mean, doh
+#eval $(thefuck --alias doh)
