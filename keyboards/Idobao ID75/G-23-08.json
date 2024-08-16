@@ -22,8 +22,8 @@
   "layers": [
     [
       "KC_ESC",
-      "KC_LGUI",
       "MACRO(5)",
+      "KC_LGUI",
       "KC_APP",
       "KC_GRV",
       "KC_BSLS",

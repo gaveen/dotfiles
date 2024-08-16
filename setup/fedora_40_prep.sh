@@ -14,7 +14,7 @@ sudo dnf install curl git vim-enhanced bash-completion ripgrep htop \
 # Convenience (minus a few flatpaks) Setup
 sudo dnf install \
     distrobox toolbox wireguard-tools powertop helix neovim \
-    gimp gimp-data-extras libreoffice-draw pdfarranger diffpdf pdfmerge \
+    gimp gimp-data-extras libreoffice-draw dia pdfarranger diffpdf pdfmerge \
     mpv rhythmbox-alternative-toolbar soundconverter hexchat \
     socat nmap netcat procs diskonaut bat wireshark exiv2 pngcrush thefuck zoxide \
     binutils wget lsof ctags gcc cmake openssl-devel llvm rr wlroots \
@@ -31,6 +31,10 @@ sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=Pack
 sudo dnf groupupdate sound-and-video
 # Additional Multimedia
 sudo dnf install libdvdcss ffmpeg easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils youtube-dl
+
+# Dependencies for QMK
+sudo dnf copr enable erovia/dfu-programmer
+sudo dnf install clang diffutils glibc-headers kernel-devel kernel-headers make unzip zip python3 avr-binutils avr-gcc avr-gcc-c++ avr-libc arm-none-eabi-binutils-cs arm-none-eabi-gcc-cs arm-none-eabi-gcc-cs-c++ arm-none-eabi-newlib avrdude dfu-programmer dfu-util hidapi libusb1-devel libusb-compat-0.1-devel
 
 # Enable Flathub: https://flatpak.org/setup/Fedora/
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
