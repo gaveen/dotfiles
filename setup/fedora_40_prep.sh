@@ -13,18 +13,18 @@ sudo dnf install curl git vim-enhanced bash-completion ripgrep htop \
 
 # Convenience (minus a few flatpaks) Setup
 sudo dnf install \
-    distrobox toolbox wireguard-tools powertop helix neovim \
+    binutils lsof ctags gcc cmake openssl-devel llvm rr distrobox toolbox helix neovim \
+    tcpdump iproute procps-ng util-linux sysstat wireguard-tools powertop wget \
+    socat nmap netcat procs diskonaut bat wireshark exiv2 pngcrush thefuck zoxide \
     gimp gimp-data-extras libreoffice-draw dia pdfarranger diffpdf pdfmerge \
     mpv rhythmbox-alternative-toolbar soundconverter hexchat \
-    socat nmap netcat procs diskonaut bat wireshark exiv2 pngcrush thefuck zoxide \
-    binutils wget lsof ctags gcc cmake openssl-devel llvm rr wlroots \
     bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 
 # Look & Feel
 sudo dnf install gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator la-capitaine-icon-theme la-capitaine-cursor-theme materia-gtk-theme arc-theme gnome-shell-extension-user-theme gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock
 
 # Fonts
-sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts fira-code-fonts rsms-inter-fonts catharsis-cormorant-fonts-all jetbrains-mono-fonts-all julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all
+sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts fira-code-fonts rsms-inter-fonts catharsis-cormorant-fonts-all jetbrains-mono-fonts-all julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all mozilla-zilla-slab-fonts
 
 # Multimedia Support
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
