@@ -13,11 +13,12 @@ sudo dnf install curl git vim-enhanced bash-completion ripgrep htop \
 
 # Convenience (minus a few flatpaks) Setup
 sudo dnf install \
-    binutils lsof ctags gcc cmake openssl-devel llvm rr distrobox toolbox helix neovim \
-    tcpdump iproute procps-ng util-linux sysstat wireguard-tools powertop wget \
-    socat nmap netcat procs diskonaut bat wireshark exiv2 pngcrush thefuck zoxide \
-    gimp gimp-data-extras libreoffice-draw dia pdfarranger diffpdf pdfmerge \
-    mpv rhythmbox-alternative-toolbar soundconverter hexchat \
+    distrobox toolbox powertop hexchat helix neovim \
+    mpv soundconverter gimp gimp-data-extras exiv2 pngcrush \
+    libreoffice-draw dia pdfarranger diffpdf pdfmerge \
+    binutils gcc cmake openssl-devel llvm lsof ctags rr \
+    tcpdump iproute wireguard-tools socat nmap netcat wget wireshark \
+    procps-ng procs util-linux sysstat diskonaut bat thefuck zoxide \
     bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 
 # Look & Feel
@@ -30,7 +31,7 @@ sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-al
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf groupupdate sound-and-video
 # Additional Multimedia
-sudo dnf install libdvdcss ffmpeg easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils youtube-dl
+sudo dnf install libdvdcss ffmpeg easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils yt-dlp yt-dlp-bash-completion
 
 # Dependencies for QMK
 sudo dnf copr enable erovia/dfu-programmer
@@ -42,11 +43,9 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Flatpak - Flatpak and related
 flatpak install flathub io.github.flattool.Warehouse                            # Manage flatpaks
 flatpak install flathub com.github.tchx84.Flatseal                              # Manage permissions for flatpaks
-flatpak install flathub io.github.giantpinkrobots.flatsweep                     # Clean leftover data from flatpaks
 
 # Flatpak - System-related
 flatpak install flathub org.gnome.NetworkDisplays                               # Connect to network displays
-flatpak install flathub com.github.alexkdeveloper.desktop-files-creator         # Create .desktop files
 
 # Flatpak - Notes and Research
 flatpak install flathub md.obsidian.Obsidian                                    # Obsidian notes
@@ -54,38 +53,16 @@ flatpak install flathub org.gnome.gitlab.somas.Apostrophe                       
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive        # TexLive plugin for Apostrophe
 
 # Flatpak - Productivity
-flatpak install flathub io.github.ungoogled_software.ungoogled_chromium         # Ungoogled Chromium
-
-# Flatpak - Dev Tools
-flatpak install flathub io.podman_desktop.PodmanDesktop                         # Podman Desktop
-flatpak install flathub com.github.marhkb.Pods                                  # Podman GUI
-
-# Flatpak - Other Utilities
-flatpak install flathub fr.romainvigier.MetadataCleaner                         # Clean metadata in files
-flatpak install flathub dev.geopjr.Collision                                    # Generate and verify file hashes
-flatpak install flathub io.gitlab.adhami3310.Impression                         # Write ISO images to drives
-flatpak install flathub it.mijorus.collector                                    # Drap & Drop buffer
-
-# Flatpak - Photo and Drawing
-flatpak install flathub io.gitlab.adhami3310.Converter                          # Convert and resize images
-flatpak install flathub com.github.huluti.Curtail                               # Compress images
-flatpak install flathub com.github.PintaProject.Pinta                           # Simple drawing/paint tool
-flatpak install flathub org.upscayl.Upscayl                                     # Upscale images
+flatpak install flathub io.github.ungoogled_software.ungoogled_chromium         # Ungoogled Chromium (for WebHID API)
 
 # Flatpak - Multimedia
 flatpak install flathub com.github.rafostar.Clapper                             # Video player
 flatpak install flathub io.bassi.Amberol                                        # Audio player
 flatpak install flathub io.github.aandrew_me.ytdn                               # YouTube downloader
-flatpak install flathub io.gitlab.adhami3310.Footage                            # Trim, crop, rotate videos
-flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer                    # Trim videos
 
 # Flatpak - Communication
 flatpak install flathub com.discordapp.Discord                                  # Discord
 flatpak install flathub org.gnome.Fractal                                       # Matrix chat client
-
-# Flatpak - Entertainment and Fun
-flatpak install flathub dev.bragefuglseth.Keypunch                              # Practice typing
-flatpak install flathub com.github.johnfactotum.Foliate                         # E-book reader
 
 # Optional Firmware
 #sudo dnf install \*-firmware
@@ -137,7 +114,7 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 ## PaperWM                                                                      # https://github.com/paperwm/PaperWM
 ### PaperWM configuration excerpt from: $ dconf read /org/gnome/shell/extensions/paperwm/winprops
 ### Restore with (untested):
-### dconf write /org/gnome/shell/extensions/paperwm/winprops "['{"wm_class":"Audacity","preferredWidth":"100%"}', '{"wm_class":"Code","preferredWidth":"100%"}', '{"wm_class":"com.github.huluti.Curtail","scratch_layer":true}', '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"easytag","preferredWidth":"100%"}', '{"wm_class":"eog","scratch_layer":true}', '{"wm_class":"evince","preferredWidth":"50%"}', '{"wm_class":"","title":"GNU Image Manipulation Program","preferredWidth":"100%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"io.github.alainm23.planify","scratch_layer":true}', '{"wm_class":"Io.github.ungoogled_software.ungoogled_chromium","preferredWidth":"100%"}', '{"wm_class":"io.gitlab.idevecore.Pomodoro","scratch_layer":true}', '{"wm_class":"libreoffice-calc","preferredWidth":"100%"}', '{"wm_class":"libreoffice-draw","preferredWidth":"100%"}', '{"wm_class":"libreoffice-impress","preferredWidth":"100%"}', '{"wm_class":"libreoffice-writer","preferredWidth":"100%"}', '{"wm_class":"Microsoft-edge","preferredWidth":"100%"}', '{"wm_class":"obsidian","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Boxes","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","scratch_layer":false,"preferredWidth":"60%"}', '{"wm_class":"","title":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Papers","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', '{"wm_class":"org.wezfurlong.wezterm","preferredWidth":"50%"}', '{"wm_class":"org.wireshark.Wireshark","preferredWidth":"100%"}', '{"wm_class":"Proton Pass","scratch_layer":true}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"re.sonny.Tangram","preferredWidth":"100%"}', '{"wm_class":"rhythmbox","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"Standard Notes","scratch_layer":true}', '{"wm_class":"steam","preferredWidth":"100%"}', '{"wm_class":"","title":"Transmission","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":true}', '{"wm_class":"VirtualBox Machine","preferredWidth":"100%"}', '{"wm_class":"VirtualBox Manager","preferredWidth":"100%"}', '{"wm_class":"xdg-desktop-portal-gnome","scratch_layer":true}', '{"wm_class":"zoom","scratch_layer":true}']"
+### dconf write /org/gnome/shell/extensions/paperwm/winprops "['{"wm_class":"Audacity","preferredWidth":"100%"}', '{"wm_class":"Code","preferredWidth":"100%"}', '{"wm_class":"com.github.huluti.Curtail","scratch_layer":true}', '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"easytag","preferredWidth":"100%"}', '{"wm_class":"eog","scratch_layer":true}', '{"wm_class":"evince","preferredWidth":"50%"}', '{"wm_class":"","title":"GNU Image Manipulation Program","preferredWidth":"100%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"io.github.alainm23.planify","scratch_layer":true}', '{"wm_class":"Io.github.ungoogled_software.ungoogled_chromium","preferredWidth":"100%"}', '{"wm_class":"io.gitlab.idevecore.Pomodoro","scratch_layer":true}', '{"wm_class":"libreoffice-calc","preferredWidth":"100%"}', '{"wm_class":"libreoffice-draw","preferredWidth":"100%"}', '{"wm_class":"libreoffice-impress","preferredWidth":"100%"}', '{"wm_class":"libreoffice-writer","preferredWidth":"100%"}', '{"wm_class":"Microsoft-edge","preferredWidth":"100%"}', '{"wm_class":"obsidian","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Boxes","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","scratch_layer":false,"preferredWidth":"60%"}', '{"wm_class":"","title":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Papers","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', '{"wm_class":"org.wezfurlong.wezterm","preferredWidth":"50%"}', '{"wm_class":"org.wireshark.Wireshark","preferredWidth":"100%"}', '{"wm_class":"Proton Pass","scratch_layer":true}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"re.sonny.Tangram","preferredWidth":"100%"}', '{"wm_class":"rhythmbox","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"Standard Notes","scratch_layer":true}', '{"wm_class":"steam","preferredWidth":"100%"}', '{"wm_class":"","title":"Transmission","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":true}', '{"wm_class":"VirtualBox Machine","preferredWidth":"100%"}', '{"wm_class":"VirtualBox Manager","preferredWidth":"100%"}', '{"wm_class":"xdg-desktop-portal-gnome","scratch_layer":true}', '{"wm_class":"zoom","scratch_layer":true}', '{"wm_class":"gnome-terminal-server","preferredWidth":"100%"}']"
 ##
 ## Wiggle                                                                       # https://github.com/mechtifs/wiggle
 ## Extension List                                                               # https://github.com/tuberry/extension-list
@@ -149,7 +126,63 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 ########## Items for Posterity ##########
 # Flatpak - Misc flatpak apps for posterity
 
-# Flatpak - Utilities:
+# Flatpak - Flatpak and related
+#flatpak install flathub io.github.giantpinkrobots.flatsweep                    # Clean leftover data from flatpaks
+
+# Flatpak - System-related
+#flatpak install flathub com.github.alexkdeveloper.desktop-files-creator        # Create .desktop files
+
+# Flatpak - Dev Tools
+#flatpak install flathub io.podman_desktop.PodmanDesktop                        # Podman Desktop
+#flatpak install flathub com.github.marhkb.Pods                                 # Podman GUI
+
+# Flatpak - Productivity
+#flatpak install flathub app.drey.Dialect                                       # Translator
+#flatpak install flathub io.gitlab.idevecore.Pomodoro                           # Pomodoro timer
+#flatpak install flathub io.github.phastmike.tags                               # Use color tags to search text files
+#flatpak install flathub io.github.alainm23.planify                             # Todo list
+
+# Flatpak - Research
+#flatpak install flathub org.tropy.Tropy                                        # Manage research photos
+#flatpak install flathub com.github.hugolabe.Wike                               # Wikipedia browser
+
+# Flatpak - PDF Tools
+#flatpak install flathub com.github.jeromerobert.pdfarranger                    # Manipulate PDF files (installed via dnf)
+#flatpak install flathub com.github.jkotra.unlockr                              # Remove PDF passwords
+#flatpak install flathub org.gnome.Papers                                       # PDF reader (upcoming Evince update)
+#flatpak install flathub com.github.unrud.djpdf                                 # Create PDFs with OCR layer
+
+# Flatpak - Photo and Drawing
+#flatpak install flathub io.gitlab.theevilskeleton.Upscaler                     # Upscale images
+#flatpak install flathub com.github.maoschanz.drawing                           # Doodling tool
+#flatpak install flathub com.endlessm.photos                                    # Simple image editor
+#flatpak install flathub io.gitlab.adhami3310.Converter                         # Convert and resize images
+#flatpak install flathub com.github.huluti.Curtail                              # Compress images
+#flatpak install flathub org.upscayl.Upscayl                                    # Upscale images
+#flatpak install flathub com.github.PintaProject.Pinta                          # Simple drawing/paint tool
+
+# Flatpak - Multimedia
+#flatpak install flathub org.gnome.Showtime                                     # Video player (upcoming GNOME default)
+#flatpak install flathub com.rafaelmardojai.Blanket                             # Ambient sounds
+#flatpak install flathub io.freetubeapp.FreeTube                                # YouTube player
+#flatpak install flathub it.mijorus.whisper                                     # Listen to own mic
+#flatpak install flathub de.haeckerfelix.AudioSharing                           # Share computer audio over LAN
+#flatpak install flathub app.drey.EarTag                                        # Edit audio file metadata tags
+#flatpak install flathub org.nickvision.tubeconverter                           # YouTube downloader
+#flatpak install flathub fr.handbrake.ghb                                       # Handbrake video converter
+#flatpak install flathub com.obsproject.Studio                                  # OBS Studio
+#flatpak install flathub io.gitlab.adhami3310.Footage                           # Trim, crop, rotate videos
+#flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer                   # Trim videos
+
+# Flatpak - Entertainment and Fun
+#flatpak install flathub info.febvre.Komikku                                    # Manga and comic book reader
+#flatpak install flathub dev.geopjr.Tuba                                        # Fediverse client
+#flatpak install flathub dev.bragefuglseth.Fretboard                            # Guitar code browser
+#flatpak install flathub dev.bragefuglseth.Keypunch                             # Practice typing
+#flatpak install flathub com.github.johnfactotum.Foliate                        # E-book reader
+#flatpak install flathub io.gitlab.news_flash.NewsFlash                         # Feed reader
+
+# Flatpak - Other Utilities
 #flatpak install flathub io.gitlab.liferooter.TextPieces                        # Transform text
 #flatpak install flathub io.github.nokse22.minitext                             # Always-on-top scratch buffer
 #flatpak install flathub io.github.nokse22.teleprompter                         # Teleprompter
@@ -159,44 +192,10 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 #flatpak install flathub com.github.qarmin.szyszka                              # Batch rename files
 #flatpak install flathub com.belmoussaoui.Decoder                               # Scan and generate QR codes
 #flatpak install flathub it.mijorus.gearlever                                   # Manage AppImage packages
-
-# Flatpak - ProductivityO
-#flatpak install flathub app.drey.Dialect                                       # Translator
-#flatpak install flathub io.gitlab.idevecore.Pomodoro                           # Pomodoro timer
-#flatpak install flathub io.github.phastmike.tags                               # Use color tags to search text files
-#flatpak install flathub io.github.alainm23.planify                             # Todo list
-
-# Flatpak - Research:
-#flatpak install flathub io.gitlab.news_flash.NewsFlash                         # Feed reader
-#flatpak install flathub org.tropy.Tropy                                        # Manage research photos
-#flatpak install flathub com.github.hugolabe.Wike                               # Wikipedia browser
-
-# Flatpak - PDF Tools:
-#flatpak install flathub com.github.jeromerobert.pdfarranger                    # Manipulate PDF files (installed via dnf)
-#flatpak install flathub com.github.jkotra.unlockr                              # Remove PDF passwords
-#flatpak install flathub org.gnome.Papers                                       # PDF reader (upcoming Evince update)
-#flatpak install flathub com.github.unrud.djpdf                                 # Create PDFs with OCR layer
-
-# Flatpak - Image Tools:
-#flatpak install flathub io.gitlab.theevilskeleton.Upscaler                     # Upscale images
-#flatpak install flathub com.github.maoschanz.drawing                           # Doodling tool
-#flatpak install flathub com.endlessm.photos                                    # Simple image editor
-
-# Flatpak - Multimedia:
-#flatpak install flathub org.gnome.Showtime                                     # Video player (upcoming GNOME default)
-#flatpak install flathub com.rafaelmardojai.Blanket                             # Ambient sounds
-#flatpak install flathub io.freetubeapp.FreeTube                                # YouTube player
-#flatpak install flathub it.mijorus.whisper                                     # Listen to own mic
-#flatpak install flathub de.haeckerfelix.AudioSharing                           # Share computer audio over LAN
-#flatpak install flathub app.drey.EarTag                                        # Edit audio file metadata tags
-#flatpak install flathub org.nickvision.tubeconverter                           # YouTube downloader
-#flatpak install flathub fr.handbrake.ghb                                       # Handbrake video converter
-#flatpak install flathub com.obsproject.Studio                                  ## OBS Studio
-
-# Flatpak - Fun & Entertainment:
-#flatpak install flathub info.febvre.Komikku                                    # Manga and comic book reader
-#flatpak install flathub dev.geopjr.Tuba                                        # Fediverse client
-#flatpak install flathub dev.bragefuglseth.Fretboard                            # Guitar code browser
+#flatpak install flathub fr.romainvigier.MetadataCleaner                        # Clean metadata in files
+#flatpak install flathub dev.geopjr.Collision                                   # Generate and verify file hashes
+#flatpak install flathub io.gitlab.adhami3310.Impression                        # Write ISO images to drives
+#flatpak install flathub it.mijorus.collector                                   # Drap & Drop buffer
 
 # Flatpak - Design Tools (e.g., https://tools.design.gnome.org/)
 #flatpak install flathub org.gnome.design.Contrast
@@ -209,17 +208,6 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 #flatpak install flathub io.gitlab.gregorni.Letterpress
 #flatpak install flathub io.github.lainsce.Colorway
 #flatpak install flathub io.github.lainsce.Emulsion
-
-# Flatpak - Unverified flatpak apps
-#flatpak install flathub org.signal.Signal                                      # [Unverified] Signal desktop
-#flatpak install flathub im.riot.Riot                                           # [Unverified] Element matrix client
-#flatpak install flathub com.anydesk.Anydesk                                    # [Unverified] Anydesk client
-#flatpak install flathub com.parsecgaming.parsec                                # [Unverified] Parsec client
-#flatpak install flathub us.zoom.Zoom                                           # [Unverified] Zoom client
-#flatpak install flathub no.mifi.losslesscut                                    # [Unverified] Trim videos and audios
-#flatpak install flathub io.github.diegoivan.pdf_metadata_editor                # [Unverified] Edit PDF file metadata
-#flatpak install flathub com.github.muriloventuroso.pdftricks                   # [Unverified] Manipulate PDF files
-#flatpak install flathub net.sourceforge.pdfchain                               # [Unverified] Manipulate PDF files
 
 
 
