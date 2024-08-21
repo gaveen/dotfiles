@@ -9,7 +9,7 @@ sudo dnf groupupdate core
 
 # Minimal (plus basic GUI tools) Setup
 sudo dnf install curl git vim-enhanced bash-completion ripgrep htop \
-    gnome-terminal-nautilus ptyxis vim-X11 gedit-plugins gitg xsel wmctrl wl-clipboard
+    gnome-terminal-nautilus ptyxis vim-X11 gedit-plugins gitg xsel wmctrl wl-clipboard gnome-network-displays
 
 # Convenience (minus a few flatpaks) Setup
 sudo dnf install \
@@ -43,9 +43,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 # Flatpak - Flatpak and related
 flatpak install flathub io.github.flattool.Warehouse                            # Manage flatpaks
 flatpak install flathub com.github.tchx84.Flatseal                              # Manage permissions for flatpaks
-
-# Flatpak - System-related
-flatpak install flathub org.gnome.NetworkDisplays                               # Connect to network displays
 
 # Flatpak - Notes and Research
 flatpak install flathub md.obsidian.Obsidian                                    # Obsidian notes
@@ -131,6 +128,7 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 
 # Flatpak - System-related
 #flatpak install flathub com.github.alexkdeveloper.desktop-files-creator        # Create .desktop files
+#flatpak install flathub org.gnome.NetworkDisplays                              # Connect to network displays
 
 # Flatpak - Dev Tools
 #flatpak install flathub io.podman_desktop.PodmanDesktop                        # Podman Desktop
