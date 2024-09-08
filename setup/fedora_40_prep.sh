@@ -18,7 +18,7 @@ sudo dnf install \
     libreoffice-draw dia pdfarranger diffpdf pdfmerge \
     binutils gcc cmake openssl-devel llvm lsof ctags rr \
     tcpdump iproute wireguard-tools socat nmap netcat wget wireshark \
-    procps-ng procs util-linux sysstat diskonaut bat thefuck zoxide \
+    procps-ng procs util-linux sysstat diskonaut bat thefuck zoxide fd-find \
     bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 
 # Look & Feel
@@ -59,7 +59,7 @@ flatpak install flathub io.github.aandrew_me.ytdn                               
 
 # Flatpak - Communication
 flatpak install flathub com.discordapp.Discord                                  # Discord
-flatpak install flathub org.gnome.Fractal                                       # Matrix chat client
+flatpak install flathub in.cinny.Cinny                                          # Matrix chat client
 
 # Optional Firmware
 #sudo dnf install \*-firmware
@@ -111,7 +111,7 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 ## PaperWM                                                                      # https://github.com/paperwm/PaperWM
 ### PaperWM configuration excerpt from: $ dconf read /org/gnome/shell/extensions/paperwm/winprops
 ### Restore with (untested):
-### dconf write /org/gnome/shell/extensions/paperwm/winprops "['{"wm_class":"Audacity","preferredWidth":"100%"}', '{"wm_class":"Code","preferredWidth":"100%"}', '{"wm_class":"com.github.huluti.Curtail","scratch_layer":true}', '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"easytag","preferredWidth":"100%"}', '{"wm_class":"eog","scratch_layer":true}', '{"wm_class":"evince","preferredWidth":"50%"}', '{"wm_class":"","title":"GNU Image Manipulation Program","preferredWidth":"100%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"io.github.alainm23.planify","scratch_layer":true}', '{"wm_class":"Io.github.ungoogled_software.ungoogled_chromium","preferredWidth":"100%"}', '{"wm_class":"io.gitlab.idevecore.Pomodoro","scratch_layer":true}', '{"wm_class":"libreoffice-calc","preferredWidth":"100%"}', '{"wm_class":"libreoffice-draw","preferredWidth":"100%"}', '{"wm_class":"libreoffice-impress","preferredWidth":"100%"}', '{"wm_class":"libreoffice-writer","preferredWidth":"100%"}', '{"wm_class":"Microsoft-edge","preferredWidth":"100%"}', '{"wm_class":"obsidian","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Boxes","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","scratch_layer":false,"preferredWidth":"60%"}', '{"wm_class":"","title":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Papers","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', '{"wm_class":"org.wezfurlong.wezterm","preferredWidth":"50%"}', '{"wm_class":"org.wireshark.Wireshark","preferredWidth":"100%"}', '{"wm_class":"Proton Pass","scratch_layer":true}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"re.sonny.Tangram","preferredWidth":"100%"}', '{"wm_class":"rhythmbox","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"Standard Notes","scratch_layer":true}', '{"wm_class":"steam","preferredWidth":"100%"}', '{"wm_class":"","title":"Transmission","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":true}', '{"wm_class":"VirtualBox Machine","preferredWidth":"100%"}', '{"wm_class":"VirtualBox Manager","preferredWidth":"100%"}', '{"wm_class":"xdg-desktop-portal-gnome","scratch_layer":true}', '{"wm_class":"zoom","scratch_layer":true}', '{"wm_class":"gnome-terminal-server","preferredWidth":"100%"}']"
+### dconf write /org/gnome/shell/extensions/paperwm/winprops "['{"wm_class":"Audacity","preferredWidth":"100%"}', '{"wm_class":"Code","preferredWidth":"100%"}', '{"wm_class":"com.github.huluti.Curtail","scratch_layer":true}', '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"easytag","preferredWidth":"100%"}', '{"wm_class":"eog","scratch_layer":true}', '{"wm_class":"evince","preferredWidth":"50%"}', '{"wm_class":"gnome-terminal-server","preferredWidth":"100%"}', '{"wm_class":"","title":"GNU Image Manipulation Program","preferredWidth":"100%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"io.github.alainm23.planify","scratch_layer":true}', '{"wm_class":"Io.github.ungoogled_software.ungoogled_chromium","preferredWidth":"100%"}', '{"wm_class":"io.gitlab.idevecore.Pomodoro","scratch_layer":true}', '{"wm_class":"libreoffice-calc","preferredWidth":"100%"}', '{"wm_class":"libreoffice-draw","preferredWidth":"100%"}', '{"wm_class":"libreoffice-impress","preferredWidth":"100%"}', '{"wm_class":"libreoffice-writer","preferredWidth":"100%"}', '{"wm_class":"Microsoft-edge","preferredWidth":"100%"}', '{"wm_class":"obsidian","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Boxes","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","scratch_layer":false,"preferredWidth":"60%"}', '{"wm_class":"","title":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Papers","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', '{"wm_class":"org.wezfurlong.wezterm","preferredWidth":"50%"}', '{"wm_class":"org.wireshark.Wireshark","preferredWidth":"100%"}', '{"wm_class":"Proton Pass","scratch_layer":true}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"re.sonny.Tangram","preferredWidth":"100%"}', '{"wm_class":"rhythmbox","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"Standard Notes","scratch_layer":true}', '{"wm_class":"steam","preferredWidth":"100%"}', '{"wm_class":"","title":"Transmission","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":true}', '{"wm_class":"VirtualBox Machine","preferredWidth":"100%"}', '{"wm_class":"VirtualBox Manager","preferredWidth":"100%"}', '{"wm_class":"xdg-desktop-portal-gnome","scratch_layer":true}', '{"wm_class":"zoom","scratch_layer":true}', '{"wm_class":"gedit","preferredWidth":"50%"}']"
 ##
 ## Wiggle                                                                       # https://github.com/mechtifs/wiggle
 ## Extension List                                                               # https://github.com/tuberry/extension-list
@@ -139,6 +139,7 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 #flatpak install flathub io.gitlab.idevecore.Pomodoro                           # Pomodoro timer
 #flatpak install flathub io.github.phastmike.tags                               # Use color tags to search text files
 #flatpak install flathub io.github.alainm23.planify                             # Todo list
+#flatpak install flathub io.github.zen_browser.zen                              # Zen browser
 
 # Flatpak - Research
 #flatpak install flathub org.tropy.Tropy                                        # Manage research photos
@@ -171,6 +172,9 @@ cargo install --git https://github.com/aya-rs/aya -- aya-tool
 #flatpak install flathub com.obsproject.Studio                                  # OBS Studio
 #flatpak install flathub io.gitlab.adhami3310.Footage                           # Trim, crop, rotate videos
 #flatpak install flathub org.gnome.gitlab.YaLTeR.VideoTrimmer                   # Trim videos
+
+# Flatpak - Communication
+#flatpak install flathub org.gnome.Fractal                                       # Matrix chat client
 
 # Flatpak - Entertainment and Fun
 #flatpak install flathub info.febvre.Komikku                                    # Manga and comic book reader
