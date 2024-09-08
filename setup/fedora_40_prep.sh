@@ -16,7 +16,7 @@ sudo dnf install \
     distrobox toolbox powertop hexchat helix neovim \
     mpv soundconverter gimp gimp-data-extras exiv2 pngcrush \
     libreoffice-draw dia pdfarranger diffpdf pdfmerge \
-    binutils gcc cmake openssl-devel llvm lsof ctags rr \
+    binutils gcc cmake openssl-devel llvm lldb lsof ctags rr \
     tcpdump iproute wireguard-tools socat nmap netcat wget wireshark \
     procps-ng procs util-linux sysstat diskonaut bat thefuck zoxide fd-find \
     bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
