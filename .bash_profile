@@ -9,8 +9,8 @@ fi
 
 # eval `dircolors $HOME/.dir_colors`
 
-#export EDITOR='vim'
-#export GIT_EDITOR='vim'
+#export EDITOR='nvim'
+#export GIT_EDITOR='nvim'
 
 # Set GOPATH
 #export PATH=$PATH:/usr/local/go/bin
