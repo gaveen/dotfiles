@@ -63,13 +63,12 @@ There are usually at least two homing keys in a keyboard (e.g., "F" and "J" with
 Therefore, I have used Esc, Del, Page Down, and Ctrl on the four corners. Colemak layer has T and N in place for the homing positions. Since I approach a keyboard with both hands at an inwards angle, my thumb home positions ended up being on the bottom row directly below my index finger home positions.
 
 
-## Current Layouts
+## Current Layout: [G-24-09](Idobao%20ID75/G-24-09.json)
 My daily-use main keyboard is built from an Idobao ID75 custom keyboard kit, configured as a ortholinear (matrix) split keyboard in a single body.
 
-The below Layout G-24-01 gives the most amount of space between the split area and therefore, better ergonomics.
+This Layout gives a comfortable amount of space between the split area and therefore, better ergonomics.
 
-### Current Layout 1: [G-24-09](Idobao%20ID75/G-24-09.json)
-This is how the current layout looks with a set of keycaps on.
+This is how is currenly looks with a set of keycaps on.
 
 ![Current Layout 1: G-24-01](https://i.imgur.com/HhjIpME.png)
 
@@ -79,16 +78,16 @@ Here is a composite image of the layers for quick reference. The details are des
 
 ![Layer Composite for Quick Reference](https://i.imgur.com/M0gIsLl.png)
 
-#### Layer 0 (Base Layer):
+### Layer 0 (Default Layer)
 
 Colemak base layer for split 1DFH touch typing, including thumb clusters. The thumb cluster also uses the differentiation between Tap and Hold behavior of a key to add more use to each key.
 
-Left Thumb Cluster (from L to R):
+**Left Thumb Cluster (from L to R):**
 - Hold: Shift & Tap: Esc,
 - Space, and
 - Hold: Switch to Layer 2 & Tap: Tab
 
-Right Thumb Cluster (from R to L):
+**Right Thumb Cluster (from R to L):**
 - Hold: Shift & Tap: Super (e.g., Windows key),
 - Enter, and
 - Hold: Switch to Layer 1 & Tap: Backspace
@@ -99,37 +98,37 @@ The rest of the Layer 0 is used as dedicated keys for a number of frequently use
 
 Since Layer 0 is the default layer, any undefined (i.e., pass-through and not defined as blank) keys in other layers are inherited from the Layer 0.
 
-#### Layer 1:
+### Layer 1
 
-Left Hand Side:
+**Left Hand Side:**
 - Numbers/Symbols (i.e., number row keys)
 - Super/Esc/Del
 - Media play/pause
 
-Right Hand Side:
+**Right Hand Side:**
 - F6 to F12 function keys
 - Alt/Ctrl/Shift/Win
 - Screen brightness and media volume increase/decrease
 
-#### Layer 2:
+### Layer 2
 
-Right Hand Side:
+**Right Hand Side:**
 - Arrow cluster
 - Home/End & Page Up/Down
 - Symbols
 
-Left Hand Side:
+**Left Hand Side:**
 - F1 - F5 function keys
 - Alt/Ctrl/Shift/Win
 - Caps lock, Scroll lock, Print screen
 - Toggle layer 3
 
-#### Layer 3:
+### Layer 3
 
 _QWERTY_ layout layer (e.g., for convenience in games) or for the poor/adventurous souls who try to borrow this keyboard.
 
 
-### Previous Layouts
+## Previous Layouts
 
 Here are some of the older iterations of the layouts I used.
 - [G-24-01](Idobao%20ID75/Previous%20Layouts/G-24-01.json) [(Pictures)](https://imgur.com/a/M7P774W)
