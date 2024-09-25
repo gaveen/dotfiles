@@ -31,7 +31,7 @@ sudo dnf install mozilla-fira-mono-fonts mozilla-fira-sans-fonts dejavu-fonts-al
 sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 sudo dnf groupupdate sound-and-video
 # Additional Multimedia
-sudo dnf install libdvdcss ffmpeg easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils yt-dlp yt-dlp-bash-completion
+sudo dnf install libdvdcss easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils yt-dlp yt-dlp-bash-completion
 
 # Dependencies for QMK
 sudo dnf copr enable erovia/dfu-programmer
@@ -64,6 +64,21 @@ flatpak install flathub in.cinny.Cinny                                          
 # Optional Firmware
 #sudo dnf install \*-firmware
 
+# Rustup - Components
+rustup component add rust-src
+rustup component add rust-analyzer
+
+# Cargo - CLI Tools
+cargo install systeroid difftastic erdtree nu viu eza
+cargo install --locked miniserve
+
+# Cargo - Dev Tools - General
+cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli systemfd
+
+# Cargo - Dev Tools - eBPF
+#cargo install bpf-linker
+#cargo install --git https://github.com/aya-rs/aya -- aya-tool
+
 # Manual Installs - Packages / Binary
 ## Rust (via rustup)                                                            # https://www.rust-lang.org/tools/install   (stable, nightly)
 ## Zellij                                                                       # https://zellij.dev/
@@ -72,47 +87,50 @@ flatpak install flathub in.cinny.Cinny                                          
 ## Dropbox                                                                      # https://www.dropbox.com/
 ## VS Code                                                                      # https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions
 
-# Rustup - Components
-rustup component add rust-src
-rustup component add rust-analyzer
-
-# Cargo - CLI Tools
-cargo install systeroid
-cargo install difftastic
-cargo install erdtree
-cargo install nu
-cargo install viu
-cargo install --locked miniserve
-
-# Cargo - Dev Tools - General
-cargo install cargo-auditable cargo-audit
-cargo install cargo-watch
-cargo install systemfd
-cargo install cargo-generate
-cargo install bindgen-cli
-
-# Cargo - Dev Tools - eBPF
-cargo install bpf-linker
-cargo install --git https://github.com/aya-rs/aya -- aya-tool
+# Manual changes to defaults
+## sudo alternatives --config x-terminal-emulator
+## sudo alternatives --config nc
 
 # Manual Set Ups
-## dotfiles (and: ptyxis, neovim, vim, gedit, etc.)
-## additional fonts
+## dotfiles (i.e., neovim, vim, etc.)
+## basic tools (ptyxis, gnome-text-editor, gnome-terminal, gedit, nautilus, etc.)
+## additional fonts (e.g., .local/share/fonts/*)
 ## Tela icon theme - https://github.com/vinceliuice/Tela-icon-theme
 ## LibreOffice galleries and icons
-## LSP support for Rust - https://rust-analyzer.github.io/manual.html
 ## deno                                                                         # https://deno.com/
 ## alacritty                                                                    # https://github.com/alacritty/alacritty/blob/master/INSTALL.md
 ## rr
 ## abrt: bugzilla credentials
-## sudo alternatives --config nc
 
 # Manual Set Ups - GNOME Extensions
+## Dash to Dock
+## Blur My Shell
+
 ## PaperWM                                                                      # https://github.com/paperwm/PaperWM
-### PaperWM configuration excerpt from: $ dconf read /org/gnome/shell/extensions/paperwm/winprops
-### Restore with (untested):
-### dconf write /org/gnome/shell/extensions/paperwm/winprops "['{"wm_class":"com.github.huluti.Curtail","scratch_layer":true}', '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"eog","scratch_layer":true}', '{"wm_class":"gnome-terminal-server","title":"/ - NVIM$/","preferredWidth":"50%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"org.gnome.Boxes","scratch_layer":false,"preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","scratch_layer":false,"preferredWidth":"60%"}', '{"wm_class":"","title":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"rhythmbox","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"steam","preferredWidth":"100%"}', '{"wm_class":"","title":"Transmission","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":true}', '{"wm_class":"VirtualBox Machine","preferredWidth":"100%"}', '{"wm_class":"VirtualBox Manager","preferredWidth":"100%"}', '{"wm_class":"xdg-desktop-portal-gnome","scratch_layer":true}', '{"wm_class":"zoom","scratch_layer":true}', '{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}', '{"wm_class":"gedit","preferredWidth":"50%"}']"
-##
+# PaperWM configuration excerpt derived from: $ dconf read /org/gnome/shell/extensions/paperwm/winprops
+# '{"wm_class":"io.bassi.Amberol","scratch_layer":true}',
+# '{"wm_class":"discord","scratch_layer":true}',
+# '{"wm_class":"eog","scratch_layer":true}',
+# '{"wm_class":"evince","preferredWidth":"50%"}',
+# '{"wm_class":"gedit","preferredWidth":"50%"}',
+# '{"wm_class":"gnome-terminal-server","title":"/ - NVIM$/","preferredWidth":"50%"}',
+# '{"wm_class":"Hexchat","scratch_layer":true}',
+# '{"wm_class":"org.gnome.Calculator","scratch_layer":true}',
+# '{"wm_class":"org.gnome.Extensions","scratch_layer":true}',
+# '{"wm_class":"org.gnome.Nautilus","preferredWidth":"60%"}',
+# '{"wm_class":"org.gnome.NetworkDisplays","title":""}',
+# '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}',
+# '{"wm_class":"org.gnome.Settings","scratch_layer":true}',
+# '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}',
+# '{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}',
+# '{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}',
+# '{"wm_class":"dev.bragefuglseth.Keypunch","scratch_layer":true}',
+# '{"wm_class":"protonvpn-app","scratch_layer":true}',
+# '{"wm_class":"soundconverter","scratch_layer":true}',
+# '{"wm_class":"via-nativia","preferredWidth":"100%"}',
+# '{"wm_class":"zoom","scratch_layer":true}',
+# '{"wm_class":"","title":"Transmission","scratch_layer":true}',
+
 ## Wiggle                                                                       # https://github.com/mechtifs/wiggle
 ## Extension List                                                               # https://github.com/tuberry/extension-list
 
@@ -235,13 +253,6 @@ exit 126
 #sudo dnf copr enable titaniumtown/lapce
 #sudo dnf copr enable jerrycasiano/FontManager
 #sudo dnf copr enable wezfurlong/wezterm-nightly                                # wezterm nightly builds
-
-# Deprecated - Manual Set Ups
-## nvchad                                                                       # https://nvchad.com/
-## go                                                                           # https://go.dev/doc/install
-## neovide                                                                      # https://neovide.dev/
-## SpiderOak ONE
-## Mullvad VPN
 
 # Deprecated - Cargo Installs
 ## cargo install trippy
