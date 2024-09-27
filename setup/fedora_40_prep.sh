@@ -51,6 +51,7 @@ flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive        
 
 # Flatpak - Productivity
 flatpak install flathub io.github.ungoogled_software.ungoogled_chromium         # Ungoogled Chromium (for WebHID API)
+flatpak install flathub org.localsend.localsend_app                             # Send files to devices in the LAN
 
 # Flatpak - Multimedia
 flatpak install flathub com.github.rafostar.Clapper                             # Video player
