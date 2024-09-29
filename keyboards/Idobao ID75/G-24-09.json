@@ -90,7 +90,7 @@
       "KC_LEFT",
       "KC_DOWN",
       "KC_RGHT",
-      "KC_RCTL",
+      "TG(2)",
       "LT(1,KC_BSPC)",
       "KC_ENT",
       "KC_RSFT",
@@ -248,7 +248,7 @@
       "MACRO(0)",
       "KC_TRNS",
       "KC_TRNS",
-      "TG(2)",
+      "KC_TRNS",
       "KC_TRNS"
     ],
     [
