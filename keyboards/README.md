@@ -131,8 +131,8 @@ _QWERTY_ layout layer (e.g., for convenience in games) or for the poor/adventuro
 ## Previous Layouts
 
 Here are some of the older iterations of the layouts I used.
-- [G-24-01](Idobao%20ID75/Previous%20Layouts/G-24-01.json) [(Pictures)](https://imgur.com/a/M7P774W)
-- [G-19](Idobao%20ID75/Previous%20Layouts/G-19.json) [(Pictures)](https://imgur.com/a/oJHjmDk)
-- [G-22](Idobao%20ID75/Previous%20Layouts/G-22.json) [(Pictures)](https://imgur.com/a/ba07kCh)
-- [G-18](Idobao%20ID75/Previous%20Layouts/G-18.json) [(Pictures)](https://imgur.com/a/WfUXuTO)
-- [G-16](Idobao%20ID75/Previous%20Layouts/G-16.json) [(Pictures)](https://imgur.com/a/n7rGcCq)
+- G-24-01 [(Pictures)](https://imgur.com/a/M7P774W)
+- G-19 [(Pictures)](https://imgur.com/a/oJHjmDk)
+- G-22 [(Pictures)](https://imgur.com/a/ba07kCh)
+- G-18 [(Pictures)](https://imgur.com/a/WfUXuTO)
+- G-16 [(Pictures)](https://imgur.com/a/n7rGcCq)

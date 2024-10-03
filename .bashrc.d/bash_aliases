@@ -1,38 +1,30 @@
-# .bash_aliases
+# ~/.bashrc.d/bash_aliases
 
 # Vim
-alias g='gvim'
 alias gvm='gvim --remote-silent $@ &> /dev/null'
 alias vess='/usr/share/vim/vim91/macros/less.sh'
-alias vim-basic='vim -u ~/.vimrc_basic'
 alias vim-minimal='vim -u NONE -N'
-#alias n='neovide'
 
 # Zellij
-alias ze='zellij --layout compact options --theme catppuccin-mocha'
+alias zel='zellij --layout compact options --theme catppuccin-mocha'
 
 # Misc
 alias :q='exit'
 alias :Q='exit'
-#alias ack='ack --smart-case'
-alias c='cd'
-alias car='cat'
-alias l='ls'
-alias ll='ls -lh --color=auto'
 alias lcd='cd'
 alias lls='ls'
 alias psc='ps xawf -eo pid,user,cgroup,args'
-alias flatpack='flatpak'
+#alias ll='ls -lh --color=auto'
 
 # MPlayer/mpv
-#alias mpa='mplayer -vo null'
-#alias mpp='mplayer -ao null -fs'
 alias mpa='mpv --no-video'
 alias mpp='mpv --fs --no-audio'
+#alias mpa='mplayer -vo null'
+#alias mpp='mplayer -ao null -fs'
 
 # RSync
 alias rget='rsync -r -v --progress -c --partial -e ssh'
 
 # Ping
-alias P8='ping 8.8.8.8'
-alias P1='ping 1.1.1.1'
+alias ping-8888='ping 8.8.8.8'
+alias ping-1111='ping 1.1.1.1'

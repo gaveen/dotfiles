@@ -1,6 +1,8 @@
 [user]
   name = Gaveen Prabhasara
   email = gaveen@pm.me
+[init]
+  defaultBranch = main
 [color]
   ui = true
 [alias]
@@ -8,7 +10,14 @@
   lo = log --oneline
   st = status -sb
 ;[core]
-  ;excludesfile = /home/gaveen/.gitignore
+;  excludesfile = /home/gaveen/.gitignore
 [github]
   user = gaveen
-  token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+;  token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[pull]
+	ff = only
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
