@@ -15,7 +15,7 @@ sudo dnf install curl git neovim vim-enhanced bash-completion ripgrep htop \
 sudo dnf install \
     distrobox toolbox powertop hexchat helix \
     mpv soundconverter gimp gimp-data-extras exiv2 pngcrush \
-    libreoffice-draw dia pdfarranger diffpdf pdfmerge \
+    libreoffice-draw dia pdfarranger diffpdf pdfmerge pandoc \
     binutils gcc cmake openssl-devel llvm lldb lsof ctags rr \
     tcpdump iproute wireguard-tools socat nmap netcat wget wireshark \
     procps-ng procs util-linux sysstat diskonaut bat thefuck zoxide fd-find \
@@ -72,6 +72,7 @@ rustup component add rust-analyzer
 # Cargo - CLI Tools
 cargo install systeroid difftastic erdtree nu viu eza
 cargo install --locked miniserve
+cargo install --locked ripgrep_all
 
 # Cargo - Dev Tools - General
 cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli systemfd
