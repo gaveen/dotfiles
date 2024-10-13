@@ -70,7 +70,7 @@ rustup component add rust-src
 rustup component add rust-analyzer
 
 # Cargo - CLI Tools
-cargo install systeroid difftastic erdtree nu viu eza
+cargo install systeroid difftastic erdtree nu viu eza binsider
 cargo install --locked miniserve
 cargo install --locked ripgrep_all
 
