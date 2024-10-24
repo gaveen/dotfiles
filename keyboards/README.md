@@ -78,7 +78,7 @@ The keycap placement is primarily optimized for visual guiding. For example, the
 
 Here is a composite image of the layers for quick reference. The details are described below.
 
-![Layer Composite for Quick Reference](https://i.imgur.com/sceYpfv.png)
+![Layer Composite for Quick Reference](https://i.imgur.com/ysL33Gl.png)
 
 ### Layer 0 (Default Layer)
 
