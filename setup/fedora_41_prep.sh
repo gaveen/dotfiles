@@ -14,7 +14,7 @@ sudo dnf install curl git neovim vim-enhanced bash-completion ripgrep htop \
 # Convenience (minus a few flatpaks) Setup
 sudo dnf install \
     distrobox toolbox powertop hexchat helix \
-    mpv soundconverter gimp gimp-data-extras exiv2 pngcrush \
+    mpv soundconverter exiv2 pngcrush \
     libreoffice-draw dia pdfarranger diffpdf pdfmerge pandoc \
     binutils gcc cmake openssl-devel llvm lldb lsof ctags rr \
     tcpdump iproute wireguard-tools socat nmap netcat wget wireshark \
@@ -54,6 +54,7 @@ flatpak install flathub io.github.ungoogled_software.ungoogled_chromium         
 flatpak install flathub org.localsend.localsend_app                             # Send files to devices in the LAN
 
 # Flatpak - Multimedia
+flatpak install flathub org.gimp.GIMP                                           # The GIMP photo editor
 flatpak install flathub com.github.rafostar.Clapper                             # Video player
 flatpak install flathub io.bassi.Amberol                                        # Audio player
 flatpak install flathub io.github.aandrew_me.ytdn                               # YouTube downloader
