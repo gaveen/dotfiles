@@ -32,7 +32,7 @@ Ergonomics can mean different things to different people. On one hand, we have t
 
 However, I also prefer my typing area as two split sections. This allows the hands to be spread further apart for better comfort. Further, I prefer to end the typing area at the very edge of the keyboard (i.e., no modifier duties for pinkies), which combined with the natural height of regular mechanical switches allows the hands and fingers to rest at a more comfortable angle.
 
-For these reasons, I picked up a 15x5 grid ortho keyboard (i.e., Idobao ID75) that is significantly wider than more commonly available ortho keyboards (e.g., OLKB Planck/Preonic). This choice gives me a uniform grid of programmable 75 keys, enough for everything I want.
+For these reasons, I picked up a 15x5 grid layout keyboard (i.e., Idobao ID75). A 15x5 grid is significantly wider than more commonly available ortholinear keyboards (e.g., OLKB Planck/Preonic). This choice gives me a uniform grid of programmable 75 keys, enough for everything I want.
 
 ### Colemak layout base
 My base layout of choice is _Colemak._ It is relatively well-known layout, easier to migrate from QWERTY, and does not break the so-called universal shortcuts (e.g., Ctrl+C, Ctrl+V, etc.). It is also comfortable and satisfying to type in, especially if you touch type.
@@ -64,69 +64,78 @@ There are usually at least two homing keys in a keyboard (e.g., "F" and "J" with
 
 Therefore, I have used Esc, Del, Enter, and Ctrl on the four corners. Colemak layer has T and N in place for the homing positions. Since I approach a keyboard with both hands at an inwards angle, my thumb home positions end up being on the bottom row directly below my index finger home positions.
 
+### Home-row mods
+As the name suggests, home-row mods are modifier keys like Shift, Ctrl, Alt, and Win placed in the home row. They make key combination shortcuts (e.g., `Ctrl+ Shift+v`) satisfying to use and also reduce hand movement too.
 
-## Current Layout: [G-24-10](Idobao%20ID75/G-24-10.json)
+Unfortunately, this also means adding a time-sensitive secondary function to the alphabetical keys of the home row. This limits typing speed and makes the typing experience more error-prone. To counter this downside, I access the home-row mods in different layers by holding a layer switch key with alternating hands.
+
+
+## Current Layout: [G-24-10](Idobao%20ID75/G-24-11.json)
 My daily-use main keyboard is built from an Idobao ID75 custom keyboard kit, configured as a ortholinear (matrix) split keyboard in a single body.
 
 This Layout gives a comfortable amount of space between the split area and therefore, better ergonomics.
 
 This is how is currently looks with a set of keycaps on.
 
-![Current Layout 1: G-24-10](https://i.imgur.com/HhjIpME.png)
+![Current Layout 1: G-24-11](https://i.imgur.com/HhjIpME.png)
 
 The keycap placement is primarily optimized for visual guiding. For example, the keycaps are in QWERTY arrangement because I can touch type in Colemak and I use a visually distinct keycap for Enter, etc. Homing positions are also maintained for tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
 
 Here is a composite image of the layers for quick reference. The details are described below.
 
-![Layer Composite for Quick Reference](https://i.imgur.com/ysL33Gl.png)
+![Layer Composite for Quick Reference](https://i.imgur.com/l98QJxL.png)
 
 ### Layer 0 (Default Layer)
 
 Colemak base layer for split 1DFH touch typing, including thumb clusters. The thumb cluster also uses the differentiation between Tap and Hold behavior of a key to add more use to each key.
 
 **Left Thumb Cluster (from L to R):**
-- Hold: Shift & Tap: Esc,
-- Space, and
-- Hold: Switch to Layer 2 & Tap: Tab
+- Shift
+- Hold: Use Layer 3 & Tap: Space
+- Hold: Use Layer 1 & Tap: Esc
 
-**Right Thumb Cluster (from R to L):**
-- Hold: Shift & Tap: Super (e.g., Windows key),
-- Hold: Ctrl & Tap: Enter, and
-- Hold: Switch to Layer 1 & Tap: Backspace
+**Right Thumb Cluster (from L to R):**
+- Hold: Use Layer 1 & Tap: Backspace
+- Hold: Use Layer 2 & Tap: Enter
+- Shift
 
 In addition, the four corners of the keyboard have useful keys (e.g., Esc, Del, Enter, and Ctrl) so that they can be hit without being seen.
 
-The rest of the Layer 0 is used as dedicated keys for a number of frequently used keys which are otherwise only accessed in layers. These are assigned to the top row and the five middle columns. For example, numbers/symbols keys, arrow keys, dedicated symbols keys, Home/End keys, F2, F5, F10, F11, Tab, and a few modifiers.
-
-I also have a key assignment where, it switches layer 2 "on" while its held down, but adds a Super key held signal. For example, pressing `Shift + t` while this key is pressed is the same as pressing the `Windows + Shift + t` together.
+The rest of the Layer 0 is used as dedicated keys for a number of frequently used keys which are otherwise only accessed in layers. These are assigned to the top row and the five middle columns. For example, numbers/symbols keys, arrow keys, dedicated symbols keys, increase/decrease screen brightness, Home/End keys, F2, F5, F11, Tab, and a few modifiers.
 
 Since Layer 0 is the default layer, any undefined keys (i.e., pass-through keys but not deliberately-blank keys) in other layers are inherited from the Layer 0.
 
 ### Layer 1
 
 **Left Hand Side:**
-- Numbers/Symbols (i.e., number row keys)
-- Super/Esc/Del
-- Media play/pause
+- Numbers
+- Number-row symbols
+- Home-row mods
 
 **Right Hand Side:**
-- F6 to F12 function keys
-- Alt/Ctrl/Shift/Win
-- Screen brightness and media volume increase/decrease
+- Arrow keys
+- Symbols
+- Home-row mods
+
+In addition, the center columns between the two typing areas also have F1 - F12.
 
 ### Layer 2
 
-**Right Hand Side:**
-- Arrow cluster
-- Home/End & Page Up/Down
-- Symbols
-
 **Left Hand Side:**
-- F1 - F5 function keys
-- Alt/Ctrl/Shift/Win
-- Caps lock, Scroll lock, Print screen
-- Toggle layer 3
+Left Hand Side keys are the same as in Layer 0 (i.e., pass-through).
+
+**Right Hand Side:**
+- Navigation keys (e.g., Arrows, Home/End, Page Up/Down)
+- Special purpose keys (e.g., Print, Caps Lock, Scroll Lock)
+- Media keys (e.g., Volume Up/Down, Play/Pause)
+- Home-row mods
 
 ### Layer 3
 
-_QWERTY_ layout layer for convenience (e.g., in games) or for the poor/adventurous souls who attempt to borrow this keyboard.
+**Left Hand Side:**
+- Function keys (e.g., F1 - F12)
+- Del and Tab
+- Home-row mods
+
+**Right Hand Side:**
+Right Hand Side keys are the same as in Layer 0 (i.e., pass-through).
