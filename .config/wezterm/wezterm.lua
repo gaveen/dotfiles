@@ -10,7 +10,7 @@ config.window_background_opacity = 0.95
 
 -- Set the default font and size
 config.font = wezterm.font 'Fira Code'
-config.font_size = 13
+config.font_size = 12
 
 -- Disable font ligatures
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }

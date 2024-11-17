@@ -83,7 +83,7 @@ The keycap placement is primarily optimized for visual guiding. For example, the
 
 Here is a composite image of the layers for quick reference. The details are described below.
 
-![Layer Composite for Quick Reference](https://i.imgur.com/l98QJxL.png)
+![Layer Composite for Quick Reference](https://i.imgur.com/PxpGCOD.png)
 
 ### Layer 0 (Default Layer)
 
@@ -91,12 +91,12 @@ Colemak base layer for split 1DFH touch typing, including thumb clusters. The th
 
 **Left Thumb Cluster (from L to R):**
 - Shift
-- Hold: Use Layer 3 & Tap: Space
-- Hold: Use Layer 1 & Tap: Esc
+- Hold: Use Layer 3 | Tap: Space
+- Hold: Use Layer 1 | Tap: Esc
 
 **Right Thumb Cluster (from L to R):**
-- Hold: Use Layer 1 & Tap: Backspace
-- Hold: Use Layer 2 & Tap: Enter
+- Hold: Use Layer 1 | Tap: Backspace
+- Hold: Use Layer 2 | Tap: Enter
 - Shift
 
 In addition, the four corners of the keyboard have useful keys (e.g., Esc, Del, Enter, and Ctrl) so that they can be hit without being seen.
