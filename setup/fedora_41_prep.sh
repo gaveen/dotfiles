@@ -30,7 +30,7 @@ sudo dnf install \
 sudo dnf install gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock
 
 # Fonts
-sudo dnf install fira-code-fonts mozilla-fira-mono-fonts mozilla-fira-sans-fonts julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-mono-fonts redhat-text-fonts rsms-inter-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts jetbrains-mono-fonts-all mozilla-zilla-slab-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts catharsis-cormorant-fonts-all google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all
+sudo dnf install fira-code-fonts mozilla-fira-mono-fonts mozilla-fira-sans-fonts julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-mono-fonts redhat-text-fonts rsms-inter-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts jetbrains-mono-fonts-all mozilla-zilla-slab-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts catharsis-cormorant-fonts-all google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all intel-one-mono-fonts
     
 # Enable Flathub: https://flatpak.org/setup/Fedora/
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
@@ -96,30 +96,48 @@ cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli
 ## Blur My Shell
 
 ## PaperWM                                                                      # https://github.com/paperwm/PaperWM
-# PaperWM configuration excerpt derived from: $ dconf read /org/gnome/shell/extensions/paperwm/winprops
+# Styling in: .config/paperwm/user.css
+#
+# [PaperWM - Winprops]
+# $ dconf read /org/gnome/shell/extensions/paperwm/winprops
 # [
-'{"wm_class":"discord","scratch_layer":true}',
-'{"wm_class":"evince","preferredWidth":"50%"}',
-'{"wm_class":"gedit","preferredWidth":"50%","scratch_layer":true}',
-'{"wm_class":"Gimp-2.10","preferredWidth":"100%","title":"/ - GIMP$/"}',
-'{"wm_class":"gnome-terminal-server","title":"/ - NVIM$/","preferredWidth":"50%"}',
-'{"wm_class":"Hexchat","scratch_layer":true}',
-'{"wm_class":"io.bassi.Amberol","scratch_layer":true}',
-'{"wm_class":"kitty","preferredWidth":"50%"}',
-'{"wm_class":"org.gnome.Calculator","scratch_layer":true}',
-'{"wm_class":"org.gnome.Extensions","scratch_layer":true}',
-'{"wm_class":"org.gnome.Nautilus","preferredWidth":"50%"}',
-'{"wm_class":"org.gnome.NetworkDisplays","title":"","scratch_layer":true}',
-'{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}',
-'{"wm_class":"org.gnome.Settings","scratch_layer":true}',
-'{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}',
-'{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}',
-'{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}',
-'{"wm_class":"protonvpn-app","scratch_layer":true}',
-'{"wm_class":"soundconverter","scratch_layer":true}',
-'{"wm_class":"via-nativia","preferredWidth":"100%"}',
-'{"wm_class":"zoom","scratch_layer":true}'
+'{"wm_class":"discord","scratch_layer":true}', 
+'{"wm_class":"eog","scratch_layer":true}', 
+'{"wm_class":"evince","preferredWidth":"50%"}', 
+'{"wm_class":"gedit","preferredWidth":"50%","scratch_layer":true}', 
+'{"wm_class":"Gimp-2.10","preferredWidth":"100%","title":"/ - GIMP$/"}', 
+'{"wm_class":"gnome-terminal-server","title":"/ - NVIM$/","preferredWidth":"50%"}', 
+'{"wm_class":"Hexchat","scratch_layer":true}', 
+'{"wm_class":"io.bassi.Amberol","scratch_layer":true}', 
+'{"wm_class":"kitty","preferredWidth":"50%"}', 
+'{"wm_class":"mpv","preferredWidth":"50%"}', 
+'{"wm_class":"org.gnome.Calculator","scratch_layer":true}', 
+'{"wm_class":"org.gnome.Extensions","scratch_layer":true}', 
+'{"wm_class":"org.gnome.Nautilus","preferredWidth":"50%"}', 
+'{"wm_class":"org.gnome.NetworkDisplays","title":"","scratch_layer":true}', 
+'{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', 
+'{"wm_class":"org.gnome.Settings","scratch_layer":true}', 
+'{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', 
+'{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}', 
+'{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', 
+'{"wm_class":"protonvpn-app","scratch_layer":true}', 
+'{"wm_class":"soundconverter","scratch_layer":true}', 
+'{"wm_class":"via-nativia","preferredWidth":"100%"}', 
+'{"wm_class":"zoom","scratch_layer":true}', 
+'{"wm_class":"steam","scratch_layer":true}'
 # ]
+#
+# [PaperWM - General]
+# Selected window border size (px): 3
+# Selected window border-radius for top corners (px): 12
+# Selected window border-radius for bottom corners (px): 12
+# Gap between windows: 6
+# Horizontal margin: 6
+# Top margin: 6
+# Bottom margin: 6
+#
+# [PaperWM - Advanced]
+# Maximize within tiling: true
 
 ## Wiggle                                                                       # https://github.com/mechtifs/wiggle
 ## Extension List                                                               # https://github.com/tuberry/extension-list

@@ -70,7 +70,7 @@ As the name suggests, home-row mods are modifier keys like Shift, Ctrl, Alt, and
 Unfortunately, this also means adding a time-sensitive secondary function to the alphabetical keys of the home row. This limits typing speed and makes the typing experience more error-prone. To counter this downside, I access the home-row mods in different layers by holding a layer switch key with alternating hands.
 
 
-## Current Layout: [G-24-10](Idobao%20ID75/G-24-11.json)
+## Current Layout: [G-24-11](Idobao%20ID75/G-24-11.json)
 My daily-use main keyboard is built from an Idobao ID75 custom keyboard kit, configured as a ortholinear (matrix) split keyboard in a single body.
 
 This Layout gives a comfortable amount of space between the split area and therefore, better ergonomics.
