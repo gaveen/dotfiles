@@ -17,7 +17,7 @@ sudo dnf install curl git bash-completion neovim ripgrep htop \
 sudo dnf install \
     distrobox yt-dlp yt-dlp-bash-completion mpv soundconverter hexchat kitty \
     pandoc exiv2 pngcrush pdfarranger diffpdf pdfmerge \
-    bat thefuck zoxide fd-find procps-ng procs util-linux sysstat diskonaut \
+    bat thefuck zoxide fd-find procps-ng procs util-linux sysstat diskonaut hyperfine \
     wget iproute nmap netcat socat wireguard-tools tcpdump wireshark \
     binutils gcc cmake openssl-devel llvm lldb lsof ctags rr
     # # Less frequently used:
