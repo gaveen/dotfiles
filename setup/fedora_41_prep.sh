@@ -5,13 +5,18 @@ exit 126
 # Set Up - RPMFusion.org
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
-sudo dnf install rpmfusion-free-release-tainted
-sudo dnf install rpmfusion-nonfree-release-tainted
+sudo dnf install rpmfusion-free-release-tainted rpmfusion-nonfree-release-tainted
 sudo dnf update @core
 
 # Minimal (plus basic GUI tools) Setup
 sudo dnf install curl git bash-completion neovim ripgrep htop \
     ptyxis wl-clipboard wmctrl xsel gitg gnome-network-displays
+
+# Look & Feel
+sudo dnf install gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock
+
+# Fonts
+sudo dnf install fira-code-fonts mozilla-fira-mono-fonts mozilla-fira-sans-fonts julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-mono-fonts redhat-text-fonts rsms-inter-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts jetbrains-mono-fonts-all mozilla-zilla-slab-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts catharsis-cormorant-fonts-all google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all intel-one-mono-fonts
 
 # Convenience (minus a few flatpaks) Setup
 sudo dnf install \
@@ -19,19 +24,13 @@ sudo dnf install \
     pandoc exiv2 pngcrush pdfarranger diffpdf pdfmerge \
     bat thefuck zoxide fd-find procps-ng procs util-linux sysstat diskonaut hyperfine \
     wget iproute nmap netcat socat wireguard-tools tcpdump wireshark \
-    binutils gcc cmake openssl-devel llvm lldb lsof ctags rr
+    binutils gcc cmake openssl-devel llvm lldb lsof ctags rr python3-gpg
     # # Less frequently used:
     # vim-enhanced helix gedit gedit-plugins toolbox powertop libreoffice-draw dia \
     # libdvdcss easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils \
     # gnome-shell-extension-user-theme la-capitaine-icon-theme la-capitaine-cursor-theme \
     # bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 
-# Look & Feel
-sudo dnf install gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock
-
-# Fonts
-sudo dnf install fira-code-fonts mozilla-fira-mono-fonts mozilla-fira-sans-fonts julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-mono-fonts redhat-text-fonts rsms-inter-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts jetbrains-mono-fonts-all mozilla-zilla-slab-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts catharsis-cormorant-fonts-all google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all intel-one-mono-fonts
-    
 # Enable Flathub: https://flatpak.org/setup/Fedora/
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
@@ -46,6 +45,7 @@ flatpak install flathub md.obsidian.Obsidian                                    
 flatpak install flathub org.gimp.GIMP                                           # The GIMP photo editor
 flatpak install flathub com.github.rafostar.Clapper                             # Video player
 flatpak install flathub io.bassi.Amberol                                        # Audio player
+flatpak install flathub org.gnome.Decibels									   # Upcoming default audio player in GNOME
 
 # Flatpak - Communication
 flatpak install flathub io.github.zen_browser.zen                               # Zen browser
@@ -86,6 +86,7 @@ cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli
 ## basic tools (ptyxis, gnome-text-editor, nautilus, etc.)
 ## additional fonts (e.g., .local/share/fonts/*)
 ## Tela icon theme                                                              # https://github.com/vinceliuice/Tela-icon-theme
+## ghostty																	   # https://ghostty.org/docs/install/binary#linux-(official)
 ## alacritty                                                                    # https://github.com/alacritty/alacritty/blob/master/INSTALL.md
 ## rr
 ## abrt: bugzilla credentials
@@ -101,30 +102,27 @@ cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli
 # [PaperWM - Winprops]
 # $ dconf read /org/gnome/shell/extensions/paperwm/winprops
 # [
-'{"wm_class":"discord","scratch_layer":true}', 
-'{"wm_class":"eog","scratch_layer":true}', 
-'{"wm_class":"evince","preferredWidth":"50%"}', 
-'{"wm_class":"gedit","preferredWidth":"50%","scratch_layer":true}', 
-'{"wm_class":"Gimp-2.10","preferredWidth":"100%","title":"/ - GIMP$/"}', 
-'{"wm_class":"gnome-terminal-server","title":"/ - NVIM$/","preferredWidth":"50%"}', 
-'{"wm_class":"Hexchat","scratch_layer":true}', 
-'{"wm_class":"io.bassi.Amberol","scratch_layer":true}', 
-'{"wm_class":"kitty","preferredWidth":"50%"}', 
-'{"wm_class":"mpv","preferredWidth":"50%"}', 
-'{"wm_class":"org.gnome.Calculator","scratch_layer":true}', 
-'{"wm_class":"org.gnome.Extensions","scratch_layer":true}', 
-'{"wm_class":"org.gnome.Nautilus","preferredWidth":"50%"}', 
-'{"wm_class":"org.gnome.NetworkDisplays","title":"","scratch_layer":true}', 
-'{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', 
-'{"wm_class":"org.gnome.Settings","scratch_layer":true}', 
-'{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', 
-'{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}', 
-'{"wm_class":"org.mozilla.firefox","preferredWidth":"100%"}', 
-'{"wm_class":"protonvpn-app","scratch_layer":true}', 
-'{"wm_class":"soundconverter","scratch_layer":true}', 
-'{"wm_class":"via-nativia","preferredWidth":"100%"}', 
-'{"wm_class":"zoom","scratch_layer":true}', 
-'{"wm_class":"steam","scratch_layer":true}'
+'{"wm_class":"discord","scratch_layer":true}',
+'{"wm_class":"evince","preferredWidth":"50%"}',
+'{"wm_class":"Gimp-2.10","title":"/ - GIMP$/","preferredWidth":"100%"}',
+'{"wm_class":"Hexchat","scratch_layer":true}',
+'{"wm_class":"io.bassi.Amberol","scratch_layer":true}',
+'{"wm_class":"kitty","preferredWidth":"50%"}',
+'{"wm_class":"mpv","preferredWidth":"50%"}',
+'{"wm_class":"org.gnome.Calculator","scratch_layer":true}',
+'{"wm_class":"org.gnome.Decibels","scratch_layer":true}',
+'{"wm_class":"org.gnome.Extensions","scratch_layer":true}',
+'{"wm_class":"org.gnome.Nautilus","preferredWidth":"50%"}',
+'{"wm_class":"org.gnome.NetworkDisplays","scratch_layer":true}',
+'{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}',
+'{"wm_class":"org.gnome.Settings","scratch_layer":true}',
+'{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}',
+'{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}',
+'{"wm_class":"protonvpn-app","scratch_layer":true}',
+'{"wm_class":"soundconverter","scratch_layer":true}',
+'{"wm_class":"steam","scratch_layer":true}',
+'{"wm_class":"via-nativia","scratch_layer":true}',
+'{"wm_class":"zoom","scratch_layer":true}'
 # ]
 #
 # [PaperWM - General]
