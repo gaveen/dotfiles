@@ -86,7 +86,7 @@
       "KC_LSFT",
       "LT(3,KC_SPC)",
       "LT(1,KC_TAB)",
-      "KC_TAB",
+      "KC_LALT",
       "KC_LEFT",
       "KC_DOWN",
       "KC_RGHT",
@@ -94,7 +94,7 @@
       "LT(1,KC_BSPC)",
       "LT(2,KC_ENT)",
       "KC_RSFT",
-      "KC_LALT",
+      "KC_RALT",
       "KC_ENT"
     ],
     [

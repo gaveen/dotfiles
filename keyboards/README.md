@@ -25,7 +25,9 @@ Given where I live—the 21st century, that is—I can't justify using poorly de
 ### Custom firmware
 A mechanical keyboard is an expensive investment, especially if it comes with the support for _custom firmware (e.g., QMK, ZMK)._ Custom firmware allows you to configure any custom layout and save it into the onboard flash memory, enabling you to use your customized layout without having to install any software on a computer.
 
-My current daily-driver keyboard of choice supports QMK firmware with VIA configurator out of the box. The configurator allows me to map any key to anything I want instantaneously without having to re-flash the keyboard firmware every time I do so.
+My current daily-driver keyboards support QMK firmware with Vial or VIA configurators out of the box. The configurator allows me to map any key to anything I want instantaneously without having to re-flash the keyboard firmware every time I do so.
+
+_Note:_ The newer of the two keyboards use Vial (instead of VIA) and I am still in process of figuring out the nuances of its firmware capabilities powering the new PCB (Printed Circuit Board).
 
 ### Ergonomic form factor
 Ergonomics can mean different things to different people. On one hand, we have the traditional QWERTY keyboards. On the far end of the ergonomic spectrum, we have keyboards custom designed for individual hands and use cases. I feel an _ortholinear (aka matrix)_ keyboard provides a meaningful balance in between as a pragmatic base for common use.
@@ -52,7 +54,9 @@ I use thumb clusters to offload frequent and modifier keys away from the pinkies
 ### Layers
 _Layers_ in a keyboard mean the different additional characters or functions available on the same physical key by temporarily switching to a different layer. This is similar to when we press Fn key on a regular keyboard.
 
-My current daily driver keyboard came with 4 layers (i.e., layer 0 - layer 3) as it is the default layers count in QMK. My configuration of these four layers is described below.
+My current daily driver keyboard came with either 4 layers (i.e., layer 0 - layer 3) or 6 layers (i.e., layer 0 - layer 5). Since my configuration for both of the keyboards are common on the first four layers, that setup is described below.
+
+On the keyboard with more layers, I additionally have two layers configured: one for QWERTY mapping and another for controlling mouse.
 
 ### Dedicated keys for visual guiding
 As explained earlier, sometimes you need to hit a key with visual-only guiding (i.e., Hand-Eye coordination). Therefore, dedicated keys can be assigned for such frequently used keys.
@@ -70,10 +74,13 @@ As the name suggests, home-row mods are modifier keys like Shift, Ctrl, Alt, and
 Unfortunately, this also means adding a time-sensitive secondary function to the alphabetical keys of the home row. This limits typing speed and makes the typing experience more error-prone. To counter this downside, I access the home-row mods in different layers by holding a layer switch key with alternating hands.
 
 
-## Current Layout: [G-24-11](Idobao%20ID75/G-24-11.json)
-My daily-use main keyboard is built from an Idobao ID75 custom keyboard kit, configured as a ortholinear (matrix) split keyboard in a single body.
+## Current Layout: G-25-04
+My daily-use two keyboards are built with Idobao ID75 custom keyboard circuit boards, configured as a ortholinear (matrix) split keyboard in a single body.
 
 This Layout gives a comfortable amount of space between the split area and therefore, better ergonomics.
+
+Idobao ID75 PCB (Atmel, backlight RGB) firmware configuration (VIA): [G-25-04](Idobao%20ID75/G-25-04.json)
+Idobao x YMDK ID75 PCB (Raspberry Pi, full RGB) firmware configuration (Vial): [G-25-04](Idobao%20x%20YMDK%20ID75/G-25-04.vil)
 
 This is how is currently looks with a set of keycaps on.
 
