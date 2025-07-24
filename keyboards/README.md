@@ -66,7 +66,7 @@ In my case, these are keys like Modifiers (e.g., Ctrl, Shift, Alt, etc.), Naviga
 ### Dedicated keys for tactile guiding
 There are usually at least two homing keys in a keyboard (e.g., "F" and "J" with a distinct feel to touch on a QWERTY keyboard, "5" on a number pad). In addition, the four corners of a rectangular keyboard are prime spots to have dedicated keys you can find just by touch.
 
-Therefore, I have used Esc, Del, Enter, and Ctrl on the four corners. Colemak layer has T and N in place for the homing positions. Since I approach a keyboard with both hands at an inwards angle, my thumb home positions end up being on the bottom row directly below my index finger home positions.
+Therefore, I have used Esc, Del, Right Arrow, and Ctrl on the four corners. Colemak layer has T and N in place for the homing positions. Since I approach a keyboard with both hands at an inwards angle, my thumb home positions end up being on the bottom row directly below my index finger home positions.
 
 ### Home-row mods
 As the name suggests, home-row mods are modifier keys like Shift, Ctrl, Alt, and Win placed in the home row. They make key combination shortcuts (e.g., `Ctrl+ Shift+v`) satisfying to use and also reduce hand movement too.
@@ -74,23 +74,23 @@ As the name suggests, home-row mods are modifier keys like Shift, Ctrl, Alt, and
 Unfortunately, this also means adding a time-sensitive secondary function to the alphabetical keys of the home row. This limits typing speed and makes the typing experience more error-prone. To counter this downside, I access the home-row mods in different layers by holding a layer switch key with alternating hands.
 
 
-## Current Layout: G-25-04
+## Current Layout: G-25-07
 My daily-use two keyboards are built with Idobao ID75 custom keyboard circuit boards, configured as a ortholinear (matrix) split keyboard in a single body.
 
 This Layout gives a comfortable amount of space between the split area and therefore, better ergonomics.
 
+Idobao x YMDK ID75 PCB (Raspberry Pi, full RGB) firmware configuration (Vial): [G-25-07](Idobao%20x%20YMDK%20ID75/G-25-07.vil)
 Idobao ID75 PCB (Atmel, backlight RGB) firmware configuration (VIA): [G-25-04](Idobao%20ID75/G-25-04.json)
-Idobao x YMDK ID75 PCB (Raspberry Pi, full RGB) firmware configuration (Vial): [G-25-04](Idobao%20x%20YMDK%20ID75/G-25-04.vil)
 
 This is how is currently looks with a set of keycaps on.
 
-![Current Layout 1: G-24-11](https://i.imgur.com/HhjIpME.png)
+![Current Layout 1: G-25-07](https://i.imgur.com/2BZJScn.png)
 
-The keycap placement is primarily optimized for visual guiding. For example, the keycaps are in QWERTY arrangement because I can touch type in Colemak and I use a visually distinct keycap for Enter, etc. Homing positions are also maintained for tactile guiding (e.g., I only need homing positions for touch typing). Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
+The keycap placement is primarily optimized for visual guiding. Homing positions are also maintained for tactile guiding. Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
 
 Here is a composite image of the layers for quick reference. The details are described below.
 
-![Layer Composite for Quick Reference](https://i.imgur.com/XhdqhrG.png)
+![Layer Composite for Quick Reference](https://i.imgur.com/EiB8LBO.png)
 
 ### Layer 0 (Default Layer)
 
@@ -98,51 +98,51 @@ Colemak base layer for split 1DFH touch typing, including thumb clusters. The th
 
 **Left Thumb Cluster (from L to R):**
 - Shift
-- Hold: Use Layer 3 | Tap: Space
-- Hold: Use Layer 1 | Tap: Esc
+- Space
+- Hold: Use Layer 1 | Tap: Tab
 
 **Right Thumb Cluster (from L to R):**
-- Hold: Use Layer 1 | Tap: Backspace
-- Hold: Use Layer 2 | Tap: Enter
-- Shift
+- Hold: Use Layer 2 | Tap: Backspace
+- Hold: Shift | Tap: Enter
 
-In addition, the four corners of the keyboard have useful keys (e.g., Esc, Del, Enter, and Ctrl) so that they can be hit without being seen.
+In addition, the four corners of the keyboard have useful keys (e.g., Esc, Del, Right Arrow, and Ctrl) so that they can be hit without being seen.
 
-The rest of the Layer 0 is used as dedicated keys for a number of frequently used keys which are otherwise only accessed in layers. These are assigned to the top row and the five middle columns. For example, numbers/symbols keys, arrow keys, dedicated symbols keys, increase/decrease screen brightness, Home/End keys, F2, F5, F11, Tab, and a few modifiers.
+The rest of the Layer 0 is used as dedicated keys for a number of frequently used keys which are otherwise only accessed in layers. For example, numbers/symbols keys, arrow keys, dedicated symbols keys, Home/End keys, a few function keys, Tab, and a few modifiers.
 
-Since Layer 0 is the default layer, any undefined keys (i.e., pass-through keys but not deliberately-blank keys) in other layers are inherited from the Layer 0.
+Since Layer 0 is the default layer, any pass-through keys in other layers are inherited from the Layer 0.
 
 ### Layer 1
 
 **Left Hand Side:**
-- Numbers
-- Number-row symbols
 - Home-row mods
+- Pass-through from Layer 0
 
 **Right Hand Side:**
-- Arrow keys
 - Symbols
-- Home-row mods
+- Tab and Esc
 
-In addition, the center columns between the two typing areas also have F1 - F12.
+In addition, the center columns between the two typing areas also have F1 - F12. Right thumb can hold to switch to Layer 3.
 
 ### Layer 2
 
 **Left Hand Side:**
-Left Hand Side keys are the same as in Layer 0 (i.e., pass-through).
+- Numbers and Symbols
 
 **Right Hand Side:**
-- Navigation keys (e.g., Arrows, Home/End, Page Up/Down)
-- Special purpose keys (e.g., Print, Caps Lock, Scroll Lock)
-- Media keys (e.g., Volume Up/Down, Play/Pause)
 - Home-row mods
+- Pass-through from Layer 0
+
+In addition, the center columns between the two typing areas also have F1 - F12. Right thumb can hold to switch to Layer 3.
 
 ### Layer 3
 
 **Left Hand Side:**
-- Function keys (e.g., F1 - F12)
-- Del and Tab
+- Function keys (e.g., F1 - F10)
 - Home-row mods
+- Caps Lock
 
 **Right Hand Side:**
-Right Hand Side keys are the same as in Layer 0 (i.e., pass-through).
+- Function keys (e.g., F11 - F12)
+- Home-row mods
+- Navigation keys (e.g., Home/End, Page Up/Down)
+- Scroll Lock, Print Screen
