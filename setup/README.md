@@ -88,7 +88,7 @@ Icons:
 ###### PaperWM Settings -> Winprops
 Configuration dump from: `$ dconf read /org/gnome/shell/extensions/paperwm/winprops`
 
-```json
+```
 [
 '{"wm_class":"ca.edestcroix.Recordbox","scratch_layer":true}',
 '{"wm_class":"dev.mufeed.Wordbook","scratch_layer":true}',
