@@ -2,9 +2,9 @@
 
 Setting up my preferred desktop configuration.
 
-- **Preferred distro:** Fedora 42 Workstation
-- **Preferred DE:** GNOME
-- **Preferred WM:** PaperWM
+- **Current distro:** Fedora Workstation 42
+- **Current DE:** GNOME
+- **Current WM:** PaperWM
 - **Distro package manager:** DNF
 - **Self-contained app format:** Flatpak
 - **Other package tools:** Cargo
