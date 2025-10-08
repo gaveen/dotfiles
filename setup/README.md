@@ -9,11 +9,20 @@ Setting up my preferred desktop configuration.
 - **Self-contained app format:** Flatpak
 - **Other package tools:** Cargo
 
+## OS Distro Installation
+
+- Supported Fedora Workstation
+- GNOME Desktop Environment with default apps
+    * Ptyxis, Text Editor, Nautilus, Papers, Boxes, Image Viewer, Calculator, Fonts, Disks, Connections, Decibels, Showtime, Screenshot tool
+- Firefox
+- LibreOffice
+    * Writer, Calc, Impress
+
 
 ## Basic Post-install Configurations
 
-### Set up - Extra DNF Repos
-#### Set up - RPMFusion.org
+### Set up - Extra Repos
+#### Set up - [RPMFusion.org](https://rpmfusion.org/)
 ```bash
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
@@ -42,7 +51,9 @@ sudo dnf install gnome-network-displays ptyxis wl-clipboard wmctrl xsel
 ### Set up - GNOME Look & Feel
 #### Install - Packages
 ```bash
-sudo dnf install gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock adwaita-mono-fonts adwaita-sans-fonts fira-code-fonts mozilla-fira-mono-fonts mozilla-fira-sans-fonts julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts
+sudo dnf install \
+	gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock \
+	adwaita-mono-fonts adwaita-sans-fonts fira-code-fonts mozilla-fira-mono-fonts mozilla-fira-sans-fonts julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts
 ```
 
 #### Configure - GNOME Shell Extensions
@@ -57,7 +68,7 @@ Fonts:
 
 Icons:
 
-- **Preferred icon theme:** [Tela](https://github.com/vinceliuice/Tela-icon-theme)
+- Current icon theme: [Tela](https://github.com/vinceliuice/Tela-icon-theme)
 
 #### Configure - GNOME Shell Extensions
 
@@ -122,6 +133,7 @@ Configuration dump from: `$ dconf read /org/gnome/shell/extensions/paperwm/winpr
 
 - [Dotfiles](https://github.com/gaveen/dotfiles)
 - [Neovimfiles](https://github.com/gaveen/neovimfiles)
+- Secrets (e.g., SSH keys, GPG keys, etc.)
 - Firefox sync
 - Basic tools
     * ptyxis
@@ -147,14 +159,19 @@ Configuration dump from: `$ dconf read /org/gnome/shell/extensions/paperwm/winpr
 - [Typst](https://github.com/typst/typst/releases)
 
 ### Install - Productivity & Multimedia - Basic
-#### System Packages
+#### Install - Frequently-used Packages
 ```bash
 sudo dnf install \
-    toolbox yt-dlp yt-dlp-bash-completion mpv soundconverter kitty \
+    toolbox yt-dlp yt-dlp-bash-completion mpv soundconverter hexchat kitty \
     pandoc exiv2 pngcrush pdfarranger diffpdf pdfmerge \
     bat thefuck zoxide fd-find procps-ng procs util-linux sysstat diskonaut hyperfine \
-    wget iproute nmap netcat socat wireguard-tools tcpdump wireshark \
-	hexchat gitg distrobox gedit gedit-plugins vim-enhanced helix powertop libreoffice-draw dia \
+    wget iproute nmap netcat socat wireguard-tools tcpdump wireshark steam
+```
+
+#### Install - Less-frequently-used Packages
+```bash
+sudo dnf install \
+	gitg distrobox gedit gedit-plugins vim-enhanced helix powertop libreoffice-draw dia \
 	libdvdcss easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils
 ```
 
