@@ -78,6 +78,7 @@ Icons:
 #### Install & Configure - Manual - GNOME Shell Extensions
 ##### [Wiggle](https://github.com/mechtifs/wiggle)
 ##### [Floating Mini Panel](https://github.com/ghi59/floating-mini-panel)
+##### [Switcher](https://github.com/daniellandau/switcher)
 ##### [Extension List](https://github.com/tuberry/extension-list)
 ##### [PaperWM](https://github.com/paperwm/PaperWM)
 
