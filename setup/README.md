@@ -110,6 +110,7 @@ Configuration dump from: `$ dconf read /org/gnome/shell/extensions/paperwm/winpr
 '{"wm_class":"Gimp-2.10","title":"/ - GIMP$/","preferredWidth":"100%"}',
 '{"wm_class":"Hexchat","scratch_layer":true}',
 '{"wm_class":"io.bassi.Amberol","scratch_layer":true}',
+'{"wm_class":"io.github.giantpinkrobots.varia","scratch_layer":true}',
 '{"wm_class":"kitty","preferredWidth":"50%"}',
 '{"wm_class":"mpv","preferredWidth":"50%"}',
 '{"wm_class":"org.gnome.Boxes","preferredWidth":"100%"}',
@@ -127,7 +128,7 @@ Configuration dump from: `$ dconf read /org/gnome/shell/extensions/paperwm/winpr
 '{"wm_class":"steam","scratch_layer":true}',
 '{"wm_class":"via-nativia","scratch_layer":false}',
 '{"wm_class":"zoom","scratch_layer":true}',
-'{"wm_class":"io.github.giantpinkrobots.varia","scratch_layer":true}'
+'{"wm_class":"gedit","preferredWidth":"50%"}'
 ]
 ```
 
@@ -187,6 +188,7 @@ flatpak install flathub com.github.tchx84.Flatseal
 ```bash
 flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub org.gimp.GIMP
+flatpak install flathub org.gnome.gedit
 flatpak install flathub io.github.zen_browser.zen
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
