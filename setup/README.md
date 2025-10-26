@@ -83,6 +83,7 @@ Icons:
 ##### [PaperWM](https://github.com/paperwm/PaperWM)
 
 Backup config dump: `$ dconf dump /org/gnome/shell/extensions/paperwm/ > paperwm.dconf`
+
 Restore config dump: `$ dconf load /org/gnome/shell/extensions/paperwm/ < paperwm.dconf`
 
 - PaperWM config in: [paperwm.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/paperwm.dconf)
