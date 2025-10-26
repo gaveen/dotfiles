@@ -1,0 +1,19 @@
+[/]
+cycle-height-steps=[0.38195000000000001, 0.5, 0.61804000000000003, 1.0]
+cycle-width-steps=[0.38195000000000001, 0.5, 0.61804000000000003, 1.0]
+horizontal-margin=6
+last-used-display-server='Wayland'
+restore-attach-modal-dialogs='true'
+restore-edge-tiling='true'
+restore-workspaces-only-on-primary='true'
+selection-border-radius-bottom=12
+selection-border-radius-top=12
+selection-border-size=3
+show-focus-mode-icon=false
+show-open-position-icon=false
+show-window-position-bar=false
+show-workspace-indicator=false
+vertical-margin=6
+vertical-margin-bottom=6
+window-gap=6
+winprops=['{"wm_class":"ca.edestcroix.Recordbox","scratch_layer":true}', '{"wm_class":"dev.mufeed.Wordbook","scratch_layer":true}', '{"wm_class":"discord","scratch_layer":true}', '{"wm_class":"evince","preferredWidth":"50%"}', '{"wm_class":"gedit","preferredWidth":"50%","scratch_layer":true}', '{"wm_class":"Gimp-2.10","title":"/ - GIMP$/","preferredWidth":"100%"}', '{"wm_class":"Hexchat","scratch_layer":true}', '{"wm_class":"io.bassi.Amberol","scratch_layer":true}', '{"wm_class":"io.github.giantpinkrobots.varia","scratch_layer":true}', '{"wm_class":"kitty","preferredWidth":"50%"}', '{"wm_class":"mpv","preferredWidth":"50%"}', '{"wm_class":"net.nokyan.Resources","scratch_layer":true}', '{"wm_class":"org.gnome.Boxes","preferredWidth":"100%"}', '{"wm_class":"org.gnome.Calculator","scratch_layer":true}', '{"wm_class":"org.gnome.Decibels","scratch_layer":true}', '{"wm_class":"org.gnome.Extensions","scratch_layer":true}', '{"wm_class":"org.gnome.Nautilus","preferredWidth":"50%"}', '{"wm_class":"org.gnome.NetworkDisplays","scratch_layer":true}', '{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}', '{"wm_class":"org.gnome.Settings","scratch_layer":true}', '{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}', '{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}', '{"wm_class":"","title":"Picture-in-Picture","scratch_layer":true,"preferredWidth":"25%"}', '{"wm_class":"protonvpn-app","scratch_layer":true}', '{"wm_class":"soundconverter","scratch_layer":true}', '{"wm_class":"steam","scratch_layer":true}', '{"wm_class":"via-nativia","scratch_layer":false}', '{"wm_class":"zoom","scratch_layer":true}']

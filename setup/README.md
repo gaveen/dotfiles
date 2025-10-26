@@ -82,55 +82,12 @@ Icons:
 ##### [Extension List](https://github.com/tuberry/extension-list)
 ##### [PaperWM](https://github.com/paperwm/PaperWM)
 
+Backup config dump: `$ dconf dump /org/gnome/shell/extensions/paperwm/ > paperwm.dconf`
+Restore config dump: `$ dconf load /org/gnome/shell/extensions/paperwm/ < paperwm.dconf`
+
+- PaperWM config in: [paperwm.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/paperwm.dconf)
 - PaperWM styling in: [.config/paperwm/user.css](https://github.com/gaveen/dotfiles/blob/main/.config/paperwm/user.css)
 
-###### PaperWM Settings -> General
-
-- Selected window border size (px): `3`
-- Selected window border-radius for top corners (px): `12`
-- Selected window border-radius for bottom corners (px): `12`
-- Gap between windows: `6`
-- Horizontal margin: `6`
-- Top margin: `6`
-- Bottom margin: `6`
-
-###### PaperWM Settings -> Advanced
-
-- Other settings -> Maximize within tiling: true
-
-###### PaperWM Settings -> Winprops
-Configuration dump from: `$ dconf read /org/gnome/shell/extensions/paperwm/winprops`
-
-```
-[
-'{"wm_class":"ca.edestcroix.Recordbox","scratch_layer":true}',
-'{"wm_class":"dev.mufeed.Wordbook","scratch_layer":true}',
-'{"wm_class":"discord","scratch_layer":true}',
-'{"wm_class":"evince","preferredWidth":"50%"}',
-'{"wm_class":"Gimp-2.10","title":"/ - GIMP$/","preferredWidth":"100%"}',
-'{"wm_class":"Hexchat","scratch_layer":true}',
-'{"wm_class":"io.bassi.Amberol","scratch_layer":true}',
-'{"wm_class":"io.github.giantpinkrobots.varia","scratch_layer":true}',
-'{"wm_class":"kitty","preferredWidth":"50%"}',
-'{"wm_class":"mpv","preferredWidth":"50%"}',
-'{"wm_class":"org.gnome.Boxes","preferredWidth":"100%"}',
-'{"wm_class":"org.gnome.Calculator","scratch_layer":true}',
-'{"wm_class":"org.gnome.Decibels","scratch_layer":true}',
-'{"wm_class":"org.gnome.Extensions","scratch_layer":true}',
-'{"wm_class":"org.gnome.Nautilus","preferredWidth":"50%"}',
-'{"wm_class":"org.gnome.NetworkDisplays","scratch_layer":true}',
-'{"wm_class":"org.gnome.Ptyxis","preferredWidth":"50%"}',
-'{"wm_class":"org.gnome.Settings","scratch_layer":true}',
-'{"wm_class":"org.gnome.SystemMonitor","scratch_layer":true}',
-'{"wm_class":"org.gnome.TextEditor","preferredWidth":"50%"}',
-'{"wm_class":"protonvpn-app","scratch_layer":true}',
-'{"wm_class":"soundconverter","scratch_layer":true}',
-'{"wm_class":"steam","scratch_layer":true}',
-'{"wm_class":"via-nativia","scratch_layer":false}',
-'{"wm_class":"zoom","scratch_layer":true}',
-'{"wm_class":"gedit","preferredWidth":"50%"}'
-]
-```
 
 ### Configure Manually
 
@@ -165,10 +122,10 @@ Configuration dump from: `$ dconf read /org/gnome/shell/extensions/paperwm/winpr
 #### Install - Frequently-used Packages
 ```bash
 sudo dnf install \
-    toolbox yt-dlp yt-dlp-bash-completion mpv soundconverter hexchat kitty \
-    pandoc exiv2 pngcrush pdfarranger diffpdf pdfmerge \
+    toolbox wget croc yt-dlp yt-dlp-bash-completion mpv soundconverter kitty \
+    hexchat steam pandoc exiv2 pngcrush pdfarranger diffpdf pdfmerge \
     bat thefuck zoxide fd-find procps-ng procs util-linux sysstat diskonaut hyperfine \
-    wget iproute nmap netcat socat wireguard-tools tcpdump wireshark steam
+    iproute nmap netcat socat wireguard-tools tcpdump wireshark
 ```
 
 #### Install - Less-frequently-used Packages
@@ -178,27 +135,36 @@ sudo dnf install \
 	libdvdcss easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils
 ```
 
-#### Flatpaks - Flatpak Management
-```bash
-flatpak install flathub io.github.flattool.Warehouse
-flatpak install flathub com.github.tchx84.Flatseal
-```
-
 #### Flatpaks - Productivity
 ```bash
 flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub org.gimp.GIMP
 flatpak install flathub org.gnome.gedit
-flatpak install flathub io.github.zen_browser.zen
-flatpak install flathub org.gnome.gitlab.somas.Apostrophe
-flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
+```
+
+#### Flatpaks - Utilities
+```bash
 flatpak install flathub io.github.giantpinkrobots.varia
+flatpak install flathub net.nokyan.Resources
 ```
 
 #### Flatpaks - Communication
 ```bash
 flatpak install flathub com.discordapp.Discord 
 flatpak install flathub in.cinny.Cinny
+```
+
+#### Flatpaks - Misc
+```bash
+flatpak install flathub io.github.zen_browser.zen
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
+```
+
+#### Flatpaks - Flatpak Management
+```bash
+flatpak install flathub io.github.flattool.Warehouse
+flatpak install flathub com.github.tchx84.Flatseal
 ```
 
 
@@ -254,7 +220,7 @@ sudo dnf install bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 
 
 ## Misc
-### Configure Alternatives
+### Optional Configure Alternatives
 
 ```bash
 sudo alternatives --config nc
