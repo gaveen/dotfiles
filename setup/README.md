@@ -18,8 +18,8 @@ Setting up my preferred desktop configuration.
 - Firefox
 - LibreOffice
     * Writer, Calc, Impress
-- Other packages:
-    * bash-completion curl git ptyxis wl-clipboard xsel adwaita-mono-fonts adwaita-sans-fonts julietaula-montserrat-fonts
+- System packages:
+    * `bash-completion curl git ptyxis wl-clipboard xsel adwaita-mono-fonts adwaita-sans-fonts julietaula-montserrat-fonts`
 
 
 ## Basic Post-install Configurations
