@@ -2,7 +2,7 @@
 
 Setting up my preferred desktop configuration.
 
-- **Current distro:** Fedora Workstation 42
+- **Current distro:** Fedora Workstation 43
 - **Current DE:** GNOME
 - **Current WM:** PaperWM
 - **Distro package manager:** DNF
@@ -13,10 +13,13 @@ Setting up my preferred desktop configuration.
 
 - Supported Fedora Workstation
 - GNOME Desktop Environment with default apps
-    * Ptyxis, Text Editor, Nautilus, Papers, Boxes, Image Viewer, Calculator, Fonts, Disks, Connections, Decibels, Showtime, Screenshot tool
+    * Terminal (Ptyxis), Files (Nautilus), Document Viewer (Papers), Boxes, Text Editor, Calculator, Disks, Connections,
+    * Audio Player (Decibels), Video Player (Showtime), Image Viewer (Loupe), Fonts, Screenshot Tool
 - Firefox
 - LibreOffice
     * Writer, Calc, Impress
+- Other packages:
+    * bash-completion curl git ptyxis wl-clipboard xsel adwaita-mono-fonts adwaita-sans-fonts julietaula-montserrat-fonts
 
 
 ## Basic Post-install Configurations
@@ -40,12 +43,12 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 ## Minimal Desktop Setup
 ### Install - Minimal Utilities - CLI
 ```bash
-sudo dnf install bash-completion curl git htop neovim ripgrep    
+sudo dnf install htop neovim ripgrep
 ```
 
 ### Install - Minimal Utilities - GUI
 ```bash
-sudo dnf install gnome-network-displays ptyxis wl-clipboard wmctrl xsel
+sudo dnf install gnome-network-displays wmctrl
 ```
 
 ### Set up - GNOME Look & Feel
@@ -53,7 +56,7 @@ sudo dnf install gnome-network-displays ptyxis wl-clipboard wmctrl xsel
 ```bash
 sudo dnf install \
 	gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock \
-	adwaita-mono-fonts adwaita-sans-fonts fira-code-fonts mozilla-fira-mono-fonts mozilla-fira-sans-fonts julietaula-montserrat-fonts julietaula-montserrat-alternates-fonts
+	fira-code-fonts julietaula-montserrat-alternates-fonts
 ```
 
 #### Configure - GNOME Shell Extensions
@@ -72,13 +75,11 @@ Icons:
 
 #### Configure - GNOME Shell Extensions
 
-- Blur My Shell
+- Blur My Shell (Outdated by F43 release day)
 - Dash to Dock
 
 #### Install & Configure - Manual - GNOME Shell Extensions
-##### [Wiggle](https://github.com/mechtifs/wiggle)
 ##### [Floating Mini Panel](https://github.com/ghi59/floating-mini-panel)
-##### [Switcher](https://github.com/daniellandau/switcher)
 ##### [Extension List](https://github.com/tuberry/extension-list)
 ##### [PaperWM](https://github.com/paperwm/PaperWM)
 
@@ -110,6 +111,8 @@ Restore config dump: `$ dconf load /org/gnome/shell/extensions/paperwm/ < paperw
     * kitty
     * [alacritty](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 
+##### [Switcher](https://github.com/daniellandau/switcher) (Outdated by F43 release day)
+##### [Wiggle](https://github.com/mechtifs/wiggle) (Outdated by F43 release day)
 
 ## Productivity & Multimedia Setup
 
@@ -140,7 +143,6 @@ sudo dnf install \
 ```bash
 flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub org.gimp.GIMP
-flatpak install flathub org.gnome.gedit
 ```
 
 #### Flatpaks - Utilities
@@ -151,7 +153,7 @@ flatpak install flathub net.nokyan.Resources
 
 #### Flatpaks - Communication
 ```bash
-flatpak install flathub com.discordapp.Discord 
+flatpak install flathub com.discordapp.Discord
 flatpak install flathub in.cinny.Cinny
 ```
 
@@ -180,7 +182,7 @@ sudo dnf install overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-
 ### Setup Dev Tools
 #### Dependencies
 ```bash
-sudo dnf install binutils gcc cmake openssl-devel llvm lldb lsof ctags rr python3-gpg
+sudo dnf install binutils gcc cmake openssl-devel clang llvm lldb lsof ctags rr python3-gpg
 ```
 
 #### [Rust](https://rust-lang.org/tools/install/)
@@ -226,4 +228,9 @@ sudo dnf install bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 ```bash
 sudo alternatives --config nc
 sudo alternatives --config x-terminal-emulator
+```
+
+### Removed/Missing/Deprecated Packages from previous distro release
+```
+mozilla-fira-mono-fonts mozilla-fira-sans-fonts 
 ```
