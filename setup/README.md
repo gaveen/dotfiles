@@ -214,7 +214,7 @@ sudo dnf install bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 ```
 
 
-### Install - Cargo-based Utilities - CLI
+## Install - Cargo-based Utilities - CLI
 
 ```bash
 cargo install --locked typst-cli
