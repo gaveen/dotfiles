@@ -55,12 +55,10 @@ sudo dnf install gnome-network-displays wmctrl
 #### Install - Packages
 ```bash
 sudo dnf install \
-	gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-blur-my-shell gnome-shell-extension-dash-to-dock \
-	fira-code-fonts julietaula-montserrat-alternates-fonts
+	gnome-tweaks fira-code-fonts gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock
 ```
 
-#### Configure - GNOME Shell Extensions
-##### Configure GNOME Tweaks
+#### Configure GNOME Tweaks
 Fonts:
 
 - Interface Text: Adwaita Sans `11`
@@ -73,22 +71,28 @@ Icons:
 
 - Current icon theme: [Tela](https://github.com/vinceliuice/Tela-icon-theme)
 
-#### Configure - GNOME Shell Extensions
 
-- Blur My Shell (Outdated by F43 release day)
-- Dash to Dock
+#### Install & Configure - GNOME Shell Extensions
 
-#### Install & Configure - Manual - GNOME Shell Extensions
+Backup config dump: `$ dconf dump /org/gnome/shell/extensions/[EXTENSION]/ > [EXTENSION].dconf`
+
+Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [EXTENSION].dconf`
+
+##### Dash to Dock
+
+- Dash to Dock config in: [dash-to-dock.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/dash-to-dock.dconf)
+
 ##### [Floating Mini Panel](https://github.com/ghi59/floating-mini-panel)
-##### [Extension List](https://github.com/tuberry/extension-list)
 ##### [PaperWM](https://github.com/paperwm/PaperWM)
-
-Backup config dump: `$ dconf dump /org/gnome/shell/extensions/paperwm/ > paperwm.dconf`
-
-Restore config dump: `$ dconf load /org/gnome/shell/extensions/paperwm/ < paperwm.dconf`
 
 - PaperWM config in: [paperwm.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/paperwm.dconf)
 - PaperWM styling in: [.config/paperwm/user.css](https://github.com/gaveen/dotfiles/blob/main/.config/paperwm/user.css)
+
+##### [Switcher](https://github.com/daniellandau/switcher)
+
+- Switcher config in: [switcher.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/switcher.dconf)
+
+##### [Wiggle](https://github.com/mechtifs/wiggle) (Outdated by F43 release day)
 
 
 ### Configure Manually
@@ -98,7 +102,7 @@ Restore config dump: `$ dconf load /org/gnome/shell/extensions/paperwm/ < paperw
 - Secrets (e.g., SSH keys, GPG keys, etc.)
 - Firefox sync
 - Basic tools
-    * ptyxis
+    * ptyxis (`$ gsettings set org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/[PROFILE_ID]/ opacity 0.9`)
     * gnome-text-editor
     * nautilus
 - LibreOffice
@@ -111,8 +115,6 @@ Restore config dump: `$ dconf load /org/gnome/shell/extensions/paperwm/ < paperw
     * kitty
     * [alacritty](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
 
-##### [Switcher](https://github.com/daniellandau/switcher) (Outdated by F43 release day)
-##### [Wiggle](https://github.com/mechtifs/wiggle) (Outdated by F43 release day)
 
 ## Productivity & Multimedia Setup
 
@@ -159,9 +161,10 @@ flatpak install flathub in.cinny.Cinny
 
 #### Flatpaks - Misc
 ```bash
-flatpak install flathub io.github.zen_browser.zen
+flatpak install flathub net.trowell.typesetter
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe
 flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
+flatpak install flathub io.github.zen_browser.zen
 ```
 
 #### Flatpaks - Flatpak Management
@@ -174,7 +177,7 @@ flatpak install flathub com.github.tchx84.Flatseal
 ### Install - Fonts
 
 ```bash
-sudo dnf install overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-mono-fonts redhat-text-fonts rsms-inter-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts jetbrains-mono-fonts-all mozilla-zilla-slab-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts catharsis-cormorant-fonts-all google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all intel-one-mono-fonts
+sudo dnf install julietaula-montserrat-underline-fonts julietaula-montserrat-alternates-fonts overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-mono-fonts redhat-text-fonts rsms-inter-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts jetbrains-mono-fonts-all mozilla-zilla-slab-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts catharsis-cormorant-fonts-all google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all intel-one-mono-fonts
 ```
 
 

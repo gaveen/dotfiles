@@ -1,0 +1,8 @@
+[/]
+fade-enable=true
+font-size=uint32 14
+icon-size=uint32 24
+matching=uint32 1
+max-width-percentage=uint32 35
+on-active-display=true
+ordering=uint32 1
