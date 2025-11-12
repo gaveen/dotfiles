@@ -199,17 +199,6 @@ rustup component add rust-src
 rustup component add rust-analyzer
 ```
 
-##### Install - (Cargo-based) Dev Tools & Utilities - CLI
-
-```bash
-cargo install --locked typst-cli
-cargo install --locked --bin jj jj-cli
-cargo install --locked ripgrep_all
-cargo install --locked miniserve
-cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli systemfd
-cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-rain
-```
-
 #### [Deno](https://deno.com/)
 ```bash
 curl -fsSL https://deno.land/install.sh | sh
@@ -225,15 +214,22 @@ sudo dnf install bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 ```
 
 
+### Install - Cargo-based Utilities - CLI
+
+```bash
+cargo install --locked typst-cli
+cargo install --locked --bin jj jj-cli
+cargo install --locked ripgrep_all
+cargo install --locked miniserve
+cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli systemfd
+cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-rain
+```
+
+
 ## Misc
 ### Optional Configure Alternatives
 
 ```bash
 sudo alternatives --config nc
 sudo alternatives --config x-terminal-emulator
-```
-
-### Removed/Missing/Deprecated Packages from previous distro release
-```
-mozilla-fira-mono-fonts mozilla-fira-sans-fonts 
 ```
