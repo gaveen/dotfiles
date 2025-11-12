@@ -122,7 +122,6 @@ Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [E
 
 - [Dropbox](https://www.dropbox.com/)
 - [Hugo](https://github.com/gohugoio/hugo/releases)
-- [Typst](https://github.com/typst/typst/releases)
 
 ### Install - Productivity & Multimedia - Basic
 #### Install - Frequently-used Packages
@@ -203,11 +202,12 @@ rustup component add rust-analyzer
 ##### Install - (Cargo-based) Dev Tools & Utilities - CLI
 
 ```bash
+cargo install --locked typst-cli
 cargo install --locked --bin jj jj-cli
+cargo install --locked ripgrep_all
+cargo install --locked miniserve
 cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli systemfd
 cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-rain
-cargo install --locked miniserve
-cargo install --locked ripgrep_all
 ```
 
 #### [Deno](https://deno.com/)
