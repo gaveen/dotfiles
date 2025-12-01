@@ -78,6 +78,8 @@ Backup config dump: `$ dconf dump /org/gnome/shell/extensions/[EXTENSION]/ > [EX
 
 Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [EXTENSION].dconf`
 
+##### [Copyous](https://github.com/boerdereinar/copyous)
+
 ##### Dash to Dock
 
 - Dash to Dock config in: [dash-to-dock.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/dash-to-dock.dconf)
@@ -137,7 +139,7 @@ sudo dnf install \
 ```bash
 sudo dnf install \
 	gitg distrobox gedit gedit-plugins vim-enhanced helix powertop libreoffice-draw dia \
-	libdvdcss easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils
+	libdvdcss easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils libgda
 ```
 
 #### Flatpaks - Productivity
