@@ -3,8 +3,7 @@
 Setting up my preferred desktop configuration.
 
 - **Current distro:** Fedora Workstation 43
-- **Current DE:** GNOME
-- **Current WM:** PaperWM
+- **Current DE/WM:** Niri
 - **Distro package manager:** DNF
 - **Self-contained app format:** Flatpak
 - **Other package tools:** Cargo
@@ -224,7 +223,7 @@ cargo install --locked --bin jj jj-cli
 cargo install --locked ripgrep_all
 cargo install --locked miniserve
 cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli systemfd
-cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-rain
+cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-rain fresh-editor
 ```
 
 
