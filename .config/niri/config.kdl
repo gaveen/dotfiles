@@ -146,7 +146,7 @@ window-rule {
     match app-id="org.gnome.Boxes"
     match app-id="GIMP"
     match app-id="obsidian"
-    match app-id="org.mozilla.firefox"
+    match app-id="dev.zed.Zed"
     open-maximized true
 }
 
