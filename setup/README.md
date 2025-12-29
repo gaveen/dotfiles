@@ -207,7 +207,7 @@ curl -fsSL https://deno.land/install.sh | sh
 
 #### [Zellij](https://zellij.dev/)
 
-#### [VS Code](https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions)
+#### [Zed](https://zed.dev/download)
 
 #### eBPF
 ```bash
