@@ -101,7 +101,7 @@ Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [E
 #### Install - Packages
 ```
 sudo dnf copr enable avengemedia/dms
-sudo dnf install niri dms
+sudo dnf install niri dms wl-mirror
 systemctl --user add-wants niri.service dms
 ```
 
