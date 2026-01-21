@@ -50,6 +50,7 @@ sudo dnf install htop neovim ripgrep
 sudo dnf install gnome-network-displays wmctrl
 ```
 
+
 ### Set up - GNOME Look & Feel
 #### Install - Packages
 ```bash
@@ -96,6 +97,21 @@ Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [E
 ##### [Wiggle](https://github.com/mechtifs/wiggle) (Outdated by F43 release day)
 
 
+### Set up - niri (with DankMaterialShell)
+#### Install - Packages
+```
+sudo dnf copr enable avengemedia/dms
+sudo dnf install niri dms
+systemctl --user add-wants niri.service dms
+```
+
+#### Configure niri
+
+- Current niri config in: [.config/niri/config.kdl](https://github.com/gaveen/dotfiles/blob/main/.config/niri/config.kdl)
+- Also check niri documentation for [important post-install](https://yalter.github.io/niri/Important-Software.html) and [screencasting](https://yalter.github.io/niri/Screencasting.html) tips
+
+
+
 ### Configure Manually
 
 - [Dotfiles](https://github.com/gaveen/dotfiles)
@@ -106,6 +122,7 @@ Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [E
     * ptyxis (`$ gsettings set org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/[PROFILE_ID]/ opacity 0.9`)
     * gnome-text-editor
     * nautilus
+- niri (see above)
 - LibreOffice
     * defaults (e.g., page, font, spacing, etc.)
     * galleries
