@@ -223,7 +223,7 @@ cargo install --locked --bin jj jj-cli
 cargo install --locked ripgrep_all
 cargo install --locked miniserve
 cargo install cargo-auditable cargo-audit cargo-watch cargo-generate bindgen-cli systemfd
-cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-rain fresh-editor
+cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-rain fresh-editor just
 ```
 
 
