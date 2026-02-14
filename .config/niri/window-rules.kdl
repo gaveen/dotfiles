@@ -1,0 +1,53 @@
+// Niri - Window Rules
+//
+// Window rules to adjust the behavior of specific windows.
+// Tip: Use `niri msg pick-window` and pick a window to get its id, etc.
+
+// Window rule: workaround for WezTerm's initial configure bug
+window-rule {
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+// Window rule: open Firefox picture-in-picture player as floating
+window-rule {
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+// Window rule: floating windows
+window-rule {
+    match app-id="org.gnome.Calculator"
+    match app-id="gedit"
+    match app-id="com.github.tenderowl.frog"
+    match app-id="protonvpn-app"
+    match app-id="org.gnome.SystemMonitor"
+    match app-id="net.nokyan.Resources"
+    // match app-id="io.bassi.Amberol"
+    // match app-id="org.gnome.Decibels"
+    // match app-id="org.gnome.NetworkDisplays"
+    // match app-id="soundconverter"
+    // match app-id="io.github.giantpinkrobots.varia"
+    // match app-id="dev.mufeed.Wordbook"
+    // match app-id="zoom"
+    open-floating true
+}
+
+// Window rule: maximized windows
+window-rule {
+    match app-id="org.gnome.Boxes"
+    match app-id="GIMP"
+    match app-id="obsidian"
+    match app-id="steam"
+    match app-id="dev.zed.Zed"
+    // match app-id="discord"
+    // match app-id="Hexchat"
+    open-maximized true
+}
+
+// Window rule: rounded window corners
+window-rule {
+    draw-border-with-background false
+    geometry-corner-radius 12
+    clip-to-geometry true
+}

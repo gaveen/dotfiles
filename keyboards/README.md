@@ -74,17 +74,17 @@ As the name suggests, home-row mods are modifier keys like Shift, Ctrl, Alt, and
 Unfortunately, this also means adding a time-sensitive secondary function to the alphabetical keys of the home row. This limits typing speed and makes the typing experience more error-prone. To counter this downside, I access the home-row mods in different layers by holding a layer switch key with alternating hands.
 
 
-## Current Layout: G-25-07
+## Current Layout: G-26-01
 My daily-use two keyboards are built with Idobao ID75 custom keyboard circuit boards, configured as a ortholinear (matrix) split keyboard in a single body.
 
 This Layout gives a comfortable amount of space between the split area and therefore, better ergonomics.
 
-Idobao x YMDK ID75 PCB (Raspberry Pi, full RGB) firmware configuration (Vial): [G-25-07](Idobao%20x%20YMDK%20ID75/G-25-07.vil)
-Idobao ID75 PCB (Atmel, backlight RGB) firmware configuration (VIA): [G-25-04](Idobao%20ID75/G-25-04.json)
+Idobao x YMDK ID75 PCB (Raspberry Pi, full RGB) firmware configuration (Vial): [G-26-01](Idobao%20x%20YMDK%20ID75/G-26-01.vil)
+Idobao ID75 PCB (Atmel, backlight RGB) firmware configuration (VIA): [G-26-01](Idobao%20ID75/G-26-01.json)
 
-This is how is currently looks with a set of keycaps on.
+This is how the layout G-25-07 looks with a set of keycaps on. The current layout G-26-01 is slightly different to be more convenient with my current workflow. The following sections are to be updated once the current layout stays settled for a while.
 
-![Current Layout 1: G-25-07](https://i.imgur.com/2BZJScn.png)
+![Layout: G-25-07](https://i.imgur.com/2BZJScn.png)
 
 The keycap placement is primarily optimized for visual guiding. Homing positions are also maintained for tactile guiding. Finally, the place-holder keycaps are also used based on the aesthetics (e.g., match/contrast the color of the surrounding keys).
 

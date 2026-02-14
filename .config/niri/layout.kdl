@@ -1,0 +1,65 @@
+// Niri - Window Positioning & Behavior
+
+// Settings that influence how windows are positioned and sized
+layout {
+    // Set gaps around windows in logical pixels.
+    gaps 5
+    center-focused-column "never"
+
+    // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+        proportion 1.0
+    }
+
+    // You can change the default width of the new windows.
+    default-column-width { proportion 0.5; }
+
+    // Set the look of the focus ring
+    focus-ring {
+        // off
+
+        // How many logical pixels the ring extends out from the windows.
+        width 4
+
+        // Color of the ring on the active monitor.
+        active-color "#20B2AA"
+
+        // Color gradient of the ring on inactive monitors, relative to the entire view.
+        inactive-gradient from="00ff99ee" to="33ccffee" angle=45 relative-to="workspace-view"
+
+        // Color of the border around windows that request your attention.
+        urgent-color "#9b0000"
+    }
+
+    // Border is similar to the focus ring, but always visible.
+    border {
+        off
+    }
+}
+
+// Disable the "Important Hotkeys" pop-up at startup
+hotkey-overlay {
+    // Uncomment this line to disable the "Important Hotkeys" pop-up at startup.
+    skip-at-startup
+}
+
+// Uncomment this line to ask the clients to omit their client-side decorations.
+// prefer-no-csd
+
+// Animation settings
+animations {
+    // Uncomment to turn off all animations.
+    // off
+
+    // Slow down all animations by this factor. Values below 1 speed them up instead.
+    // slowdown 1.2
+}
+
+// Recommended fix for Electron-based apps
+environment {
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+    //GTK_IM_MODULE "simple"
+}

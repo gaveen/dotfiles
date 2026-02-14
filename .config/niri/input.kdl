@@ -1,0 +1,20 @@
+// Niri - Input Devices
+
+input {
+    // Keyboard - default via org.freedesktop.locale1
+    keyboard {
+        xkb {
+        }
+    }
+
+    // Touchpad - configure tap, natural scrolling, and disable while typing
+    touchpad {
+        tap
+        dwt
+        natural-scroll
+    }
+
+    // Mouse
+    mouse {
+    }
+}
