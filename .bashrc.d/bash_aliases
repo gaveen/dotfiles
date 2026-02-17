@@ -1,30 +1,31 @@
 # ~/.bashrc.d/bash_aliases
 
-# Vim
-alias gvm='gvim --remote-silent $@ &> /dev/null'
-alias vess='/usr/share/vim/vim91/macros/less.sh'
-alias vim-minimal='vim -u NONE -N'
+# Option presets
 
-# Zellij
-alias zel='zellij --layout compact options --theme catppuccin-mocha'
+# bat
+alias kat='bat --theme TwoDark --style=plain --paging=never'
 
-# Misc
+# ps
+alias psc='ps xawf -eo pid,user,cgroup,args'
+
+# rsync
+alias rget='rsync -r -v --progress -c --partial -e ssh'
+
+# zellij
+alias zel='zellij --layout compact options --simplified-ui true --theme catppuccin-mocha'
+
+# mpv/mplayer
+# alias mpa='mplayer -vo null'
+# alias mpp='mplayer -ao null -fs'
+alias mpa='mpv --no-video'
+alias mpp='mpv --fs --no-audio'
+
+# Handle typos
 alias :q='exit'
 alias :Q='exit'
 alias lcd='cd'
 alias lls='ls'
-alias psc='ps xawf -eo pid,user,cgroup,args'
-#alias ll='ls -lh --color=auto'
-
-# MPlayer/mpv
-alias mpa='mpv --no-video'
-alias mpp='mpv --fs --no-audio'
-#alias mpa='mplayer -vo null'
-#alias mpp='mplayer -ao null -fs'
-
-# RSync
-alias rget='rsync -r -v --progress -c --partial -e ssh'
 
 # Ping
-alias ping-8888='ping 8.8.8.8'
-alias ping-1111='ping 1.1.1.1'
+alias ping-1='ping 1.1.1.1'
+alias ping-8='ping 8.8.8.8'
