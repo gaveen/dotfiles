@@ -48,7 +48,7 @@ function :h { vim +"h $1" +only; }
 # Use bat syntax highlighting for man
 # Dependency: bat
 function dude {
-    man $1 | bat -l man --style=-numbers --theme TwoDark
+    man $1 | bat -l man --style=plain --theme TwoDark
 }
 
 
