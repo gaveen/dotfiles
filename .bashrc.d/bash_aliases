@@ -3,7 +3,12 @@
 # Option presets
 
 # bat
-alias kat='bat --theme TwoDark --style=plain --paging=never'
+function bman {
+    man $1 | bat -l man --style=plain --theme TwoDark
+}
+alias bcat='bat --theme TwoDark --style=plain --paging=never'
+alias bnum='bat --theme TwoDark --style=plain --number'
+alias bless='bat --theme TwoDark --style=plain'
 
 # ps
 alias psc='ps xawf -eo pid,user,cgroup,args'

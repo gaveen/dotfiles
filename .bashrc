@@ -45,13 +45,6 @@ function :h { vim +"h $1" +only; }
 #    PS1="\n\[\033[0;32m\][\033[0;39m\]\W\[\033[0;33m\]\$(parse_git_branch)\[\033[0;32m\]]\n\[\033[0;32m\]\$\[\033[0m\] "
 #fi
 
-# Use bat syntax highlighting for man
-# Dependency: bat
-function dude {
-    man $1 | bat -l man --style=plain --theme TwoDark
-}
-
-
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
