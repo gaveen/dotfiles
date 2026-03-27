@@ -17,4 +17,7 @@ input {
     // Mouse
     mouse {
     }
+
+    // Move mouse pointer to the focused window
+    warp-mouse-to-focus
 }

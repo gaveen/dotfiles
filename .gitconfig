@@ -6,8 +6,11 @@
 [color]
   ui = true
 [alias]
+  ch = checkout
   hist = log --oneline --decorate --all --graph
   lo = log --oneline
+  plr = pull --rebase
+  rbom = rebase origin/main
   st = status -sb
 ;[core]
 ;  excludesfile = /home/gaveen/.gitignore

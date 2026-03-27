@@ -20,3 +20,5 @@ include "binds.kdl"
 
 // Set screenshots saving path
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+include "dms/cursor.kdl"
