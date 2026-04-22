@@ -3,6 +3,7 @@
 Setting up my preferred desktop configuration.
 
 - **Current distro:** Fedora Workstation 43
+- **Defualt DE/WM:** GNOME
 - **Current DE/WM:** Niri
 - **Distro package manager:** DNF
 - **Self-contained app format:** Flatpak
@@ -17,8 +18,6 @@ Setting up my preferred desktop configuration.
 - Firefox
 - LibreOffice
     * Writer, Calc, Impress
-- System packages:
-    * `bash-completion curl git ptyxis wl-clipboard xsel adwaita-mono-fonts adwaita-sans-fonts julietaula-montserrat-fonts`
 
 
 ## Basic Post-install Configurations
@@ -42,59 +41,13 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 ## Minimal Desktop Setup
 ### Install - Minimal Utilities - CLI
 ```bash
-sudo dnf install htop neovim ripgrep
+sudo dnf install bash-completion neovim ripgrep git curl htop
 ```
 
-### Install - Minimal Utilities - GUI
+### Install - Minimal Utilities - GUI (via default GNOME)
 ```bash
-sudo dnf install gnome-network-displays wmctrl
+sudo dnf install wl-clipboard wmctrl gnome-network-displays fira-code-fonts julietaula-montserrat-fonts adwaita-mono-fonts adwaita-sans-fonts ptyxis
 ```
-
-
-### Set up - GNOME Look & Feel
-#### Install - Packages
-```bash
-sudo dnf install \
-	gnome-tweaks fira-code-fonts gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock
-```
-
-#### Configure GNOME Tweaks
-Fonts:
-
-- Interface Text: Adwaita Sans `11`
-- Document Text: Monstserrat Medium `11`
-- Monospace Text: Fira Code weight=450 `12`
-- Hinting: Slight
-- Anti aliasing: Standard (grayscale)
-
-Icons:
-
-- Current icon theme: [Tela](https://github.com/vinceliuice/Tela-icon-theme)
-
-
-#### Install & Configure - GNOME Shell Extensions
-
-Backup config dump: `$ dconf dump /org/gnome/shell/extensions/[EXTENSION]/ > [EXTENSION].dconf`
-
-Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [EXTENSION].dconf`
-
-##### [Copyous](https://github.com/boerdereinar/copyous)
-
-##### Dash to Dock
-
-- Dash to Dock config in: [dash-to-dock.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/dash-to-dock.dconf)
-
-##### [Floating Mini Panel](https://github.com/ghi59/floating-mini-panel)
-##### [PaperWM](https://github.com/paperwm/PaperWM)
-
-- PaperWM config in: [paperwm.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/paperwm.dconf)
-- PaperWM styling in: [.config/paperwm/user.css](https://github.com/gaveen/dotfiles/blob/main/.config/paperwm/user.css)
-
-##### [Switcher](https://github.com/daniellandau/switcher)
-
-- Switcher config in: [switcher.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/switcher.dconf)
-
-##### [Wiggle](https://github.com/mechtifs/wiggle) (Outdated by F43 release day)
 
 
 ### Set up - niri (with DankMaterialShell)
@@ -107,7 +60,7 @@ systemctl --user add-wants niri.service dms
 
 #### Configure niri
 
-- Current niri config in: [.config/niri/config.kdl](https://github.com/gaveen/dotfiles/blob/main/.config/niri/config.kdl)
+- Current niri config in: [.config/niri/config.kdl](https://github.com/gaveen/dotfiles/blob/main/computers/.config/niri/config.kdl)
 - Also check niri documentation for [important post-install](https://yalter.github.io/niri/Important-Software.html) and [screencasting](https://yalter.github.io/niri/Screencasting.html) tips
 
 
@@ -116,13 +69,13 @@ systemctl --user add-wants niri.service dms
 
 - [Dotfiles](https://github.com/gaveen/dotfiles)
 - [Neovimfiles](https://github.com/gaveen/neovimfiles)
+- niri (see above)
 - Secrets (e.g., SSH keys, GPG keys, etc.)
 - Firefox sync
 - Basic tools
     * ptyxis (`$ gsettings set org.gnome.Ptyxis.Profile:/org/gnome/Ptyxis/Profiles/[PROFILE_ID]/ opacity 0.9`)
     * gnome-text-editor
     * nautilus
-- niri (see above)
 - LibreOffice
     * defaults (e.g., page, font, spacing, etc.)
     * galleries
@@ -145,49 +98,40 @@ systemctl --user add-wants niri.service dms
 #### Install - Frequently-used Packages
 ```bash
 sudo dnf install \
-    toolbox wget croc yt-dlp yt-dlp-bash-completion mpv soundconverter kitty \
-    hexchat steam pandoc exiv2 pngcrush pdfarranger diffpdf pdfmerge \
-    bat thefuck zoxide fd-find procps-ng procs util-linux sysstat diskonaut hyperfine \
+    toolbox bat wget pandoc croc thefuck zoxide fd-find \
+    yt-dlp yt-dlp-bash-completion mpv soundconverter audacity-freeworld \
+    steam hexchat kitty exiv2 pngcrush diffpdf pdfmerge libreoffice-draw \
+    procps-ng procs util-linux sysstat diskonaut hyperfine \
     iproute nmap netcat socat wireguard-tools tcpdump wireshark
 ```
 
 #### Install - Less-frequently-used Packages
 ```bash
 sudo dnf install \
-	gitg distrobox gedit gedit-plugins vim-enhanced helix powertop libreoffice-draw dia \
-	libdvdcss easytag audacity-freeworld mplayer speech-dispatcher speech-dispatcher-utils libgda
+    gitg distrobox gedit gedit-plugins vim-enhanced helix powertop dia \
+    libdvdcss easytag mplayer speech-dispatcher speech-dispatcher-utils libgda
 ```
 
 #### Flatpaks - Productivity
 ```bash
 flatpak install flathub md.obsidian.Obsidian
+flatpak install com.github.jeromerobert.pdfarranger
 flatpak install flathub org.gimp.GIMP
-```
-
-#### Flatpaks - Utilities
-```bash
-flatpak install flathub io.github.giantpinkrobots.varia
-flatpak install flathub net.nokyan.Resources
+flatpak install flathub org.onlyoffice.desktopeditors
+flatpak install flathub net.trowell.typesetter
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe
+flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
 ```
 
 #### Flatpaks - Communication
 ```bash
 flatpak install flathub com.discordapp.Discord
-flatpak install flathub in.cinny.Cinny
 ```
 
-#### Flatpaks - Misc
+#### Flatpaks - Utilities
 ```bash
-flatpak install flathub net.trowell.typesetter
-flatpak install flathub org.gnome.gitlab.somas.Apostrophe
-flatpak install flathub org.gnome.gitlab.somas.Apostrophe.Plugin.TexLive
-flatpak install flathub io.github.zen_browser.zen
-```
-
-#### Flatpaks - Flatpak Management
-```bash
-flatpak install flathub io.github.flattool.Warehouse
-flatpak install flathub com.github.tchx84.Flatseal
+flatpak install flathub net.nokyan.Resources
+flatpak install com.github.tenderowl.frog
 ```
 
 
@@ -226,7 +170,7 @@ curl -fsSL https://deno.land/install.sh | sh
 
 #### [Zed](https://zed.dev/download)
 
-#### eBPF
+#### Optional eBPF tools
 ```bash
 sudo dnf install bpftool bcc bcc-tools bpftop libbpf-tools bpfmon bpftrace
 ```
@@ -245,9 +189,67 @@ cargo install systeroid difftastic erdtree nu viu eza binsider television rusty-
 
 
 ## Misc
+### Optional Set up - GNOME Look & Feel
+#### Install - Packages
+```bash
+sudo dnf install \
+    gnome-tweaks gnome-extensions-app gnome-shell-extension-appindicator gnome-shell-extension-dash-to-dock
+```
+
+#### Configure GNOME Tweaks
+Fonts:
+
+- Interface Text: Adwaita Sans `11`
+- Document Text: Monstserrat Medium `11`
+- Monospace Text: Fira Code weight=450 `12`
+- Hinting: Slight
+- Anti aliasing: Standard (grayscale)
+
+Icons:
+
+- Current icon theme: [Tela](https://github.com/vinceliuice/Tela-icon-theme)
+
+
+#### Install & Configure - GNOME Shell Extensions
+
+Backup config dump: `$ dconf dump /org/gnome/shell/extensions/[EXTENSION]/ > [EXTENSION].dconf`
+
+Restore config dump: `$ dconf load /org/gnome/shell/extensions/[EXTENSION]/ < [EXTENSION].dconf`
+
+##### [Copyous](https://github.com/boerdereinar/copyous)
+
+##### Dash to Dock
+
+- Dash to Dock config in: [dash-to-dock.dconf](https://github.com/gaveen/dotfiles/blob/main/computers/dconfs/dash-to-dock.dconf)
+
+##### [Floating Mini Panel](https://github.com/ghi59/floating-mini-panel)
+##### [PaperWM](https://github.com/paperwm/PaperWM)
+
+- PaperWM config in: [paperwm.dconf](https://github.com/gaveen/dotfiles/blob/main/computers/dconfs/paperwm.dconf)
+- PaperWM styling in: [.config/paperwm/user.css](https://github.com/gaveen/dotfiles/blob/main/computers/.config/paperwm/user.css)
+
+##### [Switcher](https://github.com/daniellandau/switcher)
+
+- Switcher config in: [switcher.dconf](https://github.com/gaveen/dotfiles/blob/main/setup/dconfs/switcher.dconf)
+
+##### [Wiggle](https://github.com/mechtifs/wiggle) (Outdated by F43 release day)
+
+
 ### Optional Configure Alternatives
 
 ```bash
 sudo alternatives --config nc
 sudo alternatives --config x-terminal-emulator
+```
+
+### Optional Flatpaks
+#### Flatpaks - Utilities
+```bash
+flatpak install flathub io.github.giantpinkrobots.varia
+```
+
+#### Flatpaks - Flatpak Management
+```bash
+flatpak install flathub io.github.flattool.Warehouse
+flatpak install flathub com.github.tchx84.Flatseal
 ```
