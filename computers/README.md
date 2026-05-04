@@ -22,6 +22,11 @@ Setting up my preferred desktop configuration.
 
 ## Basic Post-install Configurations
 
+### Unbreak the middle-click paste for GTK apps
+```
+gsettings set org.gnome.desktop.interface gtk-enable-primary-paste true
+```
+
 ### Set up - Extra Repos
 #### Set up - [RPMFusion.org](https://rpmfusion.org/)
 ```bash
