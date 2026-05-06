@@ -239,4 +239,8 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    // Invoke niri-floataway
+    // (default: toggle stashing floating windows on the current workspace)
+    Alt+Escape { spawn-sh "niri-floataway"; }
 }
