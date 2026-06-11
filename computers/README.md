@@ -98,6 +98,7 @@ systemctl --user add-wants niri.service dms
 
 - [Dropbox](https://www.dropbox.com/)
 - [Hugo](https://github.com/gohugoio/hugo/releases)
+- [Stirling PDF](https://docs.stirlingpdf.com/Installation/Unix%20Installation/?linux-install=rpm)
 
 ### Install - Productivity & Multimedia - Basic
 #### Install - Frequently-used Packages
@@ -141,7 +142,6 @@ flatpak install com.github.tenderowl.frog
 
 
 ### Install - Fonts
-
 ```bash
 sudo dnf install julietaula-montserrat-underline-fonts julietaula-montserrat-alternates-fonts overpass-fonts overpass-mono-fonts redhat-display-fonts redhat-mono-fonts redhat-text-fonts rsms-inter-fonts dejavu-fonts-all adobe-source-sans-pro-fonts adobe-source-code-pro-fonts adobe-source-serif-pro-fonts jetbrains-mono-fonts-all mozilla-zilla-slab-fonts levien-inconsolata-fonts google-roboto-fonts google-roboto-slab-fonts google-roboto-mono-fonts google-roboto-condensed-fonts google-noto-sans-fonts google-noto-serif-fonts google-noto-sans-sinhala-fonts lklug-fonts sil-charis-fonts sil-charis-compact-fonts abattis-cantarell-fonts comic-neue-fonts comic-neue-angular-fonts catharsis-cormorant-fonts-all google-rubik-fonts polarsys-b612-fonts-all cascadia-fonts-all intel-one-mono-fonts
 ```
